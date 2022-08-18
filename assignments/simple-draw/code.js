@@ -53,7 +53,7 @@ drawFilledRect(340, height - 550, 10, 1000, 'yellow');
 
 drawFilledRect(250, height - 559, 200, 100, 'green');
 
-drawFilledRect(270, height - 559, 10, 1000, 'black');
+drawFilledRect(270, height - 559, 10, 80, 'black');
 
 //drawCircle(width/2, height/4, 10, 'blue');
 
