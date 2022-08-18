@@ -49,7 +49,7 @@ drawFilledRect(0, height - 200, 1000, 1000, 'orange');
 
 drawFilledRect(0, height - 100, 1000, 1000, 'yellow');
 
-drawFilledRect(5, height - 550, 200, 100, 'green');
+drawFilledRect(100, height - 550, 200, 100, 'green');
 
 //drawCircle(width/2, height/4, 10, 'blue');
 
