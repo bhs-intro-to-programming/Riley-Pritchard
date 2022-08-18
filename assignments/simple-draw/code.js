@@ -37,7 +37,7 @@
 
 //drawLine(0, 0, width, height, 'red')
 
-drawFilledTriangle(5, height - 20, 45, 15, 'purple');
+drawFilledCircle(5, height - 20, 45, 15, 'purple');
 
 drawFilledRect(0, height - 1000, 1000, 1000, 'red');
 
