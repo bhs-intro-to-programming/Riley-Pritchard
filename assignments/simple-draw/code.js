@@ -51,7 +51,7 @@ drawFilledCircle(width/1.5, height/3, 50, 'brown');
 
 drawCircle(width/2, height/1.9, 50, 'black');
 
-drawFilledCircle(width/1.3, height/2.1, 50, 'brown');
+drawFilledCircle(width/1.7, height/2.1, 50, 'brown');
 
 drawFilledCircle(width/2, height/2, 15, 'black');
 
