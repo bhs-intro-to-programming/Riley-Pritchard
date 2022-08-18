@@ -43,6 +43,8 @@ drawFilledRect(0, height - 500, 1000, 1000, 'orange');
 
 drawFilledRect(0, height - 400, 1000, 1000, 'yellow');
 
+drawFilledRect(0, height - 300, 1000, 1000, 'red');
+
 //drawCircle(width/2, height/4, 10, 'blue');
 
 //drawRect(50, 50, 60, 40, 'black');
