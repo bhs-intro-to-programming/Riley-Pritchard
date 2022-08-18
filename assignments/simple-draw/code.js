@@ -51,7 +51,7 @@ drawFilledRect(0, height - 100, 1000, 1000, 'yellow');
 
 drawFilledRect(250, height - 559, 200, 100, 'green');
 
-drawFilledRect(250, height - 559, 10, 1000, 'red');
+drawFilledRect(300, height - 559, 10, 1000, 'red');
 
 //drawCircle(width/2, height/4, 10, 'blue');
 
