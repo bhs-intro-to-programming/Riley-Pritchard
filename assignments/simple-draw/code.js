@@ -38,7 +38,7 @@
 //drawLine(0, 0, width, height, 'red')
 drawFilledRect(5, height - 20, 500, 400, 'blue');
 
-drawCircle(width/2, height/2, 10, 'blue');
+drawCircle(width/2, height/4, 10, 'blue');
 
 //drawRect(50, 50, 60, 40, 'black');
 
