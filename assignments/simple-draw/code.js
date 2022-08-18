@@ -36,7 +36,7 @@
  */
 
 //drawLine(0, 0, width, height, 'red')
-drawFilledRect(5.1, height - 500, 500, 400, 'blue');
+drawFilledRect(5.5, height - 500, 500, 400, 'blue');
 
 //drawCircle(width/2, height/4, 10, 'blue');
 
