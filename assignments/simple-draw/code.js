@@ -55,11 +55,11 @@ drawFilledRect(250, height - 559, 230, 100, 'green');
 
 drawFilledRect(270, height - 550, 10, 80, 'black');
 
-drawFilledRect(270, height - 520, 40, 10, 'red');
+drawFilledRect(270, height - 520, 40, 10, 'black');
 
 drawFilledRect(300, height - 550, 10, 80, 'black');
 
-drawFilledRect(320, height - 550, 10, 80, 'red');
+drawFilledRect(320, height - 550, 10, 80, 'black');
 
 drawFilledRect(320, height - 520, 40, 10, 'black');
 
