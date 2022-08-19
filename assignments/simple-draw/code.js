@@ -51,7 +51,7 @@ drawFilledRect(0, height - 100, 1000, 1000, 'yellow');
 
 drawFilledRect(340, height - 550, 10, 1000, 'yellow');
 
-drawFilledRect(250, height - 559, 250, 100, 'green');
+drawFilledRect(250, height - 559, 230, 100, 'green');
 
 drawFilledRect(270, height - 550, 10, 80, 'black');
 
