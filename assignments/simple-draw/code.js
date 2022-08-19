@@ -106,5 +106,5 @@ drawFilledCircle(width/2.5, height/2.2, 12, 'red');
 
 drawLine(180, 220, width/2.2, height/2.2, 'black')
 
-drawLine(320, 220, width/2.5, height/2.2, 'black')
+drawLine(320, 220, width/1.6, height/2.2, 'black')
 
