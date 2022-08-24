@@ -124,5 +124,11 @@
     "answer": "'s'.length",
     "correct": false,
     "timestamp": 1661378669423
+  },
+  {
+    "name": "First character",
+    "answer": "'s'[0]",
+    "correct": false,
+    "timestamp": 1661378689600
   }
 ]
