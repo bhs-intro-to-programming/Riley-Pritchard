@@ -166,5 +166,11 @@
     "answer": "s.substring(1)",
     "correct": false,
     "timestamp": 1661379063650
+  },
+  {
+    "name": "First character",
+    "answer": "s[0]",
+    "correct": true,
+    "timestamp": 1661379087538
   }
 ]
