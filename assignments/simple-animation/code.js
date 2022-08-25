@@ -8,7 +8,7 @@ const drawFrame = (time) => {
   clear();
   drawFilledCircle((time / 2) % width, height / 2, 25, 'purple');
   drawFilledCircle((time / 2.5) % width, height / 2, 25, 'blue');
-  drawFilledCircle((time / 2.9) % width, height / 2, 25, 'green');
+  drawFilledCircle((time / 3.1) % width, height / 2, 25, 'green');
   drawFilledCircle((time / 4) % width, height / 2, 25, 'yellow');
   drawFilledCircle((time / 5) % width, height / 2, 25, 'orange');
   drawFilledCircle((time / 6) % width, height / 2, 25, 'red');
