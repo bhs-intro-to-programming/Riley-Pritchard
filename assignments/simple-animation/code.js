@@ -7,7 +7,7 @@
 const drawFrame = (time) => {
   clear();
   drawFilledCircle((time / 3) % width/ 2, height / 2, 25, 'blue');
-  drawFilledCircle((time / 3) % width/2.6, height / 2, 25, 'orange');
+  drawFilledCircle((time / 3) % width/2.3, height / 2, 25, 'orange');
   drawFilledCircle((time / 3) % width/ 3, height / 2, 25, 'red');
   drawFallingTriangle(width / 2, time);
 };
