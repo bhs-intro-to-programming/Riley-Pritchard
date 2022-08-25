@@ -34,7 +34,7 @@ const drawFallingTriangle = (x, time) => {
 
   // Actually draw the triangle.
   drawTriangle(200, 200, 6, 6, 6, 200, 'purple', 3)
-  const drawFallingTriangle = (2, 5)
+  const drawFallingTriangle = (2, 5) => {}
 };
 
 // Leave this code here or the animation won't run. Also don't change the name
