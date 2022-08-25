@@ -33,7 +33,7 @@ const drawFallingTriangle = (x, time) => {
   let y3 = y1 - 13;
 
   // Actually draw the triangle.
-  drawTriangle(5, 5, 5, 5, x3, y3, 'purple', 3);
+  drawTriangle(5, 5, 5, 5, 5, y3, 'purple', 3);
 };
 
 // Leave this code here or the animation won't run. Also don't change the name
