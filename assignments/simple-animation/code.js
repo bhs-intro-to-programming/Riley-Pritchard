@@ -6,15 +6,8 @@
 // number of milliseconds (one millionth of a second) since the program started.
 const drawFrame = (time) => {
   clear();
-  
-drawFilledCircle((time / 2) % width, height / 10, 75, 'grey');
-  drawFilledCircle((time / 2.5) % width, height / 10, 75, 'grey');
-  drawFilledCircle((time / 3.1) % width, height / 10, 75, 'grey');
-  drawFilledCircle((time / 3.9) % width, height / 10, 75, 'grey');
-  drawFilledCircle((time / 4.9) % width, height / 10, 75, 'grey');
-  drawFilledCircle((time / 6.3) % width, height / 10, 75, 'grey');
+  drawFilledCircle((time / 3) % width, height / 2, 25, 'blue');
   drawFallingTriangle(width / 2, time);
-  
 };
 
 // This is a function that we define to make it easier to draw a triangle. You
@@ -40,8 +33,7 @@ const drawFallingTriangle = (x, time) => {
   let y3 = y1 - 13;
 
   // Actually draw the triangle.
-  drawTriangle(275, 1, 300, y2, 325, 1, 'blue', 6);
-  drawFallingTriangle(width / 2, time);
+  drawTriangle(x1, y1, x2, y2, x3, y3, 'pink', 3);
 };
 
 // Leave this code here or the animation won't run. Also don't change the name
