@@ -8,7 +8,7 @@ const drawFrame = (time) => {
   clear();
   drawFilledCircle((time / 3) % width, height / 7, 30, 'blue');
   drawFallingTriangle(width / 2, time/ 3);
-  drawFallingTriangle(width/ 7, time/ 2, 'blue')
+  drawFallingTriangle(width/ 7, time/ 2)
 };
 
 // This is a function that we define to make it easier to draw a triangle. You
@@ -34,7 +34,7 @@ const drawFallingTriangle = (x, time) => {
   let y3 = y1 - 13;
 
   // Actually draw the triangle.
-  drawTriangle(x1, y1, x2, y2, x3, y3, 'pink', 3);
+  drawTriangle(x1, y1, x2, y2, x3, y3, 'blue', 3);
 };
 
 // Leave this code here or the animation won't run. Also don't change the name
