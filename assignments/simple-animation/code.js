@@ -16,6 +16,8 @@ const drawFrame = (time) => {
   drawFilledCircle((time/ 3.4) % width, height/ 2, 35, ' black')
   drawFilledCircle((time/ 1.7) % width, height/ 2, 35, ' black')
   drawFilledCircle((time/ 4) % width, height/ 3.1, 35, ' black')
+  drawFilledCircle((time/ 4.9) % width, height/ 3.1, 35, ' black')
+  drawFilledCircle((time/ 3.9) % width, height/ 3.1, 35, ' black')
   drawFilledCircle((time/ 2) % width, height/ 3.1, 35, ' black')
   drawFallingTriangle(width / 2, time/ 3);
   drawFallingTriangle(width/ 7, time/ 2)
