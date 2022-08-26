@@ -7,13 +7,7 @@
 const drawFrame = (time) => {
   clear();
 
-  drawFilledCircle((time / 2) % width, height / 10, 75, 'grey');
-  drawFilledCircle((time / 2.5) % width, height / 10, 75, 'grey');
-  drawFilledCircle((time / 3.1) % width, height / 10, 75, 'grey');
-  drawFilledCircle((time / 3.9) % width, height / 10, 75, 'grey');
-  drawFilledCircle((time / 4.9) % width, height / 10, 75, 'grey');
-  drawFilledCircle((time / 6.3) % width, height / 10, 75, 'grey');
-  drawFallingTriangle(width / 2, time);
+  
 };
 
 // This is a function that we define to make it easier to draw a triangle. You
@@ -40,6 +34,13 @@ const drawFallingTriangle = (x, time) => {
 
   // Actually draw the triangle.
   drawTriangle(275, 1, 300, y2, 325, 1, 'blue', 6);
+  drawFilledCircle((time / 2) % width, height / 10, 75, 'grey');
+  drawFilledCircle((time / 2.5) % width, height / 10, 75, 'grey');
+  drawFilledCircle((time / 3.1) % width, height / 10, 75, 'grey');
+  drawFilledCircle((time / 3.9) % width, height / 10, 75, 'grey');
+  drawFilledCircle((time / 4.9) % width, height / 10, 75, 'grey');
+  drawFilledCircle((time / 6.3) % width, height / 10, 75, 'grey');
+  drawFallingTriangle(width / 2, time);
 };
 
 // Leave this code here or the animation won't run. Also don't change the name
