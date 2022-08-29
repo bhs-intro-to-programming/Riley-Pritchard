@@ -5,26 +5,9 @@
 // drawing exercise to draw shapes. The argument to this function, time, is the
 // number of milliseconds (one millionth of a second) since the program started.
 const drawFrame = (time) => {
-  //clear();
-  drawFilledCircle((time / 6) % width, height / 7, 35, 'purple');
-  drawFilledCircle((time/ 5) % width, height/ 7, 35, ' black')
-  drawFilledCircle((time/ 5.7) % width, height/ 7, 35, ' black')
-  drawFilledCircle((time/ 5.1) % width, height/ 7, 35, ' black')
-  drawFilledCircle((time/ 4.1) % width, height/ 7, 35, ' black')
-  drawFilledCircle((time/ 6.1) % width, height/ 2, 35, ' purple')
-  drawFilledCircle((time/ 4.6) % width, height/ 2, 35, ' black')
-  drawFilledCircle((time/ 3.4) % width, height/ 2, 35, ' black')
-  drawFilledCircle((time/ 6.7) % width, height/ 2, 35, ' black')
-  drawFilledCircle((time/ 4) % width, height/ 3.1, 35, ' black')
-  drawFilledCircle((time/ 4.9) % width, height/ 3.1, 35, ' black')
-  drawFilledCircle((time/ 5.9) % width, height/ 3.1, 35, ' black')
-  drawFilledCircle((time/ 4) % width, height/ 1.5, 35, ' black')
-  drawFilledCircle((time/ 5) % width, height/ 1.5, 35, ' purple')
-drawFilledCircle((time/ 6.3) % width, height/ 1.5, 35, ' black')
-drawFilledCircle((time/ 5.3) % width, height/ 1.5, 35, ' black')
-  drawFallingTriangle(width / 2, time/ 5);
-  drawFallingTriangle(width/ 7, time/ 7)
-    drawFallingTriangle(width / 1.3, time/ 6);
+  clear();
+  drawFilledCircle((time / 3) % width, height / 2, 25, 'blue');
+  drawFallingTriangle(width / 2, time);
 };
 
 // This is a function that we define to make it easier to draw a triangle. You
@@ -50,7 +33,7 @@ const drawFallingTriangle = (x, time) => {
   let y3 = y1 - 13;
 
   // Actually draw the triangle.
-  drawTriangle(x1, y1, x2, y2, x3, y3, 'white', 3);
+  drawTriangle(x1, y1, x2, y2, x3, y3, 'pink', 3);
 };
 
 // Leave this code here or the animation won't run. Also don't change the name
