@@ -110,5 +110,12 @@
     "answer": "s1 + s2",
     "correct": true,
     "timestamp": 1661810384324
+  },
+  {
+    "name": "Last three",
+    "canonical": "s.substring(s.length - 3)",
+    "answer": "s.substring(s.length - 3, s.length)",
+    "correct": true,
+    "timestamp": 1661810431565
   }
 ]
