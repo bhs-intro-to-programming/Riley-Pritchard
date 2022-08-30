@@ -19,5 +19,12 @@
     "answer": "s.substring(s.length)",
     "correct": false,
     "timestamp": 1661897153912
+  },
+  {
+    "name": "Last character",
+    "canonical": "s[s.length - 1]",
+    "answer": "s.substring(s.length-1)",
+    "correct": true,
+    "timestamp": 1661897160335
   }
 ]
