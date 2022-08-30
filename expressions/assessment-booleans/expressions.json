@@ -12,5 +12,12 @@
     "answer": "!afraidOfTheDark && !afraidOfSpiders",
     "correct": true,
     "timestamp": 1661896540932
+  },
+  {
+    "name": "Time to sleep?",
+    "canonical": "!sleepy || !dark",
+    "answer": "!sleepy || !dark",
+    "correct": true,
+    "timestamp": 1661896569220
   }
 ]
