@@ -103,5 +103,12 @@
     "answer": "Math.PI*2**2",
     "correct": true,
     "timestamp": 1661896331808
+  },
+  {
+    "name": "Distance",
+    "canonical": "Math.abs(a - b)",
+    "answer": "(a-b)*Math.abs",
+    "correct": false,
+    "timestamp": 1661898232525
   }
 ]
