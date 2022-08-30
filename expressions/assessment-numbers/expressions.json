@@ -54,5 +54,12 @@
     "answer": "a*b",
     "correct": true,
     "timestamp": 1661896166286
+  },
+  {
+    "name": "Sum",
+    "canonical": "a + b",
+    "answer": "a+b",
+    "correct": true,
+    "timestamp": 1661896170326
   }
 ]
