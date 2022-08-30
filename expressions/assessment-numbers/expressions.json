@@ -124,5 +124,12 @@
     "answer": "(x2 - y2) + (x1 - y1)",
     "correct": false,
     "timestamp": 1661898490660
+  },
+  {
+    "name": "Distance",
+    "canonical": "Math.abs(a - b)",
+    "answer": "(a-b)-Math.abs",
+    "correct": false,
+    "timestamp": 1661898601184
   }
 ]
