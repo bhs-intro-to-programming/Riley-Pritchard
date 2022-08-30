@@ -40,5 +40,12 @@
     "answer": "(a-b) + Math.abs",
     "correct": false,
     "timestamp": 1661896138303
+  },
+  {
+    "name": "Difference",
+    "canonical": "a - b",
+    "answer": "a-b",
+    "correct": true,
+    "timestamp": 1661896160815
   }
 ]
