@@ -82,5 +82,12 @@
     "answer": "(a+b)/2",
     "correct": true,
     "timestamp": 1661896214663
+  },
+  {
+    "name": "Distance",
+    "canonical": "Math.abs(a - b)",
+    "answer": "(a-b)*Math.abs",
+    "correct": false,
+    "timestamp": 1661896244488
   }
 ]
