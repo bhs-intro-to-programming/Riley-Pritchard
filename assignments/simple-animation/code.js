@@ -6,7 +6,7 @@
 // number of milliseconds (one millionth of a second) since the program started.
 const drawFrame = (time) => {
   clear();
-  drawFilledCircle((time / 2) % width/ 2, height / 2, 25, 'blue');
+  drawFilledCircle((time / 2) % width, height / 2, 25, 'blue');
   drawFallingTriangle(width / 2, time);
 };
 
@@ -18,6 +18,23 @@ const drawTriangle = (x1, y1, x2, y2, x3, y3, color, width = 1) => {
   drawLine(x2, y2, x3, y3, color, width);
   drawLine(x3, y3, x1, y1, color, width);
 };
+
+const drawSquare = (x1, y1, x2, y2, x3, y3, x4, y4 color, width = 1) => {
+  drawLine(x1, y1, x2, y2, color, width);
+  drawLine(x2, y2, x3, y3, color, width);
+  drawLine(x3, y3, x4, y4, color, width);
+  drawLine(x4, y4, x1, y1, color, width);
+};
+
+const drawFallingSquare = (x, time) => {
+  let x1 = x - 50;
+  let x2 = x;
+  let x3 = x - 50;
+  let x4 = x;
+  let y1 = (time/ 4) % height;
+  let y2 = y1;
+  let y3 = y1;
+
 
 // This draws a falling trangle of a particular shape whose bottom point is
 // positioned at x and whose y is a function of time.
