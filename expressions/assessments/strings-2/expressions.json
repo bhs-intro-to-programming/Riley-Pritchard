@@ -61,5 +61,12 @@
     "answer": "s.toLowerCase()",
     "correct": true,
     "timestamp": 1662069555574
+  },
+  {
+    "name": "All but first",
+    "canonical": "s.substring(1)",
+    "answer": "s.substring(1)",
+    "correct": true,
+    "timestamp": 1662069577502
   }
 ]
