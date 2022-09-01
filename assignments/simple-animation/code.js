@@ -33,7 +33,9 @@ const drawFallingSquare = (x, time) => {
   let x4 = x;
   let y1 = (time/ 4) % height;
   let y2 = y1;
-  let y3 = y1;
+  let y3 = y1 - 50;
+  let y4 = y1 - 50;
+  drawSquare(50, 50, 100, 50, 100, 100, 50, 100, 'purple', 3)
 
 
 // This draws a falling trangle of a particular shape whose bottom point is
