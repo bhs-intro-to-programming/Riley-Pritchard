@@ -4,7 +4,7 @@
 // change the code in here using the same functions you had in the simple
 // drawing exercise to draw shapes. The argument to this function, time, is the
 // number of milliseconds (one millionth of a second) since the program started.
-const drawFrame = (time) => {
+const drawFrame = (time/ 2) => {
     clear();
     drawFilledCircle((time / 3) % width, height/2, 25, 'blue');
     
@@ -51,7 +51,7 @@ const drawFallingTriangle = (x, time) => {
     let x3 = x + 50;
 
     // Figure out the y values as a function of time.
-    let y1 = (time / -4) % height;
+    let y1 = (time / 4) % height;
     let y2 = y1 + 37;
     let y3 = y1 - 13;
 
