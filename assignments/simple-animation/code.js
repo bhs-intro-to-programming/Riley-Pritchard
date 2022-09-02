@@ -36,7 +36,7 @@ const drawFallingSquare = (x, time) => {
  let y2 = y1;
  let y3 = y1 - 50;
  let y4 = y1 - 50;
- drawSquare(50, 50, 100, 50, 100, 100, 50, 100, 'purple', 3)
+ drawSquare(x1, y1, x2, y2, x3, y3, x4, y4, 'purple', 3)
 }
 
 
