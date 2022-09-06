@@ -16,4 +16,7 @@
  *   - Globby Birds eat fish, mice, and nuts.
  *
  */
-const isRed; isFlobbyBird||isBloggyBird;
+const isFlobbyBird = (isRed, isSpotted, eatsFish, eatsNuts, eatsWorms) => {
+  let isRed;
+  
+}
