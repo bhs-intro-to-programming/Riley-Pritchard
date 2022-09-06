@@ -17,6 +17,5 @@
  *
  */
 const isFlobbyBird = (isRed, isSpotted, eatsFish, eatsNuts, eatsWorms) => {
-  let isRed;
-  
+  return isRed+isSpotted+eatsFish+eatsNuts+eatsWorms
 }
