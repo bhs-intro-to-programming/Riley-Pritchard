@@ -20,3 +20,6 @@ const isFlobbyBird =(isRed, isSpotted) => isRed && isSpotted
 const isBloggyBird =(isRed, isSpotted) => isRed && !isSpotted
 const isFlibbleBird =(isRed, isSpotted) => !isRed && isSpotted
 const isGlobbyBird =(isRed, isSpotted) => !isRed && !isSpotted
+const eatsWorms =(isFlobbyBird, isBloggyBird, isFlibbleBird, isGlobbyBird) => {
+  return isFlobbyBird || isBloggyBird || isFlibbleBird || !isGlobbyBird
+}
