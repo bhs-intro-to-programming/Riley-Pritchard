@@ -24,3 +24,4 @@ const isGlobbyBird =(isRed, isSpotted) => !isRed && !isSpotted
 const eatsWorms =(isRed, isSpotted) => isRed || isSpotted
 const eatsNuts =(isRed, isSpotted) => isRed || !isSpotted
 const eatsFish =(isRed, isSpotted) => !isRed || isSpotted
+const eatsMice =(isRed, isSpotted) => !isRed || !isSpotted
