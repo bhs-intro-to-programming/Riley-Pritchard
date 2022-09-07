@@ -27,5 +27,5 @@ const eatsFish =(isRed, isSpotted) => !isRed || isSpotted
 const eatsMice =(isRed, isSpotted) => !isRed || !isSpotted
 
 const isRed =(s) => {
-  return s === 'flobby' || s === 'bloggy'
+  return s === 'flobby' || s === 'bloggy' || s !== 'flibble'
 }
