@@ -36,7 +36,7 @@
  */
 
 //drawLine(0, 0, width, height, 'red')
-
+drawTriangle(10, 10, 20, 20, 30, 30, 'purple,', width/1)
 //drawFilledRect(0, height - 1000, 1000, 1000, 'red');
 
 //drawFilledRect(0, height - 500, 1000, 1000, 'orange');
