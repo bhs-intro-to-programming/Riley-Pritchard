@@ -37,45 +37,43 @@
 
 //drawLine(0, 0, width, height, 'red')
 
-drawFilledRect(0, height - 1000, 1000, 1000, 'red');
+//drawFilledRect(0, height - 1000, 1000, 1000, 'red');
 
-drawFilledRect(0, height - 500, 1000, 1000, 'orange');
+//drawFilledRect(0, height - 500, 1000, 1000, 'orange');
 
-drawFilledRect(0, height - 400, 1000, 1000, 'yellow');
+//drawFilledRect(0, height - 400, 1000, 1000, 'yellow');
 
-drawFilledRect(0, height - 300, 1000, 1000, 'red');
+//drawFilledRect(0, height - 300, 1000, 1000, 'red');
 
-drawFilledRect(0, height - 200, 1000, 1000, 'orange');
+//drawFilledRect(0, height - 200, 1000, 1000, 'orange');
 
-drawFilledRect(0, height - 100, 1000, 1000, 'yellow');
+//drawFilledRect(0, height - 100, 1000, 1000, 'yellow');
 
-drawFilledRect(360, height - 550, 10, 1000, 'yellow');
+//drawFilledRect(360, height - 550, 10, 1000, 'yellow');
 
-drawFilledRect(250, height - 559, 230, 100, 'green');
+/////drawFilledRect(250, height - 559, 230, 100, 'green');
 
-drawFilledRect(270, height - 550, 10, 80, 'black');
+//drawFilledRect(270, height - 550, 10, 80, 'black');
 
-drawFilledRect(270, height - 520, 40, 10, 'black');
+//drawFilledRect(270, height - 520, 40, 10, 'black');
 
-drawFilledRect(300, height - 550, 10, 80, 'black');
+//drawFilledRect(300, height - 550, 10, 80, 'black');
 
-drawFilledRect(320, height - 550, 10, 80, 'black');
+//drawFilledRect(320, height - 550, 10, 80, 'black');
 
-drawFilledRect(320, height - 520, 40, 10, 'black');
+//drawFilledRect(320, height - 520, 40, 10, 'black');
 
-drawFilledRect(320, height - 480, 40, 10, 'black');
+//drawFilledRect(320, height - 480, 40, 10, 'black');
 
-drawFilledRect(320, height - 550, 40, 10, 'black');
+//drawFilledRect(320, height - 550, 40, 10, 'black');
 
-drawFilledRect(370, height - 550, 10, 80, 'black');
+//drawFilledRect(370, height - 550, 10, 80, 'black');
 
-drawFilledRect(370, height - 480, 40, 10, 'black');
+//drawFilledRect(370, height - 480, 40, 10, 'black');
 
-drawFilledRect(420, height - 550, 10, 80, 'black');
+//drawFilledRect(420, height - 550, 10, 80, 'black');
 
-drawFilledRect(420, height - 480, 40, 10, 'black');
-
-drawCircle(width/2, height/4, 10, 'blue');
+//drawFilledRect(420, height - 480, 40, 10, 'black');
 
 //drawFilledCircle(width/2, height/1.1, 200, 'brown');
 
@@ -104,3 +102,8 @@ drawCircle(width/2, height/4, 10, 'blue');
 
 //drawLine(320, 220, width/1.9, height/2.2, 'black')
 
+const drawTriangle = (x1, y1, x2, y2, x3, y3, color, width=1) => {
+    drawLine(x1, y1, x2, y2, color, width);
+    drawLine(x2, y2, x3, y3, color, width);
+    drawLine(x3, y3, x1, y1, color, width);
+}
