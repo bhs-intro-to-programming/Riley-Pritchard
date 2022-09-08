@@ -104,4 +104,4 @@
 
 
 
-drawTriangle(40, 20, 60, 40, 40, 60, 'purple')
+drawTriangle(60, 40, 40, 60, 40, 20, 'purple')
