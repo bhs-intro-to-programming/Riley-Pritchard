@@ -107,3 +107,5 @@ const drawTriangle = (x1, y1, x2, y2, x3, y3, color, width=1) => {
     drawLine(x2, y2, x3, y3, color, width);
     drawLine(x3, y3, x1, y1, color, width);
 }
+
+drawTriangle(10, 10, 20, 20, 30, 30, 'purple,', width)
