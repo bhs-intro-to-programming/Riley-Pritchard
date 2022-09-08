@@ -79,32 +79,30 @@ drawFilledRect(420, height - 480, 40, 10, 'black');
 
 //drawRect(50, 50, 60, 40, 'black');
 
-drawFilledCircle(width/2, height/1.1, 200, 'brown');
+//drawFilledCircle(width/2, height/1.1, 200, 'brown');
 
-drawFilledCircle(width/2, height/2, 100, 'brown');
+//drawFilledCircle(width/2, height/2, 100, 'brown');
 
-drawCircle(width/2, height/2, 100, 'black');
+//drawCircle(width/2, height/2, 100, 'black');
 
-//drawFilledRect(5, height - 20, 45, 15, 'purple');
+//drawFilledCircle(width/3, height/3, 50, 'brown');
 
-drawFilledCircle(width/3, height/3, 50, 'brown');
+//drawFilledCircle(width/1.5, height/3, 50, 'brown');
 
-drawFilledCircle(width/1.5, height/3, 50, 'brown');
+//drawCircle(width/2, height/1.9, 50, 'black');
 
-drawCircle(width/2, height/1.9, 50, 'black');
+//drawFilledCircle(width/1.7, height/2.1, 50, 'brown');
 
-drawFilledCircle(width/1.7, height/2.1, 50, 'brown');
-
-drawFilledCircle(width/2.2, height/2.1, 50, 'brown');
+//drawFilledCircle(width/2.2, height/2.1, 50, 'brown');
 
 
-drawFilledCircle(width/2, height/2, 15, 'black');
+//drawFilledCircle(width/2, height/2, 15, 'black');
 
-drawFilledCircle(width/1.7, height/2.2, 12, 'red');
+//drawFilledCircle(width/1.7, height/2.2, 12, 'red');
 
-drawFilledCircle(width/2.5, height/2.2, 12, 'red');
+//drawFilledCircle(width/2.5, height/2.2, 12, 'red');
 
-drawLine(180, 220, width/2.2, height/2.2, 'black')
+//drawLine(180, 220, width/2.2, height/2.2, 'black')
 
-drawLine(320, 220, width/1.9, height/2.2, 'black')
+//drawLine(320, 220, width/1.9, height/2.2, 'black')
 
