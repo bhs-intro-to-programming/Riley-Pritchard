@@ -36,7 +36,7 @@
  */
 
 //drawLine(0, 0, width, height, 'red')
-drawTriangle(10, 10, 20, 20, 30, 20, 'purple,', width/5)
+
 //drawFilledRect(0, height - 1000, 1000, 1000, 'red');
 
 //drawFilledRect(0, height - 500, 1000, 1000, 'orange');
@@ -108,4 +108,4 @@ const drawTriangle = (x1, y1, x2, y2, x3, y3, color, width=1) => {
     drawLine(x3, y3, x1, y1, color, width);
 }
 
-drawTriangle(10, 10, 20, 20, 30, 30, 'purple,', width/1)
+drawTriangle(10, 10, 20, 20, 30, 30, 'purple', width/1)
