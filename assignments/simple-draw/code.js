@@ -102,10 +102,10 @@
 
 //drawLine(320, 220, width/1.9, height/2.2, 'black')
 
+drawEqualTriangle(5, 'black', width)
 
-
-const drawEqualTriangle = (x1, y1, x2, y2, x3, y3, color, width=1) => {
-    drawLine(x1, y1, x2, y2, color, width);
-    drawLine(x2, y2, x3, y3, color, width);
-    drawLine(x3, y3, x1, y1, color, width);
+const drawEqualTriangle = (length, color, width=1) => {
+    drawLine(length, color, width);
+    drawLine(length, color, width);
+    drawLine(length, color, width);
 }
