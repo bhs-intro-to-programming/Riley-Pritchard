@@ -108,4 +108,5 @@ const drawEqualTriangle = (length, color, width=1) => {
     drawLine(length, color, width);
     drawLine(length, color, width);
     drawLine(length, color, width);
+    let length = Math.abs(x2-x1)+Math.abs(y2-y1)
 }
