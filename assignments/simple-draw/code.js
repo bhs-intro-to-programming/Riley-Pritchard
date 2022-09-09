@@ -104,4 +104,8 @@
 
 
 
-drawTriangle(60, 40, 40, 60, 40, 20, 'purple')
+const drawEqualTriangle = (x1, y1, x2, y2, x3, y3, color, width=1) => {
+    drawLine(x1, y1, x2, y2, color, width);
+    drawLine(x2, y2, x3, y3, color, width);
+    drawLine(x3, y3, x1, y1, color, width);
+}
