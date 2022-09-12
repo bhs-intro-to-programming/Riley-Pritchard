@@ -25,5 +25,5 @@
  */
 drawCircleLine(10, 50, 10, 'red')
 const drawCircleLine = ( x, y, r, color) => {
-  return drawFilledCircle( x, y, r, color) + (drawFilledCircle(( x + r, y, r, color)) * 20)
+  return drawFilledCircle( x, y, r, color) + drawFilledCircle(( x + r, y, r, color));
 }
