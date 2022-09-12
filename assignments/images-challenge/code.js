@@ -24,6 +24,6 @@
  *  clear()
  */
 drawFilledCircle(10,10,10, 'red')
-const drawCircleLine = (drawFilledCircle) => {
-  return drawFilledCircle
+const drawCircleLine = ( x, y, r, color) => {
+  return drawFilledCircle( x, y, r, color) + (drawFilledCircle(( x + r, y, r, color)) * 20)
 }
