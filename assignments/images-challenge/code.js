@@ -23,3 +23,7 @@
  *
  *  clear()
  */
+drawFilledCircle(10,10,10, 'red')
+const drawCircleLine = (drawFilledCircle) => {
+  return drawFilledCircle
+}
