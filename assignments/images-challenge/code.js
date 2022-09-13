@@ -25,9 +25,10 @@
  */
 
 const drawCircleLine = (x, y, r, color) => {
-  let drawFilledCircle1(x, y, r, color);
-let drawFilledCircle2((x + r * 2), y, r, color)
-  return drawFilledCircle1(x, y, r, color) + (drawFilledCircle2((x + r * 2), y, r, color)) + (drawFilledCircle((x + r * 4), y, r, color));
+  let drawFilledCircle1((x, y, r, color)* n);
+//let drawFilledCircle2((x + r * 2), y, r, color)
+let width / (r * 2) = n
+  //return drawFilledCircle1(x, y, r, color) + (drawFilledCircle2((x + r * 2), y, r, color)) + (drawFilledCircle((x + r * 4), y, r, color));
 }
 
 drawCircleLine(10, 50, 10, 'red')
