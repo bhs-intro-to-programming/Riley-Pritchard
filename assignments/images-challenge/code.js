@@ -26,7 +26,9 @@
 
 const drawCircleLine = (x, y, r, color) => {
   for (let n = 0; drawFilledCircle(x + r * n, y, r, color); n = n + 2){
+drawFilledCircle(x + r * n, y, r, color)
 }
+
    //drawFilledCircle(x, y, r, color);
    //let width / (r * 2) = n
 //let drawFilledCircle2((x + r * 2), y, r, color)
