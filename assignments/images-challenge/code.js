@@ -24,9 +24,10 @@
  *  clear()
  */
 
-const drawCircleLine = (x, y, r, color) => {
+const drawCircleLine = ( y, r, color) => {
   for (let n = 0; r * n < width - r; n = n + 2){
+    let x = width - r
 drawFilledCircle(x + r * n, y, r, color)
 }
 }
-drawCircleLine(30, 50, 30, 'red')
+drawCircleLine( 50, 30, 'red')
