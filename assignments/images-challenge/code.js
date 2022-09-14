@@ -30,4 +30,4 @@ const drawCircleLine = (y, r, color) => {
 drawFilledCircle(x + r * n, y, r, color)
 }
 }
-drawCircleLine(250, 10, 'red')
+drawCircleLine(270, 10, 'red')
