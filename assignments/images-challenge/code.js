@@ -43,4 +43,8 @@ const drawSpicyCircleLine = (y, r, color) => {
     }
   }
 }
-drawSpicyCircleLine(280, 10, 'red')
+//drawSpicyCircleLine(280, 10, 'red')
+
+  const drawSpicyCircles = (c) => {
+
+  }
