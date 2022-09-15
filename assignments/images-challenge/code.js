@@ -51,5 +51,4 @@ const drawSpicyCircles = (c) => {
   }
 }
 
-
-drawFilledCircle(width / 2, height / 2, width / 2, 'blue')
+drawSpicyCircles(11)
