@@ -56,4 +56,4 @@ const drawSpicyCircles = (c, color) => {
   }
 }
 
-drawSpicyCircles(11, 'blue')
+drawSpicyCircles(20, 'blue')
