@@ -45,8 +45,5 @@ const drawSpicyCircleLine = (y, r, color) => {
 }
 //drawSpicyCircleLine(280, 10, 'red')
 
-  const drawSpicyCircles = (c) => {
-for (let r = width / 2; c
-  }
 
 drawFilledCircle(width / 2, height/ 2, width / 2, 'blue')
