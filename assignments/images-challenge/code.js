@@ -48,4 +48,4 @@ const drawSpicyCircleLine = (y, r, color) => {
   const drawSpicyCircles = (c) => {
 for (let r = width / 2; c
   }
-drawFilledCircle(width / 2, height/ 2, width / 2)
+drawFilledCircle(width / 2, height/ 2, width / 2, blue)
