@@ -51,4 +51,4 @@ const drawSpicyCircles = (c) => {
   }
 }
 
-drawSpicyCircles(11)
+drawSpicyCircles(5)
