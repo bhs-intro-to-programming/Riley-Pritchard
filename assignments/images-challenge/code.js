@@ -51,7 +51,7 @@ const drawSpicyCircles = (c) => {
     if (r === width / 2){
       color = 'blue'
     }else{
-      color = red
+      color = 'red'
     }
   }
 }
