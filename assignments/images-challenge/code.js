@@ -57,4 +57,7 @@ const drawSpicyCircles = (c, color) => {
 }
 //drawSpicyCircles(11, 'blue')
 
-const spicyCheckers = (n, color)
+const drawSpicyCheckers = () => {
+drawFilledRect(width, height, width, height, 'blue')
+}
+drawSpicyCheckers()
