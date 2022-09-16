@@ -63,4 +63,4 @@ const drawSpicyCheckers = (n) => {
     drawFilledRect(x, 0, 'red')
   }
 }
-drawSpicyCheckers()
+drawSpicyCheckers(8)
