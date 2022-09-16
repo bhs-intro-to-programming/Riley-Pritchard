@@ -59,7 +59,7 @@ const drawSpicyCircles = (c, color) => {
 
 const drawSpicyCheckers = (n) => {
   for (let x = 0; x === width; x = x + width / n) {
-    drawFilledRect(x, 0, 'red')
+    drawFilledRect(x, 0, width/ n, height/ n, 'red')
   }
 }
 drawSpicyCheckers(8)
