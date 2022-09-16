@@ -58,10 +58,18 @@ const drawSpicyCircles = (c, color) => {
 //drawSpicyCircles(11, 'blue')
 
 const drawSpicyCheckers = (n) => {
-  for (let x = 0; x === width; x = x + width / n) {
-    drawFilledRect(x, 0, width/ n, height/ n, 'red')
+  for (let x = 0, ; x === width; x = x + width / n) {
+    for (let y = 0; y === height; y = y + width / n) {
+      drawFilledRect(x, y, width / n, height / n, 'blue')
+      if (color === 'red') {
+        color = 'blue'
+      } else {
+        color = 'red'
+      }
+    }
   }
 }
 drawSpicyCheckers(8)
 
  //drawFilledRect(0, 0, width, height, 'blue')
+ //drawFilledRect(x, 0, width/ n, height/ n, 'red')
