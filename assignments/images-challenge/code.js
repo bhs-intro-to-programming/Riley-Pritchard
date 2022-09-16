@@ -58,6 +58,6 @@ const drawSpicyCircles = (c, color) => {
 //drawSpicyCircles(11, 'blue')
 
 const drawSpicyCheckers = () => {
-drawFilledRect(width, height, width, height, 'blue')
+drawFilledRect(0, 0, width, height, 'blue')
 }
 drawSpicyCheckers()
