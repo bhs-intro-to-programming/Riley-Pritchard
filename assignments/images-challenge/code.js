@@ -38,7 +38,7 @@ const drawSpicyCircleLine = (y, r, color) => {
     let x = 0 + r * 2
     drawFilledCircle(x + r * n, y, r, color)
     if (n % 4 === 0) {
-      color = 'purple'
+      color = 'blue'
     } else {
       color = 'red'
     }
