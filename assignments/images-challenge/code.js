@@ -31,7 +31,7 @@ const drawCircleLine = (r, color) => {
     drawFilledCircle(x + r * n, y, r, color)
   }
 }
-//drawCircleLine(10, 'red')
+drawCircleLine(10, 'red')
 
 const drawSpicyCircleLine = (y, r, color) => {
   for (let n = 0; r * n < width - (r * 2); n = n + 2) {
@@ -44,7 +44,7 @@ const drawSpicyCircleLine = (y, r, color) => {
     }
   }
 }
-drawSpicyCircleLine(280, 10, 'red')
+//drawSpicyCircleLine(280, 10, 'red')
 
 const drawSpicyCircles = (c, color) => {
   for (let r = width / 2; c === c; r = r - width / 2 / c) {
