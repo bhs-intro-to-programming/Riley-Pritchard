@@ -55,7 +55,7 @@ const drawSpicyCircles = (c, color) => {
     }
   }
 }
-drawSpicyCircles(11, 'blue')
+//drawSpicyCircles(11, 'blue')
 
 const drawSpicyCheckers = (n) => {
   for (let x = 0; x > width; x = x + width / n) {
@@ -70,7 +70,12 @@ const drawSpicyCheckers = (n) => {
     }
   }
 }
-drawSpicyCheckers(8)
+//drawSpicyCheckers(8)
 
  //drawFilledRect(0, 0, width, height, 'blue')
  //drawFilledRect(x, 0, width/ n, height/ n, 'red')
+
+ const drawTooManyLines = (n) => {
+for( let x2)
+ }
+ //drawLine(x1, y1, x2, y2, color, lineWidth)
