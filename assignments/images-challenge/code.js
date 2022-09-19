@@ -95,4 +95,4 @@ const drawTooManyCircles = (r, color) => {
     drawCircle(x + r * n, y, r, color)
   }
 }
-drawTooManyCircles(10)
+drawTooManyCircles(10, 'blue')
