@@ -84,4 +84,5 @@ const drawTooManyLines = (n) => {
     }
   }
 }
+drawTooManyLines(100)
  //drawLine(x1, y1, x2, y2, color, lineWidth)
