@@ -55,7 +55,7 @@ const drawSpicyCircles = (c, color) => {
     }
   }
 }
-drawSpicyCircles(69, 'blue')
+drawSpicyCircles(2, 'blue')
 
 const drawSpicyCheckers = (n) => {
   for (let x = 0; x > width; x = x + width / n) {
