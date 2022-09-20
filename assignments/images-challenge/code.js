@@ -68,11 +68,14 @@ const drawSpicyCheckers = (n, color) => {
         color = 'blue'
       } else {
         color = 'red'
+        if (y % 2 === 0 && x === 0){
+          color = 'blue'
+        }
       }
     }
   }
 }
-drawSpicyCheckers(8, 'red')
+drawSpicyCheckers(8, 'blue')
 //for (let y = 0; y < height; y = y + width / n) {
 
 //drawFilledRect(0, 0, width, height, 'blue')
