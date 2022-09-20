@@ -64,7 +64,7 @@ const drawSpicyCheckers = (n) => {
       let a = width / n
       let y = 0
       let color = 'red'
-      drawFilledRect(x, y, a, a, 'blue')
+      drawFilledRect(x, y, a, a, color)
       if (color === 'red') {
         color = 'blue'
       } else {
