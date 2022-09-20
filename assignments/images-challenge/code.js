@@ -89,12 +89,12 @@ const drawTooManyLines = (n) => {
 //drawTooManyLines(100)
 
 const drawTooManyCircles = (r, color) => {
-  while (y < height) {
+  for (let y = r * 2; y < height - r * 2; y = y + r * 2) {
     for (let n = 0; r * n < width - (r * 2); n = n + 2) {
       let x = 0 + r * 2
-      let y = height / 2
       drawCircle(x + r * n, y, r, color)
     }
   }
 }
+
 drawTooManyCircles(10, 'blue')
