@@ -72,7 +72,7 @@ const drawSpicyCheckers = (n) => {
     }
   }
 }
-//drawSpicyCheckers(8)
+drawSpicyCheckers(8)
 
 //drawFilledRect(0, 0, width, height, 'blue')
 //drawFilledRect(x, 0, width/ n, height/ n, 'red')
@@ -110,4 +110,4 @@ const drawSomeFunnyCircles = (r, p, color) => {
     }
   }
 }
-drawSomeFunnyCircles(17, .23, 'blue')
+//drawSomeFunnyCircles(17, .23, 'blue')
