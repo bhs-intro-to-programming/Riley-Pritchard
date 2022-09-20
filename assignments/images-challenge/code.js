@@ -86,7 +86,7 @@ const drawTooManyLines = (n) => {
     }
   }
 }
-//drawTooManyLines(100)
+drawTooManyLines(100)
 
 // the code after this message works
 const drawTooManyCircles = (r, color) => {
