@@ -60,7 +60,7 @@ const drawSpicyCircles = (c, color) => {
 
 //the code after this message doesn't work yet
 const drawSpicyCheckers = (n) => {
-  for (let x = 0; x < width; x = x + a) {
+  for (let x = 0; x < width; x = x + width / n) {
       let a = width / n
       let y = 0
       let color = 'red'
