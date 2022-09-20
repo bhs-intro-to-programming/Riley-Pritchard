@@ -110,3 +110,4 @@ const drawSomeFunnyCircles = (r, p, color) => {
     }
   }
 }
+drawSomeFunnyCircles(17, .23, 'blue')
