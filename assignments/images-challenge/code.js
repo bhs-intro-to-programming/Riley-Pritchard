@@ -88,6 +88,7 @@ const drawTooManyLines = (n) => {
 }
 //drawTooManyLines(100)
 
+// the code after this message works
 const drawTooManyCircles = (r, color) => {
   for (let y = r * 2; y < height - r * 2; y = y + r * 2) {
     for (let n = 0; r * n < width - (r * 2); n = n + 2) {
@@ -96,5 +97,16 @@ const drawTooManyCircles = (r, color) => {
     }
   }
 }
+//drawTooManyCircles(17, 'blue')
 
-drawTooManyCircles(17, 'blue')
+const drawSomeFunnyCircles = (r, p, color) => {
+  for (let y = r * 2; y < height - r * 2; y = y + r * 2) {
+    for (let n = 0; r * n < width - (r * 2); n = n + 2) {
+      let x = 0 + r * 2
+      drawCircle(x + r * n, y, r, color)
+      if (Math.random() < p) {
+        drawFilledCircle(x + r * n, y, r, color)
+      }
+    }
+  }
+}
