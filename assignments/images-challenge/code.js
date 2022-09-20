@@ -63,7 +63,6 @@ const drawSpicyCheckers = (n, color) => {
   for (let y = 0; y < height; y = y + width / n) {
   for (let x = 0; x < width; x = x + width / n) {
       let a = width / n
-      let y = 0
       drawFilledRect(x, y, a, a, color)
       if (color === 'red') {
         color = 'blue'
