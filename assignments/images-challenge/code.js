@@ -97,4 +97,4 @@ const drawTooManyCircles = (r, color) => {
   }
 }
 
-drawTooManyCircles(20, 'blue')
+drawTooManyCircles(17, 'blue')
