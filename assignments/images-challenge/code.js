@@ -78,10 +78,10 @@ const drawSpicyCheckers = (n) => {
 //drawFilledRect(x, 0, width/ n, height/ n, 'red')
 
 const drawTooManyLines = (n) => {
-  for (let x1 = 0; x1 < width; x1 = x1 + width / n) {
+  for (let x2 = 0; x2 < width; x2 = x2 + width / n) {
     let y2 = height
       let y1 = 0
-      let x2 = width
+      let x1 = width
       drawLine(x1, y1, x2, y2, 'black', 1)
     }
   }
