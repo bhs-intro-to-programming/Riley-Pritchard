@@ -85,7 +85,6 @@ const drawTooManyLines = (n) => {
       drawLine(x1, y1, x2, y2, 'black', 1)
     }
   }
-}
 //for (let y2 = 0; y2 < height; y2 = y2 + height / n) {
 
 drawTooManyLines(10)
