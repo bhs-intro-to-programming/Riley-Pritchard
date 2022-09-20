@@ -61,7 +61,6 @@ const drawSpicyCircles = (c, color) => {
 //the code after this message doesn't work yet
 const drawSpicyCheckers = (n) => {
   for (let x = 0; x < width; x = x + width / n) {
-    for (let y = 0; y < height; y = y + width / n) {
       let a = width / n
       drawFilledRect(x, y, a, a, 'blue')
       if (color === 'red') {
@@ -71,8 +70,8 @@ const drawSpicyCheckers = (n) => {
       }
     }
   }
-}
 drawSpicyCheckers(8)
+//for (let y = 0; y < height; y = y + width / n) {
 
 //drawFilledRect(0, 0, width, height, 'blue')
 //drawFilledRect(x, 0, width/ n, height/ n, 'red')
