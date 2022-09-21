@@ -68,7 +68,7 @@ const drawSpicyCheckers = (n, color) => {
         color = 'blue'
       } else {
         color = 'red'
-        if (x === 0 && color === 'red'){
+        if (x === 0 && color === 'blue'){
           color = 'red'
         }
       }
