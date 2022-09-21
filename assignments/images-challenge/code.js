@@ -75,7 +75,7 @@ const drawSpicyCheckers = (n, color) => {
     }
   }
 }
-//drawSpicyCheckers(8, 'blue')
+drawSpicyCheckers(8, 'blue')
 //for (let y = 0; y < height; y = y + width / n) {
 
 //drawFilledRect(0, 0, width, height, 'blue')
@@ -96,7 +96,7 @@ const drawTooManyLines = (n) => {
   }
 
 //for (let y2 = 0; y2 < height; y2 = y2 + height / n) {
-drawTooManyLines(10)
+//drawTooManyLines(10)
 
 // the code after this message works
 const drawTooManyCircles = (r, color) => {
