@@ -90,6 +90,7 @@ const drawTooManyLines = (n) => {
   }
   //for (let y1 = height; y1 > 0; y1 = y1 - height / n) {
   for (let i = 0;i < n; i++) {
+    let y1 = height - (height / n) * i
     let x1 = 0
     let x2 = width
     let y2 = height
