@@ -96,7 +96,7 @@ const drawTooManyLines = (n) => {
   }
 
 //for (let y2 = 0; y2 < height; y2 = y2 + height / n) {
-//drawTooManyLines(10)
+drawTooManyLines(10)
 
 // the code after this message works
 const drawTooManyCircles = (r, color) => {
