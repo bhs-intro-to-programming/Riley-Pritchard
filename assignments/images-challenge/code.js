@@ -49,7 +49,6 @@ const drawSpicyCircleLine = (y, r, color) => {
 const drawSpicyCircles = (c) => {
   for (let r = width / 2; ; r = r - width / 2 / c) {
     drawFilledCircle(width / 2, height / 2, r, color)
-    let color = 'red'
     if (color === 'red') {
       color = 'blue'
     } else {
@@ -58,7 +57,7 @@ const drawSpicyCircles = (c) => {
   }
 }
 
-drawSpicyCircles(11, 'blue')
+drawSpicyCircles(11)
 
 //the code after this message doesn't work yet
 const drawSpicyCheckers = (n, color) => {
