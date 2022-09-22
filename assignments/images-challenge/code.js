@@ -26,7 +26,7 @@
 
 const drawCircleLine = (r, color) => {
   for (let n = 0; r * n < width - (r * 2); n = n + 2) {
-    let x = 0 + r * 2
+    let x = r * 2
     let y = height / 2
     drawFilledCircle(x + r * n, y, r, color)
   }
@@ -35,7 +35,7 @@ const drawCircleLine = (r, color) => {
 
 const drawSpicyCircleLine = (y, r, color) => {
   for (let n = 0; r * n < width - (r * 2); n = n + 2) {
-    let x = 0 + r * 2
+    let x = r * 2
     drawFilledCircle(x + r * n, y, r, color)
     if (n % 4 === 0) {
       color = 'blue'
@@ -82,7 +82,7 @@ const drawSpicyCheckers = (n, color) => {
 //drawFilledRect(x, 0, width/ n, height/ n, 'red')
 
 const drawTooManyLines = (n) => {
-  for (let i = 0 ; i < width ; i++) {
+  for (let i = 0 ; i < n ; i++) {
     let x2 = 0 + (width / n) * i
     let y2 = height
     let y1 = 0
@@ -106,7 +106,7 @@ drawTooManyLines(10)
 const drawTooManyCircles = (r, color) => {
   for (let y = r * 2; y < height - r * 2; y = y + r * 2) {
     for (let n = 0; r * n < width - (r * 2); n = n + 2) {
-      let x = 0 + r * 2
+      let x = r * 2
       drawCircle(x + r * n, y, r, color)
     }
   }
@@ -116,7 +116,7 @@ const drawTooManyCircles = (r, color) => {
 const drawSomeFunnyCircles = (r, p, color) => {
   for (let y = r * 2; y < height - r * 2; y = y + r * 2) {
     for (let n = 0; r * n < width - (r * 2); n = n + 2) {
-      let x = 0 + r * 2
+      let x = r * 2
       drawCircle(x + r * n, y, r, color)
       if (Math.random() < p) {
         drawFilledCircle(x + r * n, y, r, color)
