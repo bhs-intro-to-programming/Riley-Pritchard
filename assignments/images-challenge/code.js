@@ -118,7 +118,7 @@ const drawSomeFunnyCircles = (r, p, color) => {
 
 const drawStrangePictureFrame = (r, color) => {
   for (let y = r * 2; y < height - r * 2; y = y + r * 2) {
-    for (let n = 0; r * n < width - (r * 8); n = n + 2) {
+    for (let n = 0; r * n < width - (r * 2); n = n + 2) {
       let x = r * 2
       drawCircle(x + r * n, y, r, color)
     }
