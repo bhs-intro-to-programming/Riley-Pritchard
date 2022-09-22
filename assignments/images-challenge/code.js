@@ -56,7 +56,7 @@ const drawSpicyCircles = (c, color) => {
     }
   }
 }
-drawSpicyCircles(4, 'blue')
+drawSpicyCircles(11, 'blue')
 
 //the code after this message doesn't work yet
 const drawSpicyCheckers = (n, color) => {
