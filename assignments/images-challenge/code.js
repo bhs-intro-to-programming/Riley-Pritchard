@@ -121,6 +121,9 @@ const drawStrangePictureFrame = (r, color) => {
     for (let n = 0; r * n < width - (r * 2); n = n + 2) {
       let x = r * 2
       drawCircle(x + r * n, y, r, color)
+      if ( x > r * 2) {
+        color === 'white'
+      }
     }
   }
 }
