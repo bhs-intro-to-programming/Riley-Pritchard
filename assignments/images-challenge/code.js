@@ -90,16 +90,7 @@ const drawTooManyLines = (n) => {
     drawLine(x1, y1, x2, y2, 'black', 1)
   }
 }
-//for (let y1 = height; y1 > 0; y1 = y1 - height / n) {
-//for (let i = 0; i < n; i++) {
-//let y1 = height - (height / n) * i
-//let x1 = 0
-//let x2 = width
-//let y2 = height
-//drawLine(x1, y1, x2, y2, 'black', 1)
-
-//for (let y2 = 0; y2 < height; y2 = y2 + height / n) {
-drawTooManyLines(10)
+drawTooManyLines(100)
 
 // the code after this message works
 const drawTooManyCircles = (r, color) => {
