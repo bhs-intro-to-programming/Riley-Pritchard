@@ -90,7 +90,7 @@ const drawTooManyLines = (n) => {
     drawLine(x1, y1, x2, y2, 'black', 1)
   }
 }
-drawTooManyLines(100)
+drawTooManyLines(50)
 
 // the code after this message works
 const drawTooManyCircles = (r, color) => {
