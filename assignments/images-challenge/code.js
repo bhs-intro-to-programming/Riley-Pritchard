@@ -83,9 +83,9 @@ const drawSpicyCheckers = (n, color) => {
 
 const drawTooManyLines = (n) => {
   for (let i = 0; i < n; i++) {
-    let x2 = 0 + (width / n) * i
+    let x2 = (width / n) * i
     let y2 = height
-    let y1 = 0
+    let y1 = (height / n) * i
     let x1 = 0
     drawLine(x1, y1, x2, y2, 'black', 1)
   }
