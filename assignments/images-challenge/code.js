@@ -44,7 +44,7 @@ const drawSpicyCircleLine = (y, r, color) => {
     }
   }
 }
-drawSpicyCircleLine(280, 10, 'red')
+//drawSpicyCircleLine(280, 10, 'red')
 
 const drawSpicyCircles = (c, color) => {
   for (let r = width / 2; ; r = r - width / 2 / c) {
@@ -56,7 +56,7 @@ const drawSpicyCircles = (c, color) => {
     }
   }
 }
-//drawSpicyCircles(11, 'blue')
+drawSpicyCircles(11, 'blue')
 
 //the checkers code only works for certain values of n :(
 const drawSpicyCheckers = (n, color) => {
