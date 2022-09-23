@@ -122,7 +122,7 @@ const drawStrangePictureFrame = (r, color) => {
       let x = r * 2
       if (n === 0) {
         drawCircle(x + r * n, y, r, color)
-        if (y === r * 2){
+        if (y === height){
           drawCircle(x + r * n, y, r, color)
         }
       }
