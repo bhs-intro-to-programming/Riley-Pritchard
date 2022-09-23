@@ -120,9 +120,9 @@ const drawStrangePictureFrame = (r, color) => {
   for (let y = r * 2; y < height - r * 2; y = y + r * 2) {
     for (let n = 0; r * n < width - (r * 2); n = n + 2) {
       let x = r * 2
-      if (n === 0 || y === height) {
+     // if (n === 0 || y === height) {
         drawCircle(x + r * n, y, r, color)
-      }
+     // }
     }
   }
 }
