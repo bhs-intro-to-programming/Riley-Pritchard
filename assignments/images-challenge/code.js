@@ -47,7 +47,7 @@ const drawSpicyCircleLine = (d, color) => {
     }
   }
 }
-drawSpicyCircleLine(20, 'red')
+//drawSpicyCircleLine(20, 'red')
 
 const drawSpicyCircles = (c, color) => {
   for (let r = width / 2; ; r = r - width / 2 / c) {
@@ -96,15 +96,15 @@ const drawTooManyLines = (n) => {
 //drawTooManyLines(20)
 
 
-const drawTooManyCircles = (r, color) => {
+const drawTooManyCircles = (d, color) => {
   for (let y = r * 2; y < height - r * 2; y = y + r * 2) {
-    for (let n = 0; r * n < width - (r * 2); n = n + 2) {
-      let x = r * 2
-      drawCircle(x + r * n, y, r, color)
+    for (let i = 0; d * i < width - (d + d); i++) {
+    let x = i * d + d
+      drawCircle(x + r * n, y, d / 2, color)
     }
   }
 }
-//drawTooManyCircles(17, 'blue')
+drawTooManyCircles(17, 'blue')
 
 const drawSomeFunnyCircles = (r, p, color) => {
   for (let y = r * 2; y < height - r * 2; y = y + r * 2) {
