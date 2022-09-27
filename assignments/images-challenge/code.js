@@ -30,7 +30,7 @@ const drawCircleLine = (d, color) => {
   for (let i = 0; d * i < width - (d); i++) {
     let x = i * d
     let y = height / 2
-    drawFilledCircle(x, y, d, color)
+    drawFilledCircle(x, y, d / 2, color)
   }
 }
 drawCircleLine(10, 'red')
