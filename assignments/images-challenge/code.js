@@ -29,9 +29,9 @@
 const drawCircleLine = (d, color) => {
   let d = r * 2
   for (let i = 0; d * i < width - (d); i++) {
-    let x = d
+    let x = i * d
     let y = height / 2
-    drawFilledCircle(x + r * n, y, r, color)
+    drawFilledCircle(x, y, r, color)
   }
 }
 drawCircleLine(10, 'red')
