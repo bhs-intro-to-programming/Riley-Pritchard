@@ -36,10 +36,10 @@ const drawCircleLine = (d, color) => {
 //drawCircleLine(20, 'red')
 
 const drawSpicyCircleLine = (r, color) => {
-  for (let n = 0; r * n < width - (r * 2); n = n + 2) {
-    let x = r * 2
+  for (let i = 0; d * i < width - (d + d); i++) {
+    let x = i * d + d
     let y = height / 2
-    drawFilledCircle(x + r * n, y, r, color)
+    drawFilledCircle(x, y, d / 2, color)
     if (n % 4 === 0) {
       color = 'blue'
     } else {
