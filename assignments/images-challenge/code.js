@@ -33,15 +33,13 @@ const drawCircleLine = (r, color) => {
 }
 drawCircleLine(10, 'red')
 
-/*
-const drawCircleLine = (r, color) => {
-  for (let n = 0; r * n < width - (r * 2); n = n + 2) {
-    let x = r * 2
-    let y = height / 2
-    drawFilledCircle(x + r * n, y, r, color)
-  }
-}
-
+//const drawCircleLine = (r, color) => {
+  //for (let n = 0; r * n < width - (r * 2); n = n + 2) {
+    //let x = r * 2
+    //let y = height / 2
+    //drawFilledCircle(x + r * n, y, r, color)
+  //}
+//}
 
 const drawSpicyCircleLine = (y, r, color) => {
   for (let n = 0; r * n < width - (r * 2); n = n + 2) {
@@ -138,4 +136,4 @@ const drawStrangePictureFrame = (r, color) => {
   }
 }
 
-//drawStrangePictureFrame(17, 'blue')
+//drawStrangePictureFrame(17, 'blue') 
