@@ -24,11 +24,9 @@
  *  clear()
  */
 
-const d = () => {
-  return r * 2;
-  }
 
-const drawCircleLine = (r, color) => {
+
+const drawCircleLine = (d, color) => {
   for (let n = 0; r * n < width - (d); n = n + 2) {
     let x = d
     let y = height / 2
