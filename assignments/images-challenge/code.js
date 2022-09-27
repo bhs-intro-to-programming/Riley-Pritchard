@@ -97,7 +97,7 @@ const drawTooManyLines = (n) => {
 
 
 const drawTooManyCircles = (d, color) => {
-  for (let j = d; j < height - d; j++) {
+  for (let j = 0; j < height - d; j++) {
     for (let i = 0; d * i < width - (d + d); i++) {
     let x = i * d + d
     let y = j * d
