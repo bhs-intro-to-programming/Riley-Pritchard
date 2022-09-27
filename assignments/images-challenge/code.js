@@ -105,7 +105,7 @@ const drawTooManyCircles = (d, color) => {
     }
   }
 }
-drawTooManyCircles(17, 'blue')
+//drawTooManyCircles(17, 'blue')
 
 const drawSomeFunnyCircles = (r, p, color) => {
   for (let y = r * 2; y < height - r * 2; y = y + r * 2) {
@@ -121,15 +121,15 @@ const drawSomeFunnyCircles = (r, p, color) => {
 //drawSomeFunnyCircles(17, .23, 'blue')
 
 const drawStrangePictureFrame = (d, color) => {
-  for (let j = 0 ; d * j < height - (d); j++) {
+  for (let j = 1 ; d * j < height - (d); j++) {
     for (let i = 0; d * i < width - (d + d); i++) {
     let x = i * d + d
     let y = j * d
-      if (i === 0 || i === width - (d + d)|| j === height - d|| j === 0) {
+      if (i === 0 || i === width - (d + d)|| j === height - d|| j === 1) {
         drawCircle(x, y, d / 2, color)
       }
     }
   }
 }
 
-//drawStrangePictureFrame(17, 'blue') 
+drawStrangePictureFrame(17, 'blue') 
