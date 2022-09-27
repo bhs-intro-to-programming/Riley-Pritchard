@@ -33,7 +33,7 @@ const drawCircleLine = (d, color) => {
     drawFilledCircle(x, y, d / 2, color)
   }
 }
-drawCircleLine(20, 'red')
+drawCircleLine(10, 'red')
 
 //const drawCircleLine = (r, color) => {
   //for (let n = 0; r * n < width - (r * 2); n = n + 2) {
