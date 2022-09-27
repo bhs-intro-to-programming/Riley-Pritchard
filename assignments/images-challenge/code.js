@@ -40,7 +40,7 @@ const drawSpicyCircleLine = (d, color) => {
     let x = i * d + d
     let y = height / 2
     drawFilledCircle(x, y, d / 2, color)
-    if (n % 4 === 0) {
+    if (i % 4 === 0) {
       color = 'blue'
     } else {
       color = 'red'
