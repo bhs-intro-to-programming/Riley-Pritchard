@@ -120,7 +120,7 @@ const drawSomeFunnyCircles = (r, p, color) => {
 }
 //drawSomeFunnyCircles(17, .23, 'blue')
 
-const drawStrangePictureFrame = (r, color) => {
+const drawStrangePictureFrame = (d, color) => {
   for (let j = 0 ; d * j < height - (d); j++) {
     for (let i = 0; d * i < width - (d + d); i++) {
     let x = i * d + d
