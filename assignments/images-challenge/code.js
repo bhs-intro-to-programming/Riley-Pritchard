@@ -125,7 +125,7 @@ const drawStrangePictureFrame = (d, color) => {
     for (let i = 0; d * i < width - (d + d); i++) {
     let x = i * d + d
     let y = j * d
-      if (i === 0 || i === d + d + 3|| j === d - 1|| j === 1) {
+      if (i === 0 || i === d + d + 3|| j === d || j === 1) {
         drawCircle(x, y, d / 2, color)
       }
     }
