@@ -122,6 +122,7 @@ const drawSomeFunnyCircles = (r, p, color) => {
 
 const drawStrangePictureFrame = (d, color) => {
   const verticalCircles = Math.floor(height / d)
+  const horizontleCircles = Math.floor(width / d)
   for (let j = 1 ; j < verticalCircles; j++) {
     for (let i = 0; d * i < width - (d + d); i++) {
     let x = i * d + d
