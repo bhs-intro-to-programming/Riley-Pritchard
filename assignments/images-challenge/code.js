@@ -78,7 +78,7 @@ const drawSpicyCheckers = (n, color) => {
     }
   }
 }
-drawSpicyCheckers(10, 'blue')
+drawSpicyCheckers(11, 'blue')
 //for (let y = 0; y < height; y = y + width / n) {
 
 //drawFilledRect(0, 0, width, height, 'blue')
