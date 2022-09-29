@@ -60,6 +60,7 @@ const drawSpicyCircles = (c, color) => {
           color = 'green'
           if (color === 'green'){
             color = 'blue'
+          }
             if (color === 'blue')
             color = 'purple'
           }
@@ -67,7 +68,7 @@ const drawSpicyCircles = (c, color) => {
       }
     }
   }
-}
+
 drawSpicyCircles(11, 'red')
 
 const drawSpicyCheckers = (n, color) => {
