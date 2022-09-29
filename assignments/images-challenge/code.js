@@ -93,7 +93,7 @@ const drawTooManyLines = (n) => {
     drawLine(x1, y1, x2, y2, 'black', 1)
   }
 }
-drawTooManyLines(20)
+//drawTooManyLines(20)
 
 
 const drawTooManyCircles = (d, color) => {
@@ -105,7 +105,7 @@ const drawTooManyCircles = (d, color) => {
     }
   }
 }
-//drawTooManyCircles(17, 'blue')
+drawTooManyCircles(17, 'blue')
 
 const drawSomeFunnyCircles = (r, p, color) => {
   for (let y = r * 2; y < height - r * 2; y = y + r * 2) {
