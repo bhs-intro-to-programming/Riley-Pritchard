@@ -97,10 +97,10 @@ const drawTooManyLines = (n) => {
 
 
 const drawTooManyCircles = (d, color) => {
-  for (let j = 1 ; d * j < height - (d); j++) {
+  for (let j = 1; d * j < height - (d); j++) {
     for (let i = 0; d * i < width - (d + d); i++) {
-    let x = i * d + d
-    let y = j * d
+      let x = i * d + d
+      let y = j * d
       drawCircle(x, y, d / 2, color)
     }
   }
@@ -123,11 +123,11 @@ const drawSomeFunnyCircles = (r, p, color) => {
 const drawStrangePictureFrame = (d, color) => {
   const verticalCircles = Math.floor(height / d)
   const horizontleCircles = Math.floor(width / d)
-  for (let j = 1 ; j < verticalCircles; j++) {
-    for (let i = 0; d * i < width - (d + d); i++) {
-    let x = i * d + d
-    let y = d + d * j
-      if (i === 0 || i === 37|| j === verticalCircles - 1|| j === 1) {
+  for (let j = 1; j < verticalCircles; j++) {
+    for (let i = 0; i < horizontleCircles; i++) {
+      let x = d + d * i
+      let y = d + d * j
+      if (i === 0 || i === horizontleCircles || j === verticalCircles - 1 || j === 1) {
         drawCircle(x, y, d / 2, color)
       }
     }
