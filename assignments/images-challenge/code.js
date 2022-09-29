@@ -70,7 +70,7 @@ const drawSpicyCheckers = (n, color) => {
         color = 'red'
       } else {
         color = 'blue'
-        if (n % 3) {
+        if (n % 2 === 0) {
           n + 0.000001
         }
       }
