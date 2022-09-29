@@ -59,7 +59,7 @@ const drawSpicyCircles = (c, color) => {
     }
   }
 }
-drawSpicyCircles(11, 'blue')
+drawSpicyCircles(11, 'red')
 
 const drawSpicyCheckers = (n, color) => {
   for (let y = 0; y < height; y = y + width / n) {
