@@ -78,7 +78,7 @@ const drawSpicyCheckers = (n, color) => {
     }
   }
 }
-//drawSpicyCheckers(5, 'blue')
+drawSpicyCheckers(5, 'blue')
 //for (let y = 0; y < height; y = y + width / n) {
 
 //drawFilledRect(0, 0, width, height, 'blue')
@@ -134,4 +134,4 @@ const drawStrangePictureFrame = (d, color) => {
   }
 }
 
-drawStrangePictureFrame(20, 'blue') 
+//drawStrangePictureFrame(20, 'blue') 
