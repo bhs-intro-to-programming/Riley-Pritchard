@@ -118,7 +118,7 @@ const drawSomeFunnyCircles = (r, p, color) => {
     }
   }
 }
-drawSomeFunnyCircles(17, .23, 'blue')
+//drawSomeFunnyCircles(17, .23, 'blue')
 
 const drawStrangePictureFrame = (d, color) => {
   for (let j = 1 ; d * j < height - (d); j++) {
