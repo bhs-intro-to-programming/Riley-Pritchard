@@ -120,6 +120,7 @@ const drawSomeFunnyCircles = (r, p, color) => {
 }
 //drawSomeFunnyCircles(17, .23, 'blue')
 
+const d = r * 2
 const verticalCircles = Math.floor(height / d)
 const drawStrangePictureFrame = (d, color) => {
   for (let j = 1 ; j < verticalCircles; j++) {
