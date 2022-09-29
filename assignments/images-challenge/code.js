@@ -59,27 +59,25 @@ const drawSpicyCircles = (c, color) => {
     }
   }
 }
-
-
-drawSpicyCircles(11, 'red')
+//drawSpicyCircles(11, 'red')
 
 const drawSpicyCheckers = (n, color) => {
   for (let y = 0; y < height; y = y + width / n) {
     for (let x = 0; x < width; x = x + width / n) {
       let a = width / n
       drawFilledRect(x, y, a, a, color)
+      if (n % 2) {
+          n + 0.000001
       if (color === 'red') {
         color = 'blue'
       } else {
         color = 'red'
-        if (n % 2) {
-          n + 0.000001
         }
       }
     }
   }
 }
-//drawSpicyCheckers(12, 'blue')
+drawSpicyCheckers(12, 'blue')
 //for (let y = 0; y < height; y = y + width / n) {
 
 //drawFilledRect(0, 0, width, height, 'blue')
