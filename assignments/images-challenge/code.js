@@ -70,14 +70,14 @@ const drawSpicyCheckers = (n, color) => {
         color = 'red'
       } else {
         color = 'blue'
-        if (n % 2) {
+        if (n % 3) {
           n + 0.000001
         }
       }
     }
   }
 }
-drawSpicyCheckers(12.00000001, 'blue')
+drawSpicyCheckers(13, 'blue')
 //for (let y = 0; y < height; y = y + width / n) {
 
 //drawFilledRect(0, 0, width, height, 'blue')
