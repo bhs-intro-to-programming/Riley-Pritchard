@@ -53,9 +53,18 @@ const drawSpicyCircles = (c, color) => {
   for (let r = width / 2; ; r = r - width / 2 / c) {
     drawFilledCircle(width / 2, height / 2, r, color)
     if (color === 'red') {
-      color = 'blue'
-    } else {
-      color = 'red'
+      color = 'orange'
+      if ( color === 'orange'){
+        color = 'yellow'
+        if (color === 'yellow'){
+          color = 'green'
+          if (color === 'green'){
+            color = 'blue'
+            if (color === 'blue')
+            color = 'purple'
+          }
+        }
+      }
     }
   }
 }
