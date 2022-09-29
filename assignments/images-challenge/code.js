@@ -61,7 +61,6 @@ const drawSpicyCircles = (c, color) => {
 }
 //drawSpicyCircles(11, 'blue')
 
-//the checkers code only works for certain values of n :(
 const drawSpicyCheckers = (n, color) => {
   for (let y = 0; y < height; y = y + width / n) {
     for (let x = 0; x < width; x = x + width / n) {
@@ -71,9 +70,6 @@ const drawSpicyCheckers = (n, color) => {
         color = 'blue'
       } else {
         color = 'red'
-        if (x === 0 && color === 'blue') {
-          color = 'red'
-        }
       }
     }
   }
