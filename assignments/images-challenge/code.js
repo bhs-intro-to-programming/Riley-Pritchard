@@ -62,13 +62,13 @@ const drawSpicyCircles = (c, color) => {
 //drawSpicyCircles(11, 'red')
 
 const drawSpicyCheckers = (n, color) => {
+  if (n % 2 === 0) {
+          n + 0.000001
+        }
   for (let y = 0; y < height; y = y + width / n) {
     for (let x = 0; x < width; x = x + width / n) {
       let a = width / n
       drawFilledRect(x, y, a, a, color)
-      if (n % 2 === 0) {
-          n + 0.000001
-        }
       if (color === 'blue') {
         color = 'red'
       } else {
