@@ -53,21 +53,12 @@ const drawSpicyCircles = (c, color) => {
   for (let r = width / 2; ; r = r - width / 2 / c) {
     drawFilledCircle(width / 2, height / 2, r, color)
     if (color === 'red') {
-      color = 'orange'
+      color = 'blue'
+    } else {
+      color = 'red'
     }
-      if ( color === 'orange'){
-        color = 'yellow'
-      }
-        if (color === 'yellow'){
-          color = 'green'
-        }
-          if (color === 'green'){
-            color = 'blue'
-          }
-            if (color === 'blue')
-            color = 'purple'
-          }
-        }
+  }
+}
 
 
 drawSpicyCircles(11, 'red')
@@ -81,7 +72,7 @@ const drawSpicyCheckers = (n, color) => {
         color = 'blue'
       } else {
         color = 'red'
-        if (n % 2){
+        if (n % 2) {
           n + 0.000001
         }
       }
@@ -133,11 +124,11 @@ const drawSomeFunnyCircles = (r, p, color) => {
 const drawStrangePictureFrame = (d, color) => {
   const verticalCircles = Math.floor(height / d)
   const horizontleCircles = Math.floor(width / d)
-  for (let j = 0; j < verticalCircles -  1; j++) {
+  for (let j = 0; j < verticalCircles - 1; j++) {
     for (let i = 0; i < horizontleCircles - 1; i++) {
       let x = d + d * i
       let y = d + d * j
-      if (i === 0 || i === horizontleCircles - 2|| j === verticalCircles - 2 || j === 0) {
+      if (i === 0 || i === horizontleCircles - 2 || j === verticalCircles - 2 || j === 0) {
         drawCircle(x, y, d / 2, color)
       }
     }
