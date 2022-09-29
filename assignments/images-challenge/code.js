@@ -63,7 +63,7 @@ const drawSpicyCircles = (c, color) => {
 
 const drawSpicyCheckers = (n, color) => {
   if (n % 2 === 0) {
-          n + 0.000001
+          n = n + 0.000001
         }
   for (let y = 0; y < height; y = y + width / n) {
     for (let x = 0; x < width; x = x + width / n) {
