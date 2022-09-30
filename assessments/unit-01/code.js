@@ -14,10 +14,10 @@ const hypotenuse = (a, b) => {
   return Math.sqrt(a**2 + b**2);
 }
 
-const maxRadius = (x, y) => {
-  if (x / 2 < y / 2) {
-    y / 2
+const maxRadius = (c, d) => {
+  if (c / 2 < d / 2) {
+    d / 2
   }else{
-    x / 2
+    c / 2
   }
 }
