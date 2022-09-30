@@ -37,7 +37,7 @@ const canSleepIn = (isWeekend, vacation) => {
 }
 
 const moreThanTwiceAsLong = ('a', 'b') => {
-  return a > b * 2
+  return 'a'.length()  > 'b'.length() * 2
 }
 
 
