@@ -28,7 +28,7 @@ const numCircles = (r, w) => {
 }
 
 const offset = (w, x1, x2) => {
-  let x1 = (w / 2) - (Math.abs(x2 - x1) / 2);
-  let x2 = x1 + (Math.abs(x2 - x1));
-  return x1
+  return (w / 2) - (Math.abs(x2 - x1) / 2);
 }
+  //let x2 = x1 + (Math.abs(x2 - x1));
+  //return x1;
