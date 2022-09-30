@@ -36,12 +36,14 @@ const canSleepIn = (isWeekend, vacation) => {
  return isWeekend || vacation
 }
 
-//come back to 9
-const moreThanTwiceAsLong = ('a', 'b') ; {
-  return 'a'.length()  > 'b'.length() * 2
+//come back to 9 
+const moreThanTwiceAsLong = (s1, s2) => {
+  return s1.length()  > s2.length() * 2
 }
 
-const aFartherThanB
+const aFartherThanB 
 
-
+const firstHalf = (s) => {
+  s.substring(s.length / 2)
+}
 
