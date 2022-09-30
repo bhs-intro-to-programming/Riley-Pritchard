@@ -31,14 +31,17 @@ const offset = (w, x1, x2) => {
   return (w / 2) - (Math.abs(x2 - x1) / 2);
 }
 
-//come back to 6 and 7
+//come back to 6 and 7 8
 const canSleepIn = (isWeekend, vacation) => {
  return isWeekend || vacation
 }
 
-const moreThanTwiceAsLong = ('a', 'b') => {
+//come back to 9
+const moreThanTwiceAsLong = ('a', 'b') ; {
   return 'a'.length()  > 'b'.length() * 2
 }
+
+const aFartherThanB
 
 
 
