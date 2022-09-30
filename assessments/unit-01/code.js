@@ -30,5 +30,15 @@ const numCircles = (r, w) => {
 const offset = (w, x1, x2) => {
   return (w / 2) - (Math.abs(x2 - x1) / 2);
 }
-  //let x2 = x1 + (Math.abs(x2 - x1));
-  //return x1;
+
+//come back to 6 and 7
+const canSleepIn = (isWeekend, vacation) => {
+ return isWeekend || vacation
+}
+
+const moreThanTwiceAsLong = ('a', 'b') => {
+  return a > b * 2
+}
+
+
+
