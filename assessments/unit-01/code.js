@@ -14,6 +14,7 @@ const hypotenuse = (a, b) => {
   return Math.sqrt(a**2 + b**2);
 }
 
+//come back to 3
 const maxRadius = (c, d) => {
   if (c / 2 < d / 2) {
     d / 2
@@ -21,3 +22,4 @@ const maxRadius = (c, d) => {
     c / 2
   }
 }
+
