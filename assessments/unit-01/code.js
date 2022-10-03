@@ -54,5 +54,5 @@ return s.toUpperCase() + s.toLowerCase()
 }
 
 const everyOther =(s) => {
-  return s[0] + s[2] + s[5]
+  return s[0] + s[3] + s[4]
 }
