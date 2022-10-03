@@ -63,6 +63,6 @@ const upDownLastCharacter = (s) => {
 
 const yesIfEven = (a) => {
   if (a % 2 === 0){
-    return yes
+    return 'yes'
   }
 }
