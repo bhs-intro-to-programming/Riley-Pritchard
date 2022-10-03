@@ -60,3 +60,9 @@ const everyOther =(s) => {
 const upDownLastCharacter = (s) => {
   return s.substring(s.length - 1).toUpperCase() + s.substring(s.length - 1).toLowerCase()
 }
+
+const yesIfEven = (a) => {
+  if (a % 2 === 0){
+    return yes
+  }
+}
