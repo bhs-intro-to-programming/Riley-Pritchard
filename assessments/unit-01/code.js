@@ -11,20 +11,20 @@ const averageWeight = (x, y) => {
 }
 
 const hypotenuse = (a, b) => {
-  return Math.sqrt(a**2 + b**2);
+  return Math.sqrt(a ** 2 + b ** 2);
 }
 
 //come back to 3
 const maxRadius = (c, d) => {
   if (c / 2 < d / 2) {
     d / 2
-  }else{
+  } else {
     c / 2
   }
 }
 
 const numCircles = (r, w) => {
-  return w / (r * 2) 
+  return w / (r * 2)
 }
 
 const offset = (w, x1, x2) => {
@@ -33,12 +33,12 @@ const offset = (w, x1, x2) => {
 
 //come back to 6 and 7 8
 const canSleepIn = (isWeekend, vacation) => {
- return isWeekend || vacation
+  return isWeekend || vacation
 }
 
 //come back to 9 and 10
 const moreThanTwiceAsLong = (s1, s2) => {
-  return s1.length()  > s2.length() * 2
+  return s1.length() > s2.length() * 2
 }
 
 const firstHalf = (s) => {
@@ -50,10 +50,10 @@ const secondHalf = (s) => {
 }
 
 const upDown = (s) => {
-return s.toUpperCase() + s.toLowerCase()
+  return s.toUpperCase() + s.toLowerCase()
 }
 
-const everyOther =(s) => {
+const everyOther = (s) => {
   return s[0] + s[2] + s[4]
 }
 
@@ -62,7 +62,9 @@ const upDownLastCharacter = (s) => {
 }
 
 const yesIfEven = (a) => {
-  if (a % 2 === 0){
+  if (a % 2 === 0) {
     return 'yes'
+  } else {
+    return 'no'
   }
 }
