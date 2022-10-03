@@ -69,6 +69,17 @@ const yesIfEven = (a) => {
   }
 }
 
+//come back to this one (17-18)
 const countXs = (s) => {
   return s.search(/[x]/)
+}
+
+const timesTable
+
+const containsX = (s) => {
+  if (s.search(/[x]/) !== -1) {
+    return true
+  } else {
+    return false
+  }
 }
