@@ -81,3 +81,9 @@ const containsX = (s) => {
     return false
   }
 }
+
+const sumSquares = (x) => {
+  for(let i = 1; i > -x ; i = i - 1){
+    let x = x * i**2
+  }
+}
