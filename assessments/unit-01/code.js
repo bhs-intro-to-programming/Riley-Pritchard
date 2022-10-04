@@ -83,7 +83,8 @@ const containsX = (s) => {
 }
 
 const sumSquares = (x) => {
-  for(let a = x - 1; a > 0 ; a = a - 1){
-    a**2
+  while (a > 0){
+    a**2;
+    a = a - 1
   }
 }
