@@ -38,4 +38,3 @@ const isNotRed = (s1) => {
 const isNotSpotted =(s1) => {
   return s1 === 'Bloggy' || s1 === 'Globby'
 }
-/save
