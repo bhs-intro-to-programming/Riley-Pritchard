@@ -43,7 +43,7 @@ const getsSpeedingTicket = (a, s) => {
 }
 
 const moreThanTwiceAsLong = (s1, s2) => {
-  return s1.length() > s2.length() * 2
+  return s1.length > s2.length * 2
 }
 
 const firstHalf = (s) => {
