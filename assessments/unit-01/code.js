@@ -78,7 +78,7 @@ const yesIfEven = (a) => {
   }
 }
 
-//come back to this one (17-18)
+//come back to this one (17)
 const countXs = (s) => {
   return s.search(/[x]/)
 }
