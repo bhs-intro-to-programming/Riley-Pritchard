@@ -14,7 +14,6 @@ const hypotenuse = (a, b) => {
   return Math.sqrt(a ** 2 + b ** 2);
 }
 
-//come back to 3
 const maxRadius = (c, d) => {
   if (c / 2 < d / 2) {
     return d / 2
@@ -32,8 +31,8 @@ const offset = (w, x1, x2) => {
 }
 
 //come back to 6 and 7 8
-const canSleepIn = (isWeekend, vacation) => {
-  return isWeekend || vacation
+const canSleepIn = (s) => {
+  return s === isWeekend || s === vacation
 }
 
 //come back to 9 and 10
