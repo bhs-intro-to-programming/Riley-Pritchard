@@ -46,6 +46,10 @@ const moreThanTwiceAsLong = (s1, s2) => {
   return s1.length > s2.length * 2
 }
 
+const aFartherThanB = (a, b, c) => {
+  return Math.abs(a - b) < Math.abs(a - c)
+}
+
 const firstHalf = (s) => {
   s.substring(s.length / 2)
 }
