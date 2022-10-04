@@ -35,6 +35,10 @@ const canSleepIn = (s) => {
   return s === 'isWeekend' || s === 'vacation'
 }
 
+const canGoToProm = (s, s1) => {
+  return s === 'isSenior' || s === 'invitedBySenior' && s1 !== promExclusionList
+}
+
 //come back to 9 and 10
 const moreThanTwiceAsLong = (s1, s2) => {
   return s1.length() > s2.length() * 2
