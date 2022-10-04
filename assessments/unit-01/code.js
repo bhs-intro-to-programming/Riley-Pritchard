@@ -32,7 +32,7 @@ const offset = (w, x1, x2) => {
 
 //come back to 6 and 7 8
 const canSleepIn = (s) => {
-  return s === isWeekend || s === vacation
+  return s === 'isWeekend' || s === 'vacation'
 }
 
 //come back to 9 and 10
