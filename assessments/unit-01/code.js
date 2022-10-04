@@ -30,13 +30,16 @@ const offset = (w, x1, x2) => {
   return (w / 2) - (Math.abs(x2 - x1) / 2);
 }
 
-//come back to 6 and 7 8
 const canSleepIn = (s) => {
   return s === 'isWeekend' || s === 'vacation'
 }
 
 const canGoToProm = (s, s1) => {
   return s === 'isSenior' || s === 'invitedBySenior' && s1 !== 'promExclusionList'
+}
+
+const getsSpeedingTicket = (a, s) => {
+  return a > 70 || (s === 'grouchy' && a > 65)
 }
 
 //come back to 9 and 10
