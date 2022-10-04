@@ -17,9 +17,9 @@ const hypotenuse = (a, b) => {
 //come back to 3
 const maxRadius = (c, d) => {
   if (c / 2 < d / 2) {
-    d / 2
+    return d / 2
   } else {
-    c / 2
+    return c / 2
   }
 }
 
@@ -82,9 +82,10 @@ const containsX = (s) => {
   }
 }
 
+//comeback to 20
 const sumSquares = (a) => {
   while (a > 0){
-    (a - 1)**2;
+    a**2;
     a = a - 1
   }
 }
