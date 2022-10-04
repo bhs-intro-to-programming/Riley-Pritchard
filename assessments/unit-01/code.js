@@ -42,7 +42,6 @@ const getsSpeedingTicket = (a, s) => {
   return a > 70 || (s === 'grouchy' && a > 65)
 }
 
-//come back to 9 and 10
 const moreThanTwiceAsLong = (s1, s2) => {
   return s1.length() > s2.length() * 2
 }
