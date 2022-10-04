@@ -83,6 +83,14 @@ const countXs = (s) => {
   return s.search(/[x]/)
 }
 
+const timesTable = (x) => {
+  for (let j = 1; j < x + 1; j++) {
+    for (let i = 1; i < x + 1; i++) {
+      emit(j, i, j * i)
+    }
+  }
+}
+
 const containsX = (s) => {
   if (s.search(/[x]/) !== -1) {
     return true
@@ -93,8 +101,8 @@ const containsX = (s) => {
 
 //comeback to 20
 const sumSquares = (a) => {
-  while (a > 0){
-    a**2;
+  while (a > 0) {
+    a ** 2;
     a = a - 1
   }
 }
