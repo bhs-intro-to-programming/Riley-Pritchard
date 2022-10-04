@@ -36,7 +36,7 @@ const canSleepIn = (s) => {
 }
 
 const canGoToProm = (s, s1) => {
-  return s === 'isSenior' || s === 'invitedBySenior' && s1 !== promExclusionList
+  return s === 'isSenior' || s === 'invitedBySenior' && s1 !== 'promExclusionList'
 }
 
 //come back to 9 and 10
