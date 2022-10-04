@@ -82,9 +82,9 @@ const containsX = (s) => {
   }
 }
 
-const sumSquares = (x) => {
+const sumSquares = (a) => {
   while (a > 0){
-    a**2;
+    (a - 1)**2;
     a = a - 1
   }
 }
