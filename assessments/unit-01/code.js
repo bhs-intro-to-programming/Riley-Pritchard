@@ -85,7 +85,7 @@ const countXs = (s) => {
 
 const countXXs = (s) => {
   for (let y = 0; y < s.length; y++) {
-    if (s[y] = 'x') {
+    if (s[y].search(/[x]/)) {
     z = z + 1
     }
   }
