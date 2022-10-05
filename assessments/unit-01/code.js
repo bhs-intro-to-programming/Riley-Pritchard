@@ -80,10 +80,6 @@ const yesIfEven = (a) => {
 
 //come back to this one (17)
 const countXs = (s) => {
-  return s.search(/[x]/)
-}
-
-const countXXs = (s) => {
   let z = 0
   for (let y = 0; y < s.length + 1; y++) {
     if (s[y].search(/[x]/)) {
