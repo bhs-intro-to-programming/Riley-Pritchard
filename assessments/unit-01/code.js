@@ -84,12 +84,10 @@ const countXs = (s) => {
 }
 
 const countXXs = (s) => {
-  let y = 0
-  for (let x = 0; x < s.length; x++) {
+  for (let y = 0; y < s.length; y++) {
     if (s[y] = 'x') {
     z = z + 1
     }
-    y = y + 1
   }
   return z
 }
