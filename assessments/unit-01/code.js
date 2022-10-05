@@ -83,6 +83,17 @@ const countXs = (s) => {
   return s.search(/[x]/)
 }
 
+const countXXs = (s) => {
+  let y = 0
+  for (x = 0; x < s.length; x++) {
+    if (s [y] = 'x') {
+    z = z + 1
+    }
+    y = y + 1
+  }
+  return z
+}
+
 const timesTable = (x) => {
   for (let j = 1; j < x + 1; j++) {
     for (let i = 1; i < x + 1; i++) {
