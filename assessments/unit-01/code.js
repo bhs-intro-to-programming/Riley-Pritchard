@@ -82,7 +82,7 @@ const yesIfEven = (a) => {
 const countXs = (s) => {
   let z = 0
   for (let y = 0; y < s.length; y++) {
-    if (s[y].search(/[x]/)) {
+    if (s[y] === 'x') {
       z++
     } else {
       z = z
