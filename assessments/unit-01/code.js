@@ -106,7 +106,7 @@ const containsX = (s) => {
 const sumSquares = (a) => {
   let s = 0
   for (let x = 1; x < a; x++) {
-    s = s + ((a - x) ** 2)
+    s = s + x ** 2)
   }
   return s
 }
