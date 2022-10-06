@@ -104,7 +104,8 @@ const containsX = (s) => {
 
 //comeback to 20
 const sumSquares = (a) => {
+  let s = 0
   for (let x = 1; x < a; x++) {
-    a - (x) ** 2
+    s = s + (a - (x) ** 2)
   }
 }
