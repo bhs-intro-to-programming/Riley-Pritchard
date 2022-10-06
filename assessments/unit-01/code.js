@@ -99,11 +99,7 @@ const timesTable = (x) => {
 }
 
 const containsX = (s) => {
-  if (s.search(/[x]/) !== -1) {
-    return true
-  } else {
-    return false
-  }
+  return (s.search(/[x]/) !== -1)
 }
 
 //comeback to 20
