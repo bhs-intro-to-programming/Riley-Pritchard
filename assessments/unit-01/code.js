@@ -15,7 +15,7 @@ const hypotenuse = (a, b) => {
 }
 
 const maxRadius = (c, d) => {
-  if (c / 2 < d / 2) {
+  if (c / 2 > d / 2) {
     return d / 2
   } else {
     return c / 2
@@ -26,12 +26,12 @@ const numCircles = (r, w) => {
   return w / (r * 2)
 }
 
-const offset = (w, x1, x2) => {
-  return (w / 2) - (Math.abs(x2 - x1) / 2);
+const offset = (width, figureWidth) => {
+  return (width - figureWidth) / 2;
 }
 
-const canSleepIn = (s) => {
-  return s === 'isWeekend' || s === 'vacation'
+const canSleepIn = (weekday, vacation) => {
+ return !weekday || vacation
 }
 
 const canGoToProm = (s, s1) => {
