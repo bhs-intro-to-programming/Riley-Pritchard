@@ -51,7 +51,7 @@ const aFartherThanB = (a, b, c) => {
 }
 
 const firstHalf = (s) => {
-  s.substring(s.length / 2)
+  s.substring(0, s.length / 2)
 }
 
 const secondHalf = (s) => {
@@ -67,7 +67,7 @@ const everyOther = (s) => {
 }
 
 const upDownLastCharacter = (s) => {
-  return s.substring(s.length - 1).toUpperCase() + s.substring(s.length - 1).toLowerCase()
+  return s[s.length - 1].toUpperCase() + s[s.length - 1].toLowerCase()
 }
 
 const yesIfEven = (a) => {
@@ -80,15 +80,15 @@ const yesIfEven = (a) => {
 
 //come back to this one (17)
 const countXs = (s) => {
-  let z = 0
+  let c = 0
   for (let y = 0; y < s.length; y++) {
     if (s[y] === 'x') {
-      z++
+      c++
     } else {
-      z = z
+      c = c
     }
   }
-  return z
+  return c
 }
 
 const timesTable = (x) => {
