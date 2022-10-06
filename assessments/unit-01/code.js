@@ -78,7 +78,6 @@ const yesIfEven = (a) => {
   }
 }
 
-//come back to this one (17)
 const countXs = (s) => {
   let c = 0
   for (let i = 0; i < s.length; i++) {
