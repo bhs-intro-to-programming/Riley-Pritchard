@@ -34,8 +34,8 @@ const canSleepIn = (weekday, vacation) => {
  return !weekday || vacation
 }
 
-const canGoToProm = (s, s1) => {
-  return s === 'isSenior' || s === 'invitedBySenior' && s1 !== 'promExclusionList'
+const canGoToProm = (isSenior, invitedBySenior, promExclusionList) => {
+  return (isSenior || invitedBySenior) && !promExclusionList
 }
 
 const getsSpeedingTicket = (a, s) => {
