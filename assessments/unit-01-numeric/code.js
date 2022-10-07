@@ -15,12 +15,12 @@ const itemsLeftOver = (items, people) => {
 
 //2
 const areaOfCircle = (r) => {
-  return Math.PI * r**2;
+  return Math.PI * r ** 2;
 }
 
 //3
 const volumeOfCube = (l) => {
-  return l**3;
+  return l ** 3;
 }
 
 //4
@@ -39,6 +39,15 @@ const valueOfJewels = (diamonds, emeralds, dvaluegold, evaluegold) => {
 }
 
 //7
+const payWithOvertime = (hours, rate, overtime) => {
+  if (hours > 8) {
+    return (8 * rate) + ((hours - 8) * overtime)
+  } else {
+    return hours * rate
+  }
+}
+
+//8
 const firstClassPostage = (weight) => {
-  return 
+  return
 }
