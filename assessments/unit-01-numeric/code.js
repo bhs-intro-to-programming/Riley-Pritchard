@@ -10,17 +10,17 @@ const G = 6.6743e-11;
 
 //1 
 const itemsLeftOver = (items, people) => {
-  return items % people;
+  return items % people
 }
 
 //2
 const areaOfCircle = (r) => {
-  return Math.PI * r ** 2;
+  return Math.PI * r ** 2
 }
 
 //3
 const volumeOfCube = (l) => {
-  return l ** 3;
+  return l ** 3
 }
 
 //4
