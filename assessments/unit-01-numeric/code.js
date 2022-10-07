@@ -49,5 +49,5 @@ const payWithOvertime = (hours, rate, overtime) => {
 
 //8
 const firstClassPostage = (weight) => {
-  return
+  return 60 + ((Math.ceil(weight) - 1) * 24)
 }
