@@ -1,6 +1,6 @@
 const countTens = [a]; {
-  while (i < 100)
+  for (let c = 0;c < countTens.length ; c = c)
     if (a === 10) {
-      i++
+      c++
     }
 }
