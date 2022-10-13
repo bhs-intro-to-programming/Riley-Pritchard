@@ -3,4 +3,5 @@ const countTens = [a]; {
     if (a === 10) {
       i++
     }
+    return i
 }
