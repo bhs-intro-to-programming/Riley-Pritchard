@@ -23,6 +23,7 @@ const evens = (a) => {
       a2.push(c)
     }
   }
+  return a2
 }
 
 const anyOverOneHundred = (a) => {
