@@ -102,7 +102,6 @@ const containsX = (s) => {
   return (s.search(/[x]/) !== -1)
 }
 
-//comeback to 20
 const sumSquares = (a) => {
   let s = 0
   for (let x = 1; x < a; x++) {
