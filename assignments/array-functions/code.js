@@ -9,9 +9,9 @@ const countTens = (a) => {
 }
 
 const sum = (a) => {
-    let total = 0
+  let total = 0
   for (let c = 0; c < a.length; c++) {
-    total + a[c]
+    total = total + a[c]
   }
   return total
 }
@@ -33,7 +33,7 @@ const anyOverOneHundred = (a) => {
 }
 
 const pyramid = (a) => {
-  for (let c = 0; c < a + 1; c++){
+  for (let c = 0; c < a + 1; c++) {
 
   }
 }
