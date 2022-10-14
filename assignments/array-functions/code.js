@@ -20,7 +20,7 @@ const evens = (a) => {
   let a2 = []
   for (let c = 0; c < a.length; c++) {
     if (a[c] % 2 === 0) {
-      a2.push(c)
+      a2.push(a[c])
     }
   }
   return a2
