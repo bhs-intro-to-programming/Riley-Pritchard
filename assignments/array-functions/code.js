@@ -10,6 +10,7 @@ const countTens = (a) => {
 
 const sum = (a) => {
   for (let c = 0; c < a.length; c++) {
+    let total = 0
     total + a[c]
   }
   return total
