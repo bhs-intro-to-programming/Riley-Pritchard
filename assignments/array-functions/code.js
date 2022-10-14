@@ -17,9 +17,10 @@ const sum = (a) => {
 }
 
 const evens = (a) => {
+  let a2 = 0
   for (let c = 0; c < a.length; c++) {
-    if (a[c] % 2 !== 0) {
-      a.pop(c)
+    if (a[c] % 2 === 0) {
+      a2.push(c)
     }
   }
 }
