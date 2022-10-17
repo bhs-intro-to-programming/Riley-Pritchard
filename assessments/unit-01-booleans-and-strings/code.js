@@ -25,3 +25,8 @@ const willSeeTweet = (follow, followRetweeter, blocked) => {
 const evenGreaterThanZero = (x) => {
   return x % 2 === 0 && x > 0
 }
+
+const isLeapYear = (year) => {
+  return year % 4 === 0 && (year % 100 !== 0 && year % 400 === 0)
+}
+  
