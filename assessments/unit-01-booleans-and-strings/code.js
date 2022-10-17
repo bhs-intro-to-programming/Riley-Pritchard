@@ -31,3 +31,6 @@ const isLeapYear = (year) => {
   return year % 4 === 0 && (year % 100 !== 0 && year % 400 === 0)
 }
   
+const firstAndLast = (s) => {
+  return s[0] + s[s.length]
+}
