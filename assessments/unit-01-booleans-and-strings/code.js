@@ -32,5 +32,5 @@ const isLeapYear = (year) => {
 }
   
 const firstAndLast = (s) => {
-  return s[0] + s[s.length]
+  return s[0] + s[.length]
 }
