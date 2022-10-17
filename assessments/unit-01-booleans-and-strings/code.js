@@ -42,3 +42,7 @@ const swapFrontAndBack = (s) => {
 const simplePigLatin = (s, n) => {
   return s.substring(n) + s.substring(0, n) + 'ay'
 }
+
+const randomCharacter = (s) => {
+  return s[rand(s.length)]
+}
