@@ -32,7 +32,6 @@ const anyOverOneHundred = (a) => {
     
     }
   }
-}
 
 const pyramid = (a) => {
   for (let c = 0; c < a + 1; c++) {
