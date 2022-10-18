@@ -27,14 +27,17 @@ const evens = (a) => {
 }
 
 const anyOverOneHundred = (a) => {
+  let x = 0
   for (let c = 0; c < a.length; c++) {
-    return (a[c] > 100)
-    
+    if (a[c] > 100){
+      x++
     }
   }
+  return x
+}
 
 const pyramid = (a) => {
   for (let c = 0; c < a + 1; c++) {
-
+    
   }
 }
