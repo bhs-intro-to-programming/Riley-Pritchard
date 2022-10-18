@@ -33,7 +33,7 @@ const anyOverOneHundred = (a) => {
       x++
     }
   }
-  return x
+  return x > 0
 }
 
 const pyramid = (a) => {
