@@ -41,4 +41,5 @@ const pyramid = (a) => {
   for (let c = 0; c < a + 1; c++) {
     a2.push[c]
   }
+  return a2
 }
