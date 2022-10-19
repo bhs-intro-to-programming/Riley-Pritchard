@@ -38,6 +38,7 @@ const anyOverOneHundred = (a) => {
 
 const pyramid = (a) => {
   let a2 = []
+  for (let i = 0; i < c; i = i)
   for (let c = 1; c < a + 1; c++) {
     a2.push[c]
   }
