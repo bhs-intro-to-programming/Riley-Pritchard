@@ -40,7 +40,7 @@ const pyramid = (a) => {
   let a2 = []
   for (let c = 0; c < a; c++) {
     for (let i = 0; i <= c; i++) {
-      a2.push(c)
+      a2.push(c+1)
     }
   }
   return a2;
