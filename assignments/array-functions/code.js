@@ -29,7 +29,7 @@ const evens = (a) => {
 const anyOverOneHundred = (a) => {
   let x = 0
   for (let c = 0; c < a.length; c++) {
-    if (a[c] > 100){
+    if (a[c] > 100) {
       x++
     }
   }
@@ -38,9 +38,10 @@ const anyOverOneHundred = (a) => {
 
 const pyramid = (a) => {
   let a2 = []
-  for (let i = 0; i < c; i = i)
   for (let c = 1; c < a + 1; c++) {
-    a2.push[c]
+    for (let i = 0; i < c; i++) {
+      a2.push[c]
+    }
   }
   return a2
 }
