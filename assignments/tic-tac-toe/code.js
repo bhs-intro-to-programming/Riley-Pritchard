@@ -6,11 +6,12 @@
 // weeks but for now you can just adapt this code.
 
 registerOnclick((x, y) => {
-  drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
+  drawText('+', x, y, 'black', Math.min(width, height) * 0.3);
 });
 
 //drawText('#', 0, height, 'black', 300)
 
-const ticTacToe = (a) => {
+const ticTacToe = () => {
   let board = [[],[],[]]
+  if 
 }
