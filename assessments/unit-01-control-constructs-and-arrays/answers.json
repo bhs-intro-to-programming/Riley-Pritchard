@@ -17,5 +17,6 @@
   "xs[2][1]",
   "200",
   "true",
-  "The sum of the numbers from 0 to numbers.length - 1."
+  "The sum of the numbers from 0 to numbers.length - 1.",
+  "Produces a new array containing the words in words that are all uppercase."
 ]
