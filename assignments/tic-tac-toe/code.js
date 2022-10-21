@@ -11,6 +11,10 @@ registerOnclick((x, y) => {
 
 //drawText('#', 0, height, 'black', 300)
 
+const topLeft = (x, y) => {
+  return x < width / 3 && y < height / 3
+}
+
 const ticTacToe = () => {
   let board = [[],[],[]]
 }
