@@ -6,7 +6,7 @@
   "100",
   "10",
   "20",
-  null,
+  "4",
   null,
   "When done is less than 0.01",
   "It tests whether there are more than limit prime numbers below max.",
