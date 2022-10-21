@@ -18,5 +18,6 @@
   "200",
   "true",
   "The sum of the numbers from 0 to numbers.length - 1.",
-  "Produces a new array containing the words in words that are all uppercase."
+  "Produces a new array containing the words in words that are all uppercase.",
+  "This function creates a new array called result that contains words but backwards and the amount of words that is contained can only be as long as xs."
 ]
