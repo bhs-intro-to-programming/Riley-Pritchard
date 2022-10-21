@@ -9,7 +9,7 @@
   //drawText('#', x, y, 'black', Math.min(width, height) * 0.3);
 //});
 
-drawText('#', 0, 0, 'black', 10)
+drawText('#', 0, 0, 'black', 200)
 
 const ticTacToe = () => {
   let board = []
