@@ -17,4 +17,7 @@ const topLeft = () => {
 
 const ticTacToe = () => {
   let board = [[],[],[]]
+  if (registerOnclick === topleft){
+    board.push(x)
+  }
 }
