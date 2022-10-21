@@ -11,6 +11,6 @@ registerOnclick((x, y) => {
 
 //drawText('#', 0, height, 'black', 300)
 
-const ticTacToe = () => {
+const ticTacToe = (a) => {
   let board = [[],[],[]]
 }
