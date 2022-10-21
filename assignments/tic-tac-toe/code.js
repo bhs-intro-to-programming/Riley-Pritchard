@@ -7,4 +7,7 @@
 
 registerOnclick((x, y) => {
   drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
+  if (text === 'O'){
+    text === 'X'
+  }
 });
