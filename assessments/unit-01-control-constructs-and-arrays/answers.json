@@ -5,5 +5,8 @@
   "i < 10",
   "100",
   "10",
-  "20"
+  "20",
+  null,
+  null,
+  "When done is less than 0.01"
 ]
