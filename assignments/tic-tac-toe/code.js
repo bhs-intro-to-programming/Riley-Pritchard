@@ -5,9 +5,9 @@
 // is called an anonymous function. We'll discuss this in more detail in a few
 // weeks but for now you can just adapt this code.
 
-registerOnclick((x, y) => {
-  drawText('#', x, y, 'black', Math.min(width, height) * 0.3);
-});
+//registerOnclick((x, y) => {
+  //drawText('#', x, y, 'black', Math.min(width, height) * 0.3);
+//});
 
 drawText('#', 0, 0, 'black', 10)
 
