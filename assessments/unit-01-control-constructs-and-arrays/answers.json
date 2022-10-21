@@ -8,5 +8,5 @@
   "20",
   null,
   null,
-  "When Math.random() returns a number greater than 0.01"
+  "When done is less than 0.01"
 ]
