@@ -9,6 +9,8 @@ registerOnclick((x, y) => {
   drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
 });
 
+drawText('#', 0, 0, 'black', 10)
+
 const ticTacToe = () => {
   let board = []
 }
