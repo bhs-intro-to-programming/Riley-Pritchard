@@ -11,7 +11,7 @@ registerOnclick((x, y) => {
 
 //drawText('#', 0, height, 'black', 300)
 
-const topLeft = (x, y) => {
+const topLeft = () => {
   return x < width / 3 && y < height / 3
 }
 
