@@ -37,6 +37,18 @@ const midRight = () => {
   return x > width / 3 * 2 && y > height / 3 && y < height / 3 * 2
 }
 
+const botLeft = () => {
+  return x < width / 3 && y > height / 3 * 2
+}
+
+const botMid = () => {
+  return x < width / 3 * 2 && x > width / 3 && y > height / 3 * 2
+}
+
+const botRight = () => {
+  return x > width / 3 * 2 && y > height / 3 * 2
+}
+
 
 const ticTacToe = () => {
   let board = [[], [], [], [], [], [], [], [], []]
@@ -52,6 +64,15 @@ const ticTacToe = () => {
             board.push([], [], [], [], x)
             if (registerOnclick === midRight) {
               board.push([], [], [], [], [], x)
+              if (registerOnclick === botLeft) {
+                board.push([], [], [], x)
+                if (registerOnclick === botMid) {
+                  board.push([], [], [], [], x)
+                  if (registerOnclick === botRight) {
+                    board.push([], [], [], [], [], x)
+                  }
+                }
+              }
             }
           }
         }
