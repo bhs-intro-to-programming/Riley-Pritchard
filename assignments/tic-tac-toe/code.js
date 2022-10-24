@@ -15,9 +15,22 @@ const topLeft = () => {
   return x < width / 3 && y < height / 3
 }
 
+const topMiddle = () => {
+  return x > width / 3 && x < width / 3 * 2 && y < height / 3
+}
+
+const topRight = () => {
+  return x > width / 3 * 2 && y < height / 3
+}
+
 const ticTacToe = () => {
   let board = [[],[],[]]
   if (registerOnclick === topleft){
     board.push(x)
+    if (registerOnclick === topMiddle) {
+      board.push([], x)
+      if (registerOnclick === topRight) {
+      board.push([], [], x)
+    }
   }
 }
