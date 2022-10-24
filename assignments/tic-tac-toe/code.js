@@ -47,11 +47,14 @@ const ticTacToe = () => {
       if (registerOnclick === topRight) {
         board.push([], [], x)
         if (registerOnclick === midLeft) {
-    board.push([], [], [], x)
-    if (registerOnclick === midMid) {
-      board.push([], [], [], [], x)
-      if (registerOnclick === midRight) {
-        board.push([], [], [], [], [], x)
+          board.push([], [], [], x)
+          if (registerOnclick === midMid) {
+            board.push([], [], [], [], x)
+            if (registerOnclick === midRight) {
+              board.push([], [], [], [], [], x)
+            }
+          }
+        }
       }
     }
   }
