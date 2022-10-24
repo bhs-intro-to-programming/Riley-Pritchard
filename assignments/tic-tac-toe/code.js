@@ -11,6 +11,7 @@ registerOnclick((x, y) => {
 drawLine(width / 3, 0, width / 3, height, 'black', 10)
 drawLine(width / 3 * 2, 0, width / 3 * 2, height, 'black', 10)
 drawLine(0, height / 3, width, height / 3, 'black', 10)
+drawLine(0, height / 3 * 2, width, height / 3 * 2, 'black', 10)
 
 const topLeft = () => {
   return x < width / 3 && y < height / 3
