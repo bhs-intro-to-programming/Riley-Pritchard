@@ -8,8 +8,7 @@
 registerOnclick((x, y) => {
   drawText('+', x, y, 'black', Math.min(width, height) * 0.3);
 });
-
-//drawText('#', 0, height, 'black', 300)
+drawLine(0, 0, width, height, 'black', 30)
 
 const topLeft = () => {
   return x < width / 3 && y < height / 3
@@ -24,13 +23,14 @@ const topRight = () => {
 }
 
 const ticTacToe = () => {
-  let board = [[],[],[]]
-  if (registerOnclick === topleft){
+  let board = [[], [], []]
+  if (registerOnclick === topleft) {
     board.push(x)
     if (registerOnclick === topMiddle) {
       board.push([], x)
       if (registerOnclick === topRight) {
-      board.push([], [], x)
+        board.push([], [], x)
+      }
     }
   }
 }
