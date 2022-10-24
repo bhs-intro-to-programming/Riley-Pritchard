@@ -9,6 +9,7 @@ registerOnclick((x, y) => {
   drawText('+', x, y, 'black', Math.min(width, height) * 0.3);
 });
 drawLine(width / 3, 0, width / 3, height, 'black', 10)
+drawLine(width / 3 * 2, 0, width / 3 * 2, height, 'black', 10)
 
 const topLeft = () => {
   return x < width / 3 && y < height / 3
