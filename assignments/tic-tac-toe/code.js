@@ -53,23 +53,23 @@ const botRight = () => {
 const ticTacToe = () => {
   let board = [[], [], [], [], [], [], [], [], []]
   if (registerOnclick === topleft) {
-    board.push(x)
+    board[0] = 'x'
     if (registerOnclick === topMid) {
-      board.push([], x)
+      board[1] = 'x'
       if (registerOnclick === topRight) {
-        board.push([], [], x)
+        board[2] = 'x'
         if (registerOnclick === midLeft) {
-          board.push([], [], [], x)
+          board[3] = 'x'
           if (registerOnclick === midMid) {
-            board.push([], [], [], [], x)
+            board[4] = 'x'
             if (registerOnclick === midRight) {
-              board.push([], [], [], [], [], x)
+              board[5] = 'x'
               if (registerOnclick === botLeft) {
-                board.push([], [], [], x)
+                board[6] = 'x'
                 if (registerOnclick === botMid) {
-                  board.push([], [], [], [], x)
+                  board[7] = 'x'
                   if (registerOnclick === botRight) {
-                    board.push([], [], [], [], [], x)
+                    board[8] = 'x'
                   }
                 }
               }
