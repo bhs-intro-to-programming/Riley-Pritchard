@@ -6,7 +6,7 @@
 // weeks but for now you can just adapt this code.
 
 registerOnclick((x, y) => {
-  drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
+  drawText('x', x, y, 'black', Math.min(width, height) * 0.3);
 });
 
 drawLine(width / 3, 0, width / 3, height, 'black', 5)
@@ -72,4 +72,8 @@ const ticTacToe = () => {
       }
     }
   }
+}
+
+const win = () => {
+  if ((board[0] && board[1] && board[2]) === 'x' || 'o')
 }
