@@ -75,5 +75,7 @@ const ticTacToe = () => {
 }
 
 const win = () => {
-  if ((board[0] && board[1] && board[2]) === 'x' || 'o')
+  if ((board[0] && board[1] && board[2]) === 'x' || 'o'){
+    
+  }
 }
