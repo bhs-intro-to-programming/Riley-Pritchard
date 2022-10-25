@@ -52,7 +52,7 @@ const botRight = () => {
 
 const ticTacToe = () => {
   let board = [[], [], [], [], [], [], [], [], []]
-  if (registerOnclick === topleft) {
+  if (registerOnclick === topleft) {drawText(player, x, y, 'black', Math.min(width, height) * 0.3)
     board[0] = 'x'
     if (registerOnclick === topMid) {
       board[1] = 'x'
