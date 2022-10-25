@@ -5,8 +5,15 @@
 // is called an anonymous function. We'll discuss this in more detail in a few
 // weeks but for now you can just adapt this code.
 
+let player = 'x'
+
 registerOnclick((x, y) => {
-  drawText('x', x, y, 'black', Math.min(width, height) * 0.3);
+  drawText(player, x, y, 'black', Math.min(width, height) * 0.3);
+  if (player === 'x') {
+    player = 'o'
+  } else {
+    player = 'x'
+  }
 });
 
 drawLine(width / 3, 0, width / 3, height, 'black', 5)
@@ -75,7 +82,7 @@ const ticTacToe = () => {
 }
 
 const win = () => {
-  if ((board[0] && board[1] && board[2]) === ('x' || 'o')){
+  if ((board[0] && board[1] && board[2]) === ('x' || 'o')) {
     drawLine(width / 6, height / 6, width / 6 * 5, height / 6)
   }
 }
