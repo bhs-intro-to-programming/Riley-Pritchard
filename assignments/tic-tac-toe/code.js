@@ -6,6 +6,7 @@
 // weeks but for now you can just adapt this code.
 
 let player = 'x'
+let board = ['','','','','','','','',''];
 
 registerOnclick((x, y) => {
   drawText(player, x, y, 'black', Math.min(width, height) * 0.3);
