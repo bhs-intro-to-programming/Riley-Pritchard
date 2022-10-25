@@ -17,35 +17,27 @@ drawLine(0, height / 3 * 2, width, height / 3 * 2, 'black', 5)
 const topLeft = () => {
   return x < width / 3 && y < height / 3
 }
-
 const topMid = () => {
   return x > width / 3 && x < width / 3 * 2 && y < height / 3
 }
-
 const topRight = () => {
   return x > width / 3 * 2 && y < height / 3
 }
-
 const midLeft = () => {
   return x < width / 3 && y > height / 3 && y < height / 3 * 2
 }
-
 const midMid = () => {
   return x < width / 3 * 2 && x > width / 3 && y > height / 3 && y < height / 3 * 2
 }
-
 const midRight = () => {
   return x > width / 3 * 2 && y > height / 3 && y < height / 3 * 2
 }
-
 const botLeft = () => {
   return x < width / 3 && y > height / 3 * 2
 }
-
 const botMid = () => {
   return x < width / 3 * 2 && x > width / 3 && y > height / 3 * 2
 }
-
 const botRight = () => {
   return x > width / 3 * 2 && y > height / 3 * 2
 }
