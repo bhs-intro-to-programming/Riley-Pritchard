@@ -9,6 +9,7 @@ let player = 'x'
 let board = ['','','','','','','','',''];
 
 registerOnclick((x, y) => {
+  console.log(`${x} ${y}`)
   drawText(player, x, y, 'black', Math.min(width, height) * 0.3);
   if (player === 'x') {
     player = 'o'
