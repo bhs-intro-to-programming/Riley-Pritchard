@@ -9,7 +9,7 @@ let player = 'x'
 let board = ['','','','','','','','',''];
 
 registerOnclick((x, y) => {
-  console.log(`${x} ${y}`)
+  ticTacToe(x,y)
   //drawText(player, x, y, 'black', Math.min(width, height) * 0.3);
   //if (player === 'x') {
     //player = 'o'
@@ -52,7 +52,9 @@ const botRight = () => {
 }
 
 
-const ticTacToe = () => {
+const ticTacToe = (x, y) => {
+    console.log(`${x} ${y}`)
+
   if (registerOnclick === (width / 3, height / 3)) {
     drawText(player, width / 6, height / 6, 'black', Math.min(width, height) * 0.3)
     board[0] = player
