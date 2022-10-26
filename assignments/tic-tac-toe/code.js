@@ -73,10 +73,13 @@ const ticTacToe = (x, y) => {
               drawText(player, width / 6 * 5, height / 2, 'black', 70)
               board[5] = player
               if (botLeft(x, y)) {
+                drawText(player, width / 6, height / 12 * 11, 'black', 70)
                 board[6] = player
                 if (botMid(x, y)) {
+                  drawText(player, width / 2, height / 12 * 11, 'black', 70)
                   board[7] = player
                   if (botRight(x, y)) {
+                    drawText(player, width / 6 * 5, height / 12 * 11, 'black', 70)
                     board[8] = player
                   }
                 }
