@@ -90,7 +90,7 @@ const ticTacToe = (x, y) => {
 }
 
 const win = () => {
-  if ((board[0] && board[1] && board[2]) === ('x' || 'o')) {
+  if (board[0] === 'x') {
     drawLine(width / 6, height / 6, width / 6 * 5, height / 6)
   }
 }
