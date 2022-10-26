@@ -64,10 +64,10 @@ const ticTacToe = (x, y) => {
     drawText(player, width / 6 * 5, height / 12 * 3, 'black', 70)
     board[2] = player
   } else if (midLeft(x, y)) {
-    drawText(player, width / 6, height / 2, 'black', 70)
+    drawText(player, width / 6, height / 12 * 7, 'black', 70)
     board[3] = player
   } else if (midMid(x, y)) {
-    drawText(player, width / 2, height / 2, 'black', 70)
+    drawText(player, width / 2, height / 12 * 7, 'black', 70)
     board[4] = player
   } else if (midRight(x, y)) {
     drawText(player, width / 6 * 5, height / 12 * 7, 'black', 70)
