@@ -55,7 +55,7 @@ const botRight = (x, y) => {
 const ticTacToe = (x, y) => {
   console.log(`${x} ${y}`)
   if (topLeft(x, y)) {
-    drawText(player, width / 6 - 35, height / 3, 'black', 70)
+    drawText(player, width / 6 - 35, height / 12 * 3, 'black', 70)
     board[0] = player
     if (topMid(x, y)) {
       board[1] = player
