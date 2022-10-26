@@ -57,38 +57,30 @@ const ticTacToe = (x, y) => {
   if (topLeft(x, y)) {
     drawText(player, width / 6, height / 12 * 3, 'black', 70)
     board[0] = player
-    if (topMid(x, y)) {
-      drawText(player, width / 2, height / 12 * 3, 'black', 70)
-      board[1] = player
-      if (topRight(x, y)) {
-        drawText(player, width / 6 * 5, height / 12 * 3, 'black', 70)
-        board[2] = player
-        if (midLeft(x, y)) {
-          drawText(player, width / 6, height / 2, 'black', 70)
-          board[3] = player
-          if (midMid(x, y)) {
-            drawText(player, width / 2, height / 2, 'black', 70)
-            board[4] = player
-            if (midRight(x, y)) {
-              drawText(player, width / 6 * 5, height / 2, 'black', 70)
-              board[5] = player
-              if (botLeft(x, y)) {
-                drawText(player, width / 6, height / 12 * 11, 'black', 70)
-                board[6] = player
-                if (botMid(x, y)) {
-                  drawText(player, width / 2, height / 12 * 11, 'black', 70)
-                  board[7] = player
-                  if (botRight(x, y)) {
-                    drawText(player, width / 6 * 5, height / 12 * 11, 'black', 70)
-                    board[8] = player
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+  } else if (topMid(x, y)) {
+    drawText(player, width / 2, height / 12 * 3, 'black', 70)
+    board[1] = player
+  } else if (topRight(x, y)) {
+    drawText(player, width / 6 * 5, height / 12 * 3, 'black', 70)
+    board[2] = player
+  } else if (midLeft(x, y)) {
+    drawText(player, width / 6, height / 2, 'black', 70)
+    board[3] = player
+  } else if (midMid(x, y)) {
+    drawText(player, width / 2, height / 2, 'black', 70)
+    board[4] = player
+  } else if (midRight(x, y)) {
+    drawText(player, width / 6 * 5, height / 2, 'black', 70)
+    board[5] = player
+  } else if (botLeft(x, y)) {
+    drawText(player, width / 6, height / 12 * 11, 'black', 70)
+    board[6] = player
+  } else if (botMid(x, y)) {
+    drawText(player, width / 2, height / 12 * 11, 'black', 70)
+    board[7] = player
+  } else if (botRight(x, y)) {
+    drawText(player, width / 6 * 5, height / 12 * 11, 'black', 70)
+    board[8] = player
   }
 }
 
