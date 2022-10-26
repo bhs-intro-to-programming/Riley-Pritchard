@@ -88,10 +88,10 @@ const ticTacToe = (x, y) => {
     player = 'x'
   }
 }
+    drawLine(width / 12, height / 6, width / 12 * 11, height / 6)
 
-drawLine(width / 6, height / 6, width / 6 * 5, height / 6)
 const win = () => {
   if (board[0] === 'x') {
-    drawLine(width / 6, height / 6, width / 6 * 5, height / 6)
+    drawLine(width / 12, height / 6, width / 12 * 11, height / 6)
   }
 }
