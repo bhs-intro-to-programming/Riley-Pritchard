@@ -6,15 +6,15 @@
 // weeks but for now you can just adapt this code.
 
 let player = 'x'
-let board = ['','','','','','','','',''];
+let board = ['', '', '', '', '', '', '', '', ''];
 
 registerOnclick((x, y) => {
-  ticTacToe(x,y)
+  ticTacToe(x, y)
   //drawText(player, x, y, 'black', Math.min(width, height) * 0.3);
   //if (player === 'x') {
-    //player = 'o'
+  //player = 'o'
   //} else {
-    //player = 'x'
+  //player = 'x'
   //}
 });
 
@@ -23,56 +23,55 @@ drawLine(width / 3 * 2, 0, width / 3 * 2, height, 'black', 5)
 drawLine(0, height / 3, width, height / 3, 'black', 5)
 drawLine(0, height / 3 * 2, width, height / 3 * 2, 'black', 5)
 
-const topLeft = () => {
+const topLeft = (x, y) => {
   return x < width / 3 && y < height / 3
 }
-const topMid = () => {
+const topMid = (x, y) => {
   return x > width / 3 && x < width / 3 * 2 && y < height / 3
 }
-const topRight = () => {
+const topRight = (x, y) => {
   return x > width / 3 * 2 && y < height / 3
 }
-const midLeft = () => {
+const midLeft = (x, y) => {
   return x < width / 3 && y > height / 3 && y < height / 3 * 2
 }
-const midMid = () => {
+const midMid = (x, y) => {
   return x < width / 3 * 2 && x > width / 3 && y > height / 3 && y < height / 3 * 2
 }
-const midRight = () => {
+const midRight = (x, y) => {
   return x > width / 3 * 2 && y > height / 3 && y < height / 3 * 2
 }
-const botLeft = () => {
+const botLeft = (x, y) => {
   return x < width / 3 && y > height / 3 * 2
 }
-const botMid = () => {
+const botMid = (x, y) => {
   return x < width / 3 * 2 && x > width / 3 && y > height / 3 * 2
 }
-const botRight = () => {
+const botRight = (x, y) => {
   return x > width / 3 * 2 && y > height / 3 * 2
 }
 
 
 const ticTacToe = (x, y) => {
-    console.log(`${x} ${y}`)
-
-  if (registerOnclick === (width / 3, height / 3)) {
+  console.log(`${x} ${y}`)
+  if (topLeft(x, y)) {
     drawText(player, width / 6, height / 6, 'black', Math.min(width, height) * 0.3)
     board[0] = player
-    if (registerOnclick === topMid) {
+    if (topMid(x, y)) {
       board[1] = player
-      if (registerOnclick === topRight) {
+      if (topRight(x, y)) {
         board[2] = player
-        if (registerOnclick === midLeft) {
+        if (midLeft(x, y)) {
           board[3] = player
-          if (registerOnclick === midMid) {
+          if (midMid(x, y)) {
             board[4] = player
-            if (registerOnclick === midRight) {
+            if (midRight(x, y)) {
               board[5] = player
-              if (registerOnclick === botLeft) {
+              if (botLeft(x, y)) {
                 board[6] = player
-                if (registerOnclick === botMid) {
+                if (botMid(x, y)) {
                   board[7] = player
-                  if (registerOnclick === botRight) {
+                  if (botRight(x, y)) {
                     board[8] = player
                   }
                 }
