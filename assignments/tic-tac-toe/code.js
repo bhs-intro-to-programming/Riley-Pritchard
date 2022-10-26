@@ -10,12 +10,12 @@ let board = ['','','','','','','','',''];
 
 registerOnclick((x, y) => {
   console.log(`${x} ${y}`)
-  drawText(player, x, y, 'black', Math.min(width, height) * 0.3);
-  if (player === 'x') {
-    player = 'o'
-  } else {
-    player = 'x'
-  }
+  //drawText(player, x, y, 'black', Math.min(width, height) * 0.3);
+  //if (player === 'x') {
+    //player = 'o'
+  //} else {
+    //player = 'x'
+  //}
 });
 
 drawLine(width / 3, 0, width / 3, height, 'black', 5)
@@ -53,8 +53,7 @@ const botRight = () => {
 
 
 const ticTacToe = () => {
-  let board = [n, n, n, n, n, n, n, n, n]
-  if (console.log(`${x} ${y}`) === 660 / 3, 215 / 3) {
+  if (registerOnclick === (width / 3, height / 3)) {
     drawText(player, width / 6, height / 6, 'black', Math.min(width, height) * 0.3)
     board[0] = player
     if (registerOnclick === topMid) {
