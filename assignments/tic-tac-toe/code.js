@@ -10,12 +10,6 @@ let board = ['', '', '', '', '', '', '', '', ''];
 
 registerOnclick((x, y) => {
   ticTacToe(x, y)
-  //drawText(player, x, y, 'black', Math.min(width, height) * 0.3);
-  //if (player === 'x') {
-  //player = 'o'
-  //} else {
-  //player = 'x'
-  //}
 });
 
 drawLine(width / 3, 0, width / 3, height, 'black', 5)
