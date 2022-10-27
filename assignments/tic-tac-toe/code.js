@@ -82,4 +82,8 @@ const ticTacToe = (x, y) => {
   console.log(board)
 }
 
-
+const win = () => {
+  if (board[0, 1, 2] === 'x' || 'o') {
+    drawLine(width / 12, height / 6, width / 12 * 11, height / 6)
+  }
+}
