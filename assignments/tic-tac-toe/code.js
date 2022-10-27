@@ -53,7 +53,6 @@ const botRight = (x, y) => {
 
 
 const ticTacToe = (x, y) => {
-  console.log(board)
   if (topLeft(x, y)) {
     drawText(player, width / 6, height / 12 * 3, 'black', 70)
     board[0] = player
@@ -87,6 +86,7 @@ const ticTacToe = (x, y) => {
   }else{
     player = 'x'
   }
+  console.log(board)
 }
 
 
