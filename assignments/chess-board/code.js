@@ -16,4 +16,5 @@ const BLACK_PAWN   = '♟';
 
 drawLine(width / 8, 0, width / 8, height, 'black', 2)
 drawLine(width / 4, 0, width / 4, height, 'black', 2)
-drawLine(width / 8 * 3, 0, width / 8 *3, height, 'black', 2)
+drawLine(width / 8 * 3, 0, width / 8 * 3, height, 'black', 2)
+drawLine(width / 2, 0, width / 2, height, 'black', 2)
