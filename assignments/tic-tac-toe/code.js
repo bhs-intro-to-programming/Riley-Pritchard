@@ -51,6 +51,11 @@ const botRight = (x, y) => {
   return x > width / 3 * 2 && y > height / 3 * 2
 }
 
+const win = () => {
+  if (board[0, 1, 2] === 'x') {
+    drawLine(width / 12, height / 6, width / 12 * 11, height / 6)
+  }
+}
 
 const ticTacToe = (x, y) => {
   if (topLeft(x, y)) {
@@ -90,8 +95,3 @@ const ticTacToe = (x, y) => {
 }
 
 
-const win = () => {
-  if (board[0, 1, 2] === 'x') {
-    drawLine(width / 12, height / 6, width / 12 * 11, height / 6)
-  }
-}
