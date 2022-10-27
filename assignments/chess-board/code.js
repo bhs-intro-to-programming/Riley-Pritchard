@@ -40,3 +40,4 @@ let board =
 ['b','b','b','b','b','b','b','b']]
 let player = 'w'
 
+const row = Math.floor(y / (height / 8))
