@@ -28,3 +28,15 @@ drawLine(0, height / 2, width, height / 2, 'black', 2)
 drawLine(0, height / 8 * 5, width, height / 8 * 5, 'black', 2)
 drawLine(0, height / 4 * 3, width, height / 4 * 3, 'black', 2)
 drawLine(0, height / 8 * 7, width, height / 8 * 7, 'black', 2)
+
+let board = 
+[['w','w','w','w','w','w','w','w']
+['w','w','w','w','w','w','w','w']
+['','','','','','','','']
+['','','','','','','','']
+['','','','','','','','']
+['','','','','','','','']
+['b','b','b','b','b','b','b','b']
+['b','b','b','b','b','b','b','b']]
+let player = 'w'
+
