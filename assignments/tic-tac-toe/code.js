@@ -46,31 +46,31 @@ const botRight = (x, y) => {
 }
 
 const ticTacToe = (x, y) => {
-  if (topLeft(x, y) && (board[0] !== ('x' || 'o'))) {
+  if (topLeft(x, y) && (board[0] !== ('x' && 'o'))) {
     drawText(player, width / 6, height / 12 * 3, 'black', 70)
     board[0] = player
-  } else if (topMid(x, y) && (board[1] !== ('x' || 'o'))) {
+  } else if (topMid(x, y) && (board[1] !== ('x' && 'o'))) {
     drawText(player, width / 2, height / 12 * 3, 'black', 70)
     board[1] = player
-  } else if (topRight(x, y) && (board[2] !== ('x' || 'o'))) {
+  } else if (topRight(x, y) && (board[2] !== ('x' && 'o'))) {
     drawText(player, width / 6 * 5, height / 12 * 3, 'black', 70)
     board[2] = player
-  } else if (midLeft(x, y) && (board[3] !== ('x' || 'o'))) {
+  } else if (midLeft(x, y) && (board[3] !== ('x' && 'o'))) {
     drawText(player, width / 6, height / 12 * 7, 'black', 70)
     board[3] = player
-  } else if (midMid(x, y) && (board[4] !== ('x' || 'o'))) {
+  } else if (midMid(x, y) && (board[4] !== ('x' && 'o'))) {
     drawText(player, width / 2, height / 12 * 7, 'black', 70)
     board[4] = player
-  } else if (midRight(x, y) && (board[5] !== ('x' || 'o'))) {
+  } else if (midRight(x, y) && (board[5] !== ('x' && 'o'))) {
     drawText(player, width / 6 * 5, height / 12 * 7, 'black', 70)
     board[5] = player
-  } else if (botLeft(x, y) && (board[6] !== ('x' || 'o'))) {
+  } else if (botLeft(x, y) && (board[6] !== ('x' && 'o'))) {
     drawText(player, width / 6, height / 12 * 11, 'black', 70)
     board[6] = player
-  } else if (botMid(x, y) && (board[7] !== ('x' || 'o'))) {
+  } else if (botMid(x, y) && (board[7] !== ('x' && 'o'))) {
     drawText(player, width / 2, height / 12 * 11, 'black', 70)
     board[7] = player
-  } else if (botRight(x, y) && (board[8] !== ('x' || 'o'))) {
+  } else if (botRight(x, y) && (board[8] !== ('x' && 'o'))) {
     drawText(player, width / 6 * 5, height / 12 * 11, 'black', 70)
     board[8] = player
   }
