@@ -12,7 +12,7 @@ const BLACK_KNIGHT = '♞';
 const BLACK_PAWN   = '♟';
 
 // Example of drawing one of the pieces
-drawText(WHITE_KING, width/2, height/2, 'black', 64);
+//drawText(WHITE_KING, width/2, height/2, 'black', 64);
 
 drawLine(width / 8, 0, width / 8, height, 'black', 2)
 drawLine(width / 4, 0, width / 4, height, 'black', 2)
@@ -30,16 +30,17 @@ drawLine(0, height / 4 * 3, width, height / 4 * 3, 'black', 2)
 drawLine(0, height / 8 * 7, width, height / 8 * 7, 'black', 2)
 
 let board = 
-[['w','w','w','w','w','w','w','w']
-['w','w','w','w','w','w','w','w']
+[['wr','wn','wb','wk','wq','wb','wn','wr']
+['wp','wp','wp','wp','wp','wp','wp','wp']
 ['','','','','','','','']
 ['','','','','','','','']
 ['','','','','','','','']
 ['','','','','','','','']
-['b','b','b','b','b','b','b','b']
-['b','b','b','b','b','b','b','b']]
+['bp','bp','bp','bp','bp','bp','bp','bp']
+['br','bn','bb','bk','bq','bb','bn','br']]
 let player = 'w'
 
 const row = Math.floor(y / (height / 8))
 const column = Math.floor(x / (width / 8))
+
 
