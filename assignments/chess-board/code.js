@@ -12,7 +12,7 @@ const BLACK_KNIGHT = '♞';
 const BLACK_PAWN   = '♟';
 
 // Example of drawing one of the pieces
-//drawText(WHITE_KING, width/2, height/2, 'black', 64);
+drawText(WHITE_KING, width/2, height/2, 'black', 64);
 
 drawLine(width / 8, 0, width / 8, height, 'black', 2)
 drawLine(width / 4, 0, width / 4, height, 'black', 2)
