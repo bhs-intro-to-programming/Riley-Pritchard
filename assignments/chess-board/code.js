@@ -41,3 +41,5 @@ let board =
 let player = 'w'
 
 const row = Math.floor(y / (height / 8))
+const column = Math.floor(x / (width / 8))
+
