@@ -38,4 +38,3 @@ let player = 'w'
 const row = (y) => Math.floor(y / (height / 8))
 const column = (x) => Math.floor(x / (width / 8))
 
-const 
