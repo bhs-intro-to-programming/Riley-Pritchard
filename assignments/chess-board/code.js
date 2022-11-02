@@ -38,3 +38,4 @@ let player = 'w'
 //const column = Math.floor(x / (width / 8))
 
 
+drawBoard()
