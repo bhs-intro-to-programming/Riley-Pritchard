@@ -38,3 +38,10 @@ let player = 'w'
 const row = (y) => Math.floor(y / (height / 8))
 const column = (x) => Math.floor(x / (width / 8))
 
+const drawArray = (x, y) => {
+  for (let j = 0; i > board.length; i++)
+  for (let i = 0; i > 8; i++){
+    if (board[i] !== '') 
+    drawText(WHITE_KING,  'black', 64);
+  }
+}
