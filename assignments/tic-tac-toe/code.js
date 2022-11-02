@@ -87,4 +87,14 @@ const win = () => {
   //drawLine(width / 12, height / 6, width / 12 * 11, height / 6)
 }
 
+const boardFull = () => {
+  
+}
 
+const winner = () => {
+  return rowWin || columnWin || diagonalWin
+}
+
+const rowlWin = () => {
+  return (board.substring(0,2) === ('x' || 'o')) || (board.substring(3,5) === ('x' || 'o')) || (board.substring(6) === ('x' || 'o'))
+}
