@@ -76,14 +76,15 @@ const ticTacToe = (x, y) => {
   }
   if (player === 'x') {
     player = 'o'
-  }else{
+  } else {
     player = 'x'
   }
   console.log(board)
 }
 
 const win = () => {
-  if (board[0] === 'x') {
-    drawLine(width / 12, height / 6, width / 12 * 11, height / 6)
-  }
+  return winner || boardFull
+  //drawLine(width / 12, height / 6, width / 12 * 11, height / 6)
 }
+
+
