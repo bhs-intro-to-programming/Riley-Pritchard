@@ -88,7 +88,7 @@ const win = () => {
 }
 
 const boardFull = () => {
-  
+  return board.every((x) => x !== '')
 }
 
 const winner = () => {
