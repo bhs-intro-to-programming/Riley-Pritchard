@@ -18,19 +18,10 @@ const drawBoard = () => {
   for (let i = 0; i < 8; i++){
   drawLine(width / 8 * i, 0, width / 8 * i, height, 'black', 2)
   }
-  for (let i = 0; i < 8; i++){
-    drawLine(0, height / 8 * i, width, height / 8 * i, 'black', 2)
+  for (let j = 0; j < 8; ++){
+    drawLine(0, height / 8 * j, width, height / 8 * j, 'black', 2)
   }
 }
-
-
-drawLine(0, height / 8, width, height / 8, 'black', 2)
-drawLine(0, height / 4, width, height / 4, 'black', 2)
-drawLine(0, height / 8 * 3, width, height / 8 * 3, 'black', 2)
-drawLine(0, height / 2, width, height / 2, 'black', 2)
-drawLine(0, height / 8 * 5, width, height / 8 * 5, 'black', 2)
-drawLine(0, height / 4 * 3, width, height / 4 * 3, 'black', 2)
-drawLine(0, height / 8 * 7, width, height / 8 * 7, 'black', 2)
 
 let board = 
 [['wr','wn','wb','wk','wq','wb','wn','wr']
