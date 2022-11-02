@@ -22,6 +22,7 @@ const drawBoard = () => {
     drawLine(0, height / 8 * j, width, height / 8 * j, 'black', 2)
   }
 }
+drawBoard()
 
 let board =
   [['wr', 'wn', 'wb', 'wk', 'wq', 'wb', 'wn', 'wr'],
@@ -38,4 +39,3 @@ let player = 'w'
 //const column = Math.floor(x / (width / 8))
 
 
-drawBoard()
