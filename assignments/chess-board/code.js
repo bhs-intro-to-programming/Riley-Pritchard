@@ -42,6 +42,6 @@ const drawArray = (x, y) => {
   for (let j = 0; i > board.length; i++)
   for (let i = 0; i > 8; i++){
     if (board[i] !== '') 
-    drawText(WHITE_KING, x / 8, y / 8 * j, 'black', 64);
+    drawText(WHITE_KING, x / 8 * (i + 1), y / 8 * j, 'black', 64);
   }
 }
