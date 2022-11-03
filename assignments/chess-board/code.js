@@ -25,8 +25,8 @@ const drawBoard = () => {
 drawBoard()
 
 let board =
-  [['wr', 'wn', 'wb', 'wk', 'wq', 'wb', 'wn', 'wr'],
-  ['wp', 'wp', 'wp', 'wp', 'wp', 'wp', 'wp', 'wp'],
+  [['WHITE_ROOK', 'WHITE_KNIGHT', 'WHITE_BISHOP', 'WHITE_KING', 'WHITE_QUEEN', 'WHITE_BISHOP', 'WHITE_KNIGHT', 'WHITE_ROOK'],
+  ['WHITE_PAWN', 'WHITE_PAWN', 'WHITE_PAWN', 'WHITE_PAWN', 'WHITE_PAWN', 'WHITE_PAWN', 'WHITE_PAWN', 'WHITE_PAWN'],
   ['', '', '', '', '', '', '', ''],
   ['', '', '', '', '', '', '', ''],
   ['', '', '', '', '', '', '', ''],
@@ -42,7 +42,7 @@ const drawArray = () => {
   for (let j = 0; j < board.length; j++)
     for (let i = 0; i < 8; i++) {
       if (board[j][i] !== '') {
-        drawText(WHITE_KING, width / 8 * (i), height / 8 * (j + 1), 'black', 50);
+        drawText(board[j][i], width / 8 * (i), height / 8 * (j + 1), 'black', 50);
       }
     }
 }
