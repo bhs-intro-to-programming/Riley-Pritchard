@@ -33,7 +33,7 @@ let board =
   ['', '', '', '', '', '', '', ''],
   ['bp', 'bp', 'bp', 'bp', 'bp', 'bp', 'bp', 'bp'],
   ['br', 'bn', 'bb', 'bk', 'bq', 'bb', 'bn', 'br']]
-let player = 'w'
+//let player = 'w'
 
 const row = (y) => Math.floor(y / (height / 8))
 const column = (x) => Math.floor(x / (width / 8))
