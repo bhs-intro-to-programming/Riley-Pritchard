@@ -42,7 +42,7 @@ const drawArray = () => {
   for (let j = 0; j < board.length; j++)
     for (let i = 0; i < 8; i++) {
       if (board[j][i] !== '') {
-        drawText(WHITE_KING, width / 8 * (i), height / 8 * (j + 1), 'black', 64);
+        drawText(WHITE_KING, width / 8 * (i), height / 8 * (j + 1), 'black', 50);
       }
     }
 }
