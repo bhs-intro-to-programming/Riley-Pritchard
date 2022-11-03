@@ -25,7 +25,7 @@ const drawBoard = () => {
 drawBoard()
 
 let board =
-  [['WHITE_ROOK', 'WHITE_KNIGHT', 'WHITE_BISHOP', 'WHITE_KING', 'WHITE_QUEEN', 'WHITE_BISHOP', 'WHITE_KNIGHT', 'WHITE_ROOK'],
+  [[WHITE_ROOK, 'WHITE_KNIGHT', 'WHITE_BISHOP', 'WHITE_KING', 'WHITE_QUEEN', 'WHITE_BISHOP', 'WHITE_KNIGHT', 'WHITE_ROOK'],
   ['WHITE_PAWN', 'WHITE_PAWN', 'WHITE_PAWN', 'WHITE_PAWN', 'WHITE_PAWN', 'WHITE_PAWN', 'WHITE_PAWN', 'WHITE_PAWN'],
   ['', '', '', '', '', '', '', ''],
   ['', '', '', '', '', '', '', ''],
