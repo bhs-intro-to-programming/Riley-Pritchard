@@ -46,3 +46,5 @@ const drawArray = (x, y) => {
       }
     }
 }
+
+drawArray
