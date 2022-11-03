@@ -39,7 +39,7 @@ const row = (y) => Math.floor(y / (height / 8))
 const column = (x) => Math.floor(x / (width / 8))
 
 const drawArray = () => {
-  for (let j = 0; i < board.length; i++)
+  for (let j = 0; j < board.length; j++)
     for (let i = 0; i < 8; i++) {
       if (board[j][i] !== '') {
         drawText(WHITE_KING, width / 8 * (i + 1), height / 8 * (j + 1), 'black', 64);
