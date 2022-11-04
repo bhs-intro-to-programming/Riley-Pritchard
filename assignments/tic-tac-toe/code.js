@@ -167,7 +167,7 @@ const rightDiagonalOwin = () => {
   return (board[2] === 'o') && (board[4] === 'o') && (board[6] === 'o')
 }
 
-const winnerYes = (0) => {
+const winnerYes = () => {
   if (winner === true)
   console.log('winner')
 }
