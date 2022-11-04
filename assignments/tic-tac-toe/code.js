@@ -124,8 +124,10 @@ const midRowOWin = () => {
 const botRowOWin = () => {
   return (board[6] === 'o') && (board[7] === 'o') && (board[8] === 'o')
 }
-
-const ColumnXWin = () => {
+const columnWin = () => {
+  return columnXwin || columnOwin
+}
+const columnXWin = () => {
   return leftColumnXWin || midColumnXWin || rightColumnXWin
 }
 const leftColumnXWin = () => {
@@ -136,4 +138,31 @@ const midColumnXWin = () => {
 }
 const rightColumnXWin = () => {
   return (board[2] === 'x') && (board[5] === 'x') && (board[8] === 'x')
+}
+const columnOWin = () => {
+  return leftColumnOWin || midColumnOWin || rightColumnOWin
+}
+const leftColumnOWin = () => {
+  return (board[0] === 'o') && (board[3] === 'o') && (board[6] === 'o')
+}
+const midColumnOWin = () => {
+  return (board[1] === 'o') && (board[4] === 'o') && (board[7] === 'o')
+}
+const rightColumnOWin = () => {
+  return (board[2] === 'o') && (board[5] === 'o') && (board[8] === 'o')
+}
+const diagonalWin = () => {
+  return leftDiagonalXwin || rightDiagonalXwin || leftDiagonalOwin || rightDiagonalOwin
+}
+const leftDiagonalXwin = () => {
+  return (board[0] === 'x') && (board[4] === 'x') && (board[8] === 'x')
+}
+const rightDiagonalXwin = () => {
+  return (board[2] === 'x') && (board[4] === 'x') && (board[6] === 'x')
+}
+const leftDiagonalOwin = () => {
+  return (board[0] === 'o') && (board[4] === 'o') && (board[8] === 'o')
+}
+const rightDiagonalOwin = () => {
+  return (board[2] === 'o') && (board[4] === 'o') && (board[6] === 'o')
 }
