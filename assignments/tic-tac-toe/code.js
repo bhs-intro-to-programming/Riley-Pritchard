@@ -124,3 +124,16 @@ const midRowOWin = () => {
 const botRowOWin = () => {
   return (board[6] === 'o') && (board[7] === 'o') && (board[8] === 'o')
 }
+
+const ColumnXWin = () => {
+  return leftColumnXWin || midColumnXWin || rightColumnXWin
+}
+const leftColumnXWin = () => {
+  return (board[0] === 'x') && (board[3] === 'x') && (board[6] === 'x')
+}
+const midColumnXWin = () => {
+  return (board[1] === 'x') && (board[4] === 'x') && (board[7] === 'x')
+}
+const rightColumnXWin = () => {
+  return (board[2] === 'x') && (board[5] === 'x') && (board[8] === 'x')
+}
