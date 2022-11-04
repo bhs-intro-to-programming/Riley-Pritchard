@@ -104,5 +104,6 @@ const columnWin = () => {
 }
 
 const threeInARow = () => {
-  return board[0],board[1],board[2]
+  return (board[0],board[1],board[2])
+  //i have no clue why this is returning just board[2]
 }
