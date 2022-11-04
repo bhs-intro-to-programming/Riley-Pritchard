@@ -92,17 +92,13 @@ const boardFull = () => {
 }
 
 const winner = () => {
-  return rowWin || columnWin || diagonalWin
-}
-
-const rowWin = () => {
-  return (board.substring(0,2) === ('x' || 'o')) || (board.substring(3,5) === ('x' || 'o')) || (board.substring(6) === ('x' || 'o'))
-}
-
-const columnWin = () => {
-  return 
+  return topRowXWin || midRowXWin
 }
 
 const topRowXWin = () => {
   return (board[0] === 'x') && (board[1] === 'x') && (board[2] === 'x')
+}
+
+const midRowXWin = () => {
+  return (board[3] === 'x') && (board[4] === 'x') && (board[5] === 'x')
 }
