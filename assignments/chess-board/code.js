@@ -53,5 +53,5 @@ registerOnclick((x, y) => {
 });
 
 const select = (x, y) => {
-  drawText(board[row(y)][column(x)], width / 8 * column, height / 8 * row, 'yellow', 45)
+  drawText(board[row(y)][column(x)], width / 8 * column, height / 8 * row, 'red', 45)
 }
