@@ -102,3 +102,7 @@ const rowWin = () => {
 const columnWin = () => {
   return 
 }
+
+const threeInARow = () => {
+  return board[0] && board[1] && board[2]
+}
