@@ -92,13 +92,18 @@ const boardFull = () => {
 }
 
 const winner = () => {
-  return topRowXWin || midRowXWin
+  return rowWin || columnWin || diagonalWin
 }
 
+const xRowWin = () => {
+  return topRowXWin || midRowXWin || botRowXWin
+}
 const topRowXWin = () => {
   return (board[0] === 'x') && (board[1] === 'x') && (board[2] === 'x')
 }
-
 const midRowXWin = () => {
   return (board[3] === 'x') && (board[4] === 'x') && (board[5] === 'x')
+}
+const botRowXWin = () => {
+  return (board[6] === 'x') && (board[7] === 'x') && (board[8] === 'x')
 }
