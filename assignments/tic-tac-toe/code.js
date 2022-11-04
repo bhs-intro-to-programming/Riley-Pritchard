@@ -95,6 +95,10 @@ const winner = () => {
   return rowWin || columnWin || diagonalWin
 }
 
+const rowWin = () => {
+  return xRowWin || oRowWin
+}
+
 const xRowWin = () => {
   return topRowXWin || midRowXWin || botRowXWin
 }
