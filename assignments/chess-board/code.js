@@ -39,7 +39,7 @@ const row = (y) => Math.floor(y / (height / 8))
 const column = (x) => Math.floor(x / (width / 8))
 
 const select = (x, y) => {
-  drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'yellow', 45)
+  drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'red', 45)
 }
 
 registerOnclick(select);
@@ -48,7 +48,7 @@ const drawArray = () => {
   for (let j = 0; j < board.length; j++)
     for (let i = 0; i < 8; i++) {
       if (board[j][i] !== '') {
-        drawText(board[j][i], width / 8 * (i), height / 8 * (j + 1), 'red', 40);
+        drawText(board[j][i], width / 8 * (i), height / 8 * (j + 1), 'black', 40);
       }
     }
 }
