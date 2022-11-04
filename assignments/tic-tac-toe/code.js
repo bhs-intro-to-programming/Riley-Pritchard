@@ -103,7 +103,6 @@ const columnWin = () => {
   return 
 }
 
-const threeInARow = () => {
-  return (board[0],board[1],board[2])
-  //i have no clue why this is returning just board[2]
+const topRowXWin = () => {
+  return (board[0] === 'x') && (board[1] === 'x') && (board[2] === 'x')
 }
