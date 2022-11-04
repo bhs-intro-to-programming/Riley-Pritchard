@@ -92,6 +92,7 @@ const boardFull = () => {
 }
 
 const winner = () => {
+    console.log(winner)
   return rowWin || columnWin || diagonalWin
 }
 
