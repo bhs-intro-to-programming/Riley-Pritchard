@@ -99,3 +99,6 @@ const rowWin = () => {
   return (board.substring(0,2) === ('x' || 'o')) || (board.substring(3,5) === ('x' || 'o')) || (board.substring(6) === ('x' || 'o'))
 }
 
+const columnWin = () => {
+  return 
+}
