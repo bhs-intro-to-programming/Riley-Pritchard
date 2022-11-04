@@ -49,7 +49,7 @@ const drawArray = () => {
 drawArray()
 
 const select = (x, y) => {
-  drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * row(y) + 1, 'yellow', 45)
+  drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'yellow', 45)
 }
 
 registerOnclick(select);
