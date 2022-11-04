@@ -107,3 +107,16 @@ const midRowXWin = () => {
 const botRowXWin = () => {
   return (board[6] === 'x') && (board[7] === 'x') && (board[8] === 'x')
 }
+
+const oRowWin = () => {
+  return topRowOWin || midRowOWin || botRowOWin
+}
+const topRowOWin = () => {
+  return (board[0] === 'o') && (board[1] === 'o') && (board[2] === 'o')
+}
+const midRowOWin = () => {
+  return (board[3] === 'o') && (board[4] === 'o') && (board[5] === 'o')
+}
+const botRowOWin = () => {
+  return (board[6] === 'o') && (board[7] === 'o') && (board[8] === 'o')
+}
