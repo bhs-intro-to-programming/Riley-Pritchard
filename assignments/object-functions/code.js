@@ -22,3 +22,7 @@ const midpoint = ({'x' : x1,'y': y1}, {'x': x2,'y': y2}) => {
    o.y = ((Math.abs(y2 - y1)) / 2)
    return o
 }
+
+const sumSalaries = () => {
+  return 1
+}
