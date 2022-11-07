@@ -17,5 +17,8 @@ const distance = ({'x' : x1,'y': y1}, {'x': x2,'y': y2}) => {
 }
 
 const midpoint = ({'x' : x1,'y': y1}, {'x': x2,'y': y2}) => {
-  return 
+  let o = {'x' : 0, 'y' : 0}
+   o.x = (Math.abs(x1 - x2) / 2)
+   o.y = (Math.abs(y1 - y2) / 2)
+   return o
 }
