@@ -3,5 +3,6 @@ const getX = (o) => {
 }
 
 const point = (x, y) => {
+  let o = {}
   return o = {'x' : x, 'y' : y}
 }
