@@ -23,6 +23,6 @@ const midpoint = ({'x' : x1,'y': y1}, {'x': x2,'y': y2}) => {
    return o
 }
 
-const sumSalaries = ([]) => {
-  return []
+const sumSalaries = ([{'salary': x},{'salary' : y}]) => {
+  return x + y
 }
