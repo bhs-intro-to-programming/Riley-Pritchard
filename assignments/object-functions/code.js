@@ -45,3 +45,7 @@ const newHighScore = (score, a) => {
     return newScore
   }
 }
+
+const summarizeBooks = (a) => {
+  return
+}
