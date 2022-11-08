@@ -35,7 +35,7 @@ const newHighScore = (score, a) => {
   let newScore = 0
   a.push({'score' : score})
   for (let i = 0; i < a.length; i++) {
-    if (a[i].score > score) {
+    if (a[i].score > newScore) {
       newScore = a[i].score
     }
   }
