@@ -47,5 +47,10 @@ const newHighScore = (score, a) => {
 }
 
 const summarizeBooks = (a) => {
+  let o = {'titles' : [], 'pages' : 0}
+  for (let i = 0; i < a.length; i++){
+    o.titles = o.titles + a[i].titles
+    o.pages = o.pages + a[i].pages
+  }
   return
 }
