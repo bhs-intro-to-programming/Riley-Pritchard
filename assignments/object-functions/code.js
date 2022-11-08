@@ -31,4 +31,6 @@ const sumSalaries = (a) => {
   return count
 }
 
-const newHighScore = (score, a)
+const newHighScore = (score, a) => {
+  return
+}
