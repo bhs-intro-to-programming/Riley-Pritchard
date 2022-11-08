@@ -23,10 +23,12 @@ const midpoint = (p1, p2) => {
    return o
 }
 
-const sumSalaries = ([a]) => {
+const sumSalaries = (a) => {
   let count = 0
-  for (let i = 0; i > a.length; i++){
+  for (let i = 0; i < a.length; i++){
     count = count + a[i].salary
   }
   return count
 }
+
+const newHighScore = (score, a)
