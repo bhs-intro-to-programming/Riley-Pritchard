@@ -33,6 +33,7 @@ const sumSalaries = (a) => {
 
 const newHighScore = (score, a) => {
   let newScore = 0
+  a.push({'score' : score})
   for (let i = 0; i < a.length; i++) {
     if (a[i].score > score) {
       newScore = a[i].score
