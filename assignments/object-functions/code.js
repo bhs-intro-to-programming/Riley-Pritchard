@@ -52,5 +52,5 @@ const summarizeBooks = (a) => {
     o.titles = o.titles + a[i].titles
     o.pages = o.pages + a[i].pages
   }
-  return
+  return o
 }
