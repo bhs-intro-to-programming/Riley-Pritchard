@@ -50,7 +50,7 @@ const summarizeBooks = (a) => {
   let o = {'titles' : [], 'pages' : 0}
   let titles = []
   for (let i = 0; i < a.length; i++){
-    titles.push(a[i].titles)
+    titles.push(a[i].title)
     o.pages = o.pages + a[i].pages
   }
   o.titles = titles
