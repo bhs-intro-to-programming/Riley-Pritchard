@@ -23,6 +23,10 @@ const midpoint = (p1, p2) => {
    return o
 }
 
-const sumSalaries = ([p1,p2,p3]) => {
-  return p1.salary + p2.salary + p3.salary
+const sumSalaries = ([a]) => {
+  let count = 0
+  for (let i = 0; i < a.length; i++){
+    count = count + a[i].salary
+  }
+  return count
 }
