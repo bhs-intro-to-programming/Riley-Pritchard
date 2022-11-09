@@ -88,7 +88,7 @@ const ticTacToe = (x, y) => {
 }
 
 const end = () => {
-  return winner() || boardFull()
+  return winner(player) || boardFull()
   //drawLine(width / 12, height / 6, width / 12 * 11, height / 6)
 }
 
