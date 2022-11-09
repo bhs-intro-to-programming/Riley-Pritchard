@@ -83,7 +83,7 @@ const ticTacToe = (x, y) => {
 }
 
 const win = () => {
-  return winner || boardFull
+  return winner() || boardFull()
   //drawLine(width / 12, height / 6, width / 12 * 11, height / 6)
 }
 
@@ -92,15 +92,15 @@ const boardFull = () => {
 }
 
 const winner = () => {
-  return rowWin || columnWin || diagonalWin
+  return rowWin() || columnWin() || diagonalWin()
 }
 
 const rowWin = () => {
-  return xRowWin || oRowWin
+  return xRowWin() || oRowWin()
 }
 
 const xRowWin = () => {
-  return topRowXWin || midRowXWin || botRowXWin
+  return topRowXWin() || midRowXWin() || botRowXWin()
 }
 const topRowXWin = () => {
   return (board[0] === 'x') && (board[1] === 'x') && (board[2] === 'x')
@@ -113,7 +113,7 @@ const botRowXWin = () => {
 }
 
 const oRowWin = () => {
-  return topRowOWin || midRowOWin || botRowOWin
+  return topRowOWin() || midRowOWin() || botRowOWin()
 }
 const topRowOWin = () => {
   return (board[0] === 'o') && (board[1] === 'o') && (board[2] === 'o')
@@ -125,10 +125,10 @@ const botRowOWin = () => {
   return (board[6] === 'o') && (board[7] === 'o') && (board[8] === 'o')
 }
 const columnWin = () => {
-  return columnXwin || columnOwin
+  return columnXwin() || columnOwin()
 }
 const columnXWin = () => {
-  return leftColumnXWin || midColumnXWin || rightColumnXWin
+  return leftColumnXWin() || midColumnXWin() || rightColumnXWin()
 }
 const leftColumnXWin = () => {
   return (board[0] === 'x') && (board[3] === 'x') && (board[6] === 'x')
