@@ -75,7 +75,7 @@ const ticTacToe = (x, y) => {
     board[8] = player
   }
   if (winner(player)){
-    console.log(player + 'won')
+    console.log(player + ' won')
   }
   if (end()){
     console.log('end of game')
