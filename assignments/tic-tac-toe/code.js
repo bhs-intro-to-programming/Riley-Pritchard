@@ -99,33 +99,8 @@ const rowWin = (start, player) => {
   return board[start] === player && board[start + 1] === player && board[start + 2] === player;
 };
 
-const xRowWin = () => {
-  return topRowXWin() || midRowXWin() || botRowXWin()
-}
-const topRowXWin = () => {
-  return (board[0] === 'x') && (board[1] === 'x') && (board[2] === 'x')
-}
-const midRowXWin = () => {
-  return (board[3] === 'x') && (board[4] === 'x') && (board[5] === 'x')
-}
-const botRowXWin = () => {
-  return (board[6] === 'x') && (board[7] === 'x') && (board[8] === 'x')
-}
-
-const oRowWin = () => {
-  return topRowOWin() || midRowOWin() || botRowOWin()
-}
-const topRowOWin = () => {
-  return (board[0] === 'o') && (board[1] === 'o') && (board[2] === 'o')
-}
-const midRowOWin = () => {
-  return (board[3] === 'o') && (board[4] === 'o') && (board[5] === 'o')
-}
-const botRowOWin = () => {
-  return (board[6] === 'o') && (board[7] === 'o') && (board[8] === 'o')
-}
-const columnWin = () => {
-  return columnXwin() || columnOwin()
+const columnWin = (start, player) => {
+  return board[start] === player && board[start + 3] === player && board [start + 6]
 }
 const columnXWin = () => {
   return leftColumnXWin() || midColumnXWin() || rightColumnXWin()
