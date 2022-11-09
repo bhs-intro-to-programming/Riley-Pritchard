@@ -74,6 +74,9 @@ const ticTacToe = (x, y) => {
     drawText(player, width / 6 * 5, height / 12 * 11, 'black', 70)
     board[8] = player
   }
+  if (winner(player)){
+    console.log(player + 'won')
+  }
   if (player === 'x') {
     player = 'o'
   } else {
@@ -91,8 +94,11 @@ const boardFull = () => {
   return board.every((x) => x !== '')
 }
 
-const winner = () => {
-  return rowWin() || columnWin() || diagonalWin()
+const winner = (player) => {
+  return anyRowWin(player) || columnWin() || diagonalWin()
+}
+const anyRowWin =  (player) => {
+  return rowWin(0, player) || rowWin(3, player) || rowWin(6, player)
 }
 const rowWin = (start, player) => {
   return board[start] === player && board[start + 1] === player && board[start + 2] === player;
@@ -101,7 +107,7 @@ const columnWin = (start, player) => {
   return board[start] === player && board[start + 3] === player && board [start + 6]
 }
 const diagonalWin = () => {
-  return leftDiagonalXwin || rightDiagonalXwin || leftDiagonalOwin || rightDiagonalOwin
+  return leftDiagonalXwin() || rightDiagonalXwin() || leftDiagonalOwin() || rightDiagonalOwin()
 }
 const leftDiagonalXwin = () => {
   return (board[0] === 'x') && (board[4] === 'x') && (board[8] === 'x')
