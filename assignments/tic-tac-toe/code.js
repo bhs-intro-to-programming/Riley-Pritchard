@@ -77,6 +77,9 @@ const ticTacToe = (x, y) => {
   if (winner(player)){
     console.log(player + 'won')
   }
+  if (end()){
+    console.log('end of game')
+  }
   if (player === 'x') {
     player = 'o'
   } else {
