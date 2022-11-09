@@ -85,7 +85,6 @@ const ticTacToe = (x, y) => {
   } else {
     player = 'x'
   }
-  console.log(board)
 }
 
 const end = () => {
