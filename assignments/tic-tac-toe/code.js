@@ -94,37 +94,11 @@ const boardFull = () => {
 const winner = () => {
   return rowWin() || columnWin() || diagonalWin()
 }
-
 const rowWin = (start, player) => {
   return board[start] === player && board[start + 1] === player && board[start + 2] === player;
 };
-
 const columnWin = (start, player) => {
   return board[start] === player && board[start + 3] === player && board [start + 6]
-}
-const columnXWin = () => {
-  return leftColumnXWin() || midColumnXWin() || rightColumnXWin()
-}
-const leftColumnXWin = () => {
-  return (board[0] === 'x') && (board[3] === 'x') && (board[6] === 'x')
-}
-const midColumnXWin = () => {
-  return (board[1] === 'x') && (board[4] === 'x') && (board[7] === 'x')
-}
-const rightColumnXWin = () => {
-  return (board[2] === 'x') && (board[5] === 'x') && (board[8] === 'x')
-}
-const columnOWin = () => {
-  return leftColumnOWin || midColumnOWin || rightColumnOWin
-}
-const leftColumnOWin = () => {
-  return (board[0] === 'o') && (board[3] === 'o') && (board[6] === 'o')
-}
-const midColumnOWin = () => {
-  return (board[1] === 'o') && (board[4] === 'o') && (board[7] === 'o')
-}
-const rightColumnOWin = () => {
-  return (board[2] === 'o') && (board[5] === 'o') && (board[8] === 'o')
 }
 const diagonalWin = () => {
   return leftDiagonalXwin || rightDiagonalXwin || leftDiagonalOwin || rightDiagonalOwin
