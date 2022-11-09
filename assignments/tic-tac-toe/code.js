@@ -82,7 +82,7 @@ const ticTacToe = (x, y) => {
   console.log(board)
 }
 
-const win = () => {
+const end = () => {
   return winner() || boardFull()
   //drawLine(width / 12, height / 6, width / 12 * 11, height / 6)
 }
@@ -95,9 +95,9 @@ const winner = () => {
   return rowWin() || columnWin() || diagonalWin()
 }
 
-const rowWin = () => {
-  return xRowWin() || oRowWin()
-}
+const rowWin = (start, player) => {
+  return board[start] === player && board[start + 1] === player && board[start + 2] === player;
+};
 
 const xRowWin = () => {
   return topRowXWin() || midRowXWin() || botRowXWin()
