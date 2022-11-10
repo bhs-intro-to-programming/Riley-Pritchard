@@ -14,3 +14,7 @@ const drawTheThings = () => {
   }
 }
 drawTheThings()
+
+animate = () => {
+  drawTheThings
+}
