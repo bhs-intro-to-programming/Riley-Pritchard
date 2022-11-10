@@ -7,4 +7,4 @@ const drawTheThings = () => {
 }
 //drawTheThings()
 
-drawFilledRect(0,0,4,4,'yellow')
+drawFilledRect(0,0,4,4,'red')
