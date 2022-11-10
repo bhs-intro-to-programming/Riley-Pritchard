@@ -6,14 +6,21 @@ const drawTheThings = () => {
     for (let j = 0; j < width; j = j + 5) {
       if (Math.random() < .2) {
         drawFilledRect(j, i, 5, 5, 'yellow')
-        b.push('yes')
+        b.push(j)
       } else {
-        b.push('no')
+        b.push(0)
       }
     }
   }
 }
 drawTheThings()
+const whatLives = (start) => {
+  for(start = 0; start < b.length; start++){
+    if (b[start] === 'yes' && b[start + 1] === 'yes' && b[start + 3] === 'yes'){
+      drawFilledRect(, , 5, 5, 'yellow')
+    }
+  }
+}
 
 animate = () => {
   drawTheThings
