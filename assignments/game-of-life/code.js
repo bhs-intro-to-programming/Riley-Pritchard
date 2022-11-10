@@ -14,13 +14,14 @@ const drawTheThings = () => {
   }
 }
 drawTheThings()
-const whatLives = (start) => {
-  for(start = 0; start < b.length; start++){
-    if (b[start] === 'yes' && b[start + 1] === 'yes' && b[start + 3] === 'yes'){
-      drawFilledRect(, , 5, 5, 'yellow')
-    }
-  }
-}
+
+//const whatLives = (start) => {
+  //for(start = 0; start < b.length; start++){
+    //if (b[start] === 'yes' && b[start + 1] === 'yes' && b[start + 3] === 'yes'){
+      //drawFilledRect(, , 5, 5, 'yellow')
+    //}
+  //}
+//}
 
 animate = () => {
   drawTheThings
