@@ -30,6 +30,9 @@ const whatLives = (start) => {
       }
     }
   }
+  for (a = b.length; a > -1; a = a - 1){
+    b.pop[a]
+  }
 }
 
 //animate = () => {
