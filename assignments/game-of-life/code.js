@@ -8,4 +8,5 @@ const drawTheThings = () => {
   }
 }
 drawTheThings()
+
 drawFilledRect(0,0,100,100,'yellow')
