@@ -34,6 +34,7 @@ const whatLives = (start) => {
     b.pop[a]
   }
 }
+whatLives(start)
 
 //animate = () => {
 //  drawTheThings
