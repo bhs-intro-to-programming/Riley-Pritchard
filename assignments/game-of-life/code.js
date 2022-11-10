@@ -25,6 +25,6 @@ const whatLives = (start) => {
   }
 }
 
-animate = () => {
-  drawTheThings
-}
+//animate = () => {
+//  drawTheThings
+//}
