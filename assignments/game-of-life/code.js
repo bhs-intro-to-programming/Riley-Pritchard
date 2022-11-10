@@ -6,7 +6,7 @@ const drawTheThings = () => {
     for (let j = 0; j < width; j = j + 5) {
       if (Math.random() < .2) {
         drawFilledRect(j, i, 5, 5, 'yellow')
-        b.push(j)
+        b.push(j + 1)
       } else {
         b.push(0)
       }
