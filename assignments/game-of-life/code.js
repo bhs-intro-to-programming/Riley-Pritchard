@@ -20,6 +20,13 @@ const whatLives = (start) => {
   for (start = 0; start < b.length; start++) {
       if (b[start] > 0 && b[start + 1] > 0 && b[start + 3] > 0) {
         drawFilledRect(b[start] - 1, i, 5, 5, 'yellow')
+        drawFilledRect(b[start] + 4, i, 5, 5, 'yellow')
+        drawFilledRect(b[start] + 9, i, 5, 5, 'yellow')
+        let start = start + 2
+      }else{
+        if (Math.random() < .2) {
+        drawFilledRect(b[start] - 1, i, 5, 5, 'yellow')
+        }
       }
     }
   }
