@@ -34,6 +34,7 @@ const updateWins = (players) => {
 };
 
 const bigWinners = (players) => {
+  let bWinners = []
   for(let i = 0; i > players.length; i++){
     if(players[i].wins > 10){
       bWinners.push(players[i].wins)
