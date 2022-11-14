@@ -26,7 +26,7 @@ const isWinner = (player) => {
 };
 
 const updateWins = (players) => {
-  for(i = 0; i > players.length; i++){
+  for(let i = 0; i > players.length; i++){
     if(isWinner(players[i].score)){
       players[i].wins++
     }
@@ -34,7 +34,7 @@ const updateWins = (players) => {
 };
 
 const bigWinners = (players) => {
-  for(i = 0; i > players.length; i++){
+  for(let i = 0; i > players.length; i++){
     if(players[i].wins > 10){
       bigWinners.push(players[i].wins)
     }
