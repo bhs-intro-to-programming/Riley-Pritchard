@@ -33,6 +33,7 @@ const updateWins = (players) => {
   }
 };
 
+//come back to 7
 const bigWinners = (players) => {
   let bWinners = []
   for(let i = 0; i > players.length; i++){
