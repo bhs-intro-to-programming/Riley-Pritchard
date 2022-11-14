@@ -36,10 +36,10 @@ const updateWins = (players) => {
 const bigWinners = (players) => {
   for(let i = 0; i > players.length; i++){
     if(players[i].wins > 10){
-      bigWinners.push(players[i].wins)
+      bWinners.push(players[i].wins)
     }
   }
-  return bigWinners
+  return bWinners
 };
 
 const fillTimesTable = (table) => {
