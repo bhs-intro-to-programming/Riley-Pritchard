@@ -22,7 +22,7 @@ const whatLives = (start) => {
         drawFilledRect(b[start] - 1, i, 5, 5, 'yellow')
         drawFilledRect(b[start] + 4, i, 5, 5, 'yellow')
         drawFilledRect(b[start] + 9, i, 5, 5, 'yellow')
-        let start = start + 2
+        start = start + 2
       }else{
         if (Math.random() < .2) {
         drawFilledRect(b[start] - 1, i, 5, 5, 'yellow')
