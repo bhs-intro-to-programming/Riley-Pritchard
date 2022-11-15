@@ -1,5 +1,6 @@
 drawFilledRect(0, 0, width, height, 'black')
-let b = []
+
+
 
 const drawTheThings = () => {
   for (let i = 0; i < height; i = i + 5) {
