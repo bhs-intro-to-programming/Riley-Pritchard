@@ -97,7 +97,7 @@ const boardFull = () => {
 }
 
 const winner = (player) => {
-  return anyRowWin(player) || anyColumnWin(player) || diagonalWin()
+  return anyRowWin(player) || anyColumnWin(player) || diagonalWin(player)
 }
 const anyRowWin =  (player) => {
   return rowWin(0, player) || rowWin(3, player) || rowWin(6, player)
@@ -111,7 +111,7 @@ const rowWin = (start, player) => {
 const columnWin = (start, player) => {
   return board[start] === player && board[start + 3] === player && board [start + 6]
 }
-const diagonalWin = () => {
+const diagonalWin = (player) => {
   return leftDiagonalwin(player) || rightDiagonalwin(player)
 }
 const leftDiagonalwin = (player) => {
