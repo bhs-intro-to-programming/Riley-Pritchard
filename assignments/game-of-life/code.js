@@ -9,4 +9,5 @@ const board = () => {
       b.push(false)
     }
   }
+  return b
 }
