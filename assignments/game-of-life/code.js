@@ -10,8 +10,8 @@ const makeArray = () => {
         b.push(0)
       }
     }
-    return b
   }
+  makeArray()
 
 
   const drawTheThings = () => {
