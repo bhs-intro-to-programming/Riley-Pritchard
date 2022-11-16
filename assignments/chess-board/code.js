@@ -43,7 +43,7 @@ const select = (x, y) => {
   drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'red', 40)
   aSelect.push(board[row(y)][column(x)])
   if (aSelect !== []){
-      drawText(aSelect, width / 8 * column(x), height / 8 * (row(y) + 1), 'black', 30)
+      drawText(aSelect, width / 8 * column(x), height / 8 * (row(y) + 1), 'black', 35)
     aSelect.pop(board[row(y)][column(x)])
   }
 }
