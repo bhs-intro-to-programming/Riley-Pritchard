@@ -11,6 +11,7 @@ const makeArray = () => {
         b.push(0)
       }
     }
+    return b
   }
 
 
