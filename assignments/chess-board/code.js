@@ -40,8 +40,12 @@ const column = (x) => Math.floor(x / (width / 8))
 
 const select = (x, y) => {
   let aSelect = []
-  drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'red', 45)
+  drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'red', 40)
   aSelect.push(board[row(y)][column(x)])
+}
+
+const move = (x, y) => {
+  
 }
 
 registerOnclick(select);
