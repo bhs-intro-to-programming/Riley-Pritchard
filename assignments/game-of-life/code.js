@@ -45,7 +45,3 @@ const whatLives = () => {
   }
 }
 whatLives()
-
-//animate = () => {
-//  drawTheThings
-//}
