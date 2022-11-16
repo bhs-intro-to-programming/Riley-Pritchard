@@ -38,8 +38,8 @@ let board =
 const row = (y) => Math.floor(y / (height / 8))
 const column = (x) => Math.floor(x / (width / 8))
 
+let aSelect = []
 const select = (x, y) => {
-  let aSelect = []
   drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'red', 40)
   aSelect.push(board[row(y)][column(x)])
 }
