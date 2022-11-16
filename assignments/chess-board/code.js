@@ -40,13 +40,15 @@ const column = (x) => Math.floor(x / (width / 8))
 
 let aSelect = []
 const select = (x, y) => {
-  drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'red', 40)
-  aSelect.push(board[row(y)][column(x)])
-  if (aSelect !== []){
-      drawText(aSelect, width / 8 * column(x), height / 8 * (row(y) + 1), 'black', 30)
+  if (aSelect !== []) {
+    drawText(aSelect, width / 8 * column(x), height / 8 * (row(y) + 1), 'black', 30)
     aSelect.pop(board[row(y)][column(x)])
+  } else {
+    drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'red', 40)
+    aSelect.push(board[row(y)][column(x)])
   }
 }
+
 
 registerOnclick(select);
 
