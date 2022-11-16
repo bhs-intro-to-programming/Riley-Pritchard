@@ -5,7 +5,7 @@ const makeArray = () => {
   for (let i = 0; i < height; i += 5) {
     a.push([])
     for (let j = 0; j < width; j += 5) {
-      if (Math.random() < .2)
+      if (Math.random() < .2){
         a.push(1)
     } else {
       a.push(0)
