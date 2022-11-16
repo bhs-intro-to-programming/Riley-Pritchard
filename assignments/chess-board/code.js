@@ -42,6 +42,7 @@ const select = (x, y) => {
   let aSelect = []
   drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'red', 45)
   aSelect.push(board[row(y)][column(x)])
+  return aSelect
 }
 
 registerOnclick(select);
