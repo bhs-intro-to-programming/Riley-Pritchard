@@ -50,7 +50,7 @@ const select = (x, y) => {
   }
 }
 
-registerOnclick(select, move);
+registerOnclick(select);
 
 const drawArray = () => {
   for (let j = 0; j < board.length; j++)
