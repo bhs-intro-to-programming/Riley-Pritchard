@@ -45,7 +45,7 @@ const select = (x, y) => {
 }
 
 const move = (x, y) => {
-  
+    drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'black', 40)
 }
 
 registerOnclick(select);
