@@ -1,6 +1,18 @@
 drawFilledRect(0, 0, width, height, 'black')
 
-//this needs a lot of work, it is not done
+const makeArray = () => {
+  let a = []
+  for (let i = 0; i < height; i += 5) {
+    a.push([])
+    for (let j = 0; j < width; j += 5) {
+      if (Math.random() < .2)
+        a.push(1)
+    } else {
+      a.push(0)
+    }
+  }
+}
+
 
 const drawTheThings = () => {
   for (let i = 0; i < height; i = i + 5) {
