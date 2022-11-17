@@ -14,6 +14,17 @@ let board = [['','','',''],['','','',''],['','','',''],['','','','']]
 const random2 = () => {
   drawText('2', Math.random, Math.random, 'black', 80)
 }
+random2()
 
-
-drawText('2', 50, 50, 'black', 70)
+const left = (x) => {
+  return x < width / 4
+}
+const right = (x) => {
+  return x > width / 4 * 3
+}
+const top = (x, y) => {
+  return x > width / 4 && x < width / 4 * 3 && y < height / 2
+}
+const bot = (x, y) => {
+  return x > width / 4 && x < width / 4 * 3 && y > height / 2
+}
