@@ -16,4 +16,4 @@ const random2 = () => {
 }
 
 
-drawText('2', 50, 50, 'black', 80)
+drawText('2', 50, 50, 'black', 70)
