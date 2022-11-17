@@ -14,4 +14,6 @@ let board = [['','','',''],['','','',''],['','','',''],['','','','']]
 const random2 = () => {
   drawText('2', Math.random, Math.random, color, 80)
 }
-random2()
+
+
+drawText('2', Math.random, Math.random, color, 80)
