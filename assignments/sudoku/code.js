@@ -1,3 +1,4 @@
+//this isn't sudoku, it's 2048
 const drawBoard = () => {
   for (let i = 0; i < 4; i++) {
     drawLine(width / 4 * i, 0, width / 4 * i, height, 'black', 2)
@@ -7,3 +8,9 @@ const drawBoard = () => {
   }
 }
 drawBoard()
+
+let board = [['','','',''],['','','',''],['','','',''],['','','','']]
+
+const random2 = () => {
+  drawText('2', Math.random, Math.random, color, size)
+}
