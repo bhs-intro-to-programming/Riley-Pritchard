@@ -12,8 +12,8 @@ drawBoard()
 let board = [['','','',''],['','','',''],['','','',''],['','','','']]
 
 const random2 = () => {
-  drawText('2', Math.random, Math.random, color, 80)
+  drawText('2', Math.random, Math.random, 'black', 80)
 }
 
 
-drawText('2', Math.random, Math.random, color, 80)
+drawText('2', Math.random, Math.random, 'black', 80)
