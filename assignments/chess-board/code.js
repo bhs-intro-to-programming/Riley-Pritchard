@@ -39,7 +39,7 @@ const row = (y) => Math.floor(y / (height / 8))
 const column = (x) => Math.floor(x / (width / 8))
 
 let aSelect = []
-const select = (x, y) => {
+const move = (x, y) => {
   if (aSelect !== []) {
     drawText(aSelect, width / 8 * column(x), height / 8 * (row(y) + 1), 'black', 30)
     board[row(y)][column(x)] = aSelect[0]
@@ -52,7 +52,7 @@ const select = (x, y) => {
 }
 
 
-registerOnclick(select);
+registerOnclick(move);
 
 const drawArray = () => {
   for (let j = 0; j < board.length; j++)
