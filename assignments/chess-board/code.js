@@ -65,3 +65,8 @@ const drawArray = () => {
 }
 drawArray()
 
+const draw = () => {
+  clear()
+  drawBoard()
+  drawArray()
+}
