@@ -19,7 +19,7 @@ const drawBoard = () => {
     drawLine(width / 8 * i, 0, width / 8 * i, height, 'purple', 2)
   }
   for (let j = 0; j < 8; j++) {
-    drawLine(0, height / 8 * j, width, height / 8 * j, 'red', 2)
+    drawLine(0, height / 8 * j, width, height / 8 * j, 'purple', 2)
   }
 }
 drawBoard()
