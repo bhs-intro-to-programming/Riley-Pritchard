@@ -40,7 +40,7 @@ const column = (x) => Math.floor(x / (width / 8))
 
 let aSelect = []
 const move = (x, y) => {
-  if (aSelect !== []) {
+  if (aSelect.length === 1) {
     drawText(aSelect, width / 8 * column(x), height / 8 * (row(y) + 1), 'black', 30)
     board[row(y)][column(x)] = aSelect[0]
     aSelect.pop(board[row(y)][column(x)])
