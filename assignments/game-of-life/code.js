@@ -1,5 +1,5 @@
 drawFilledRect(0, 0, width, height, 'black')
-
+let b = []
 const makeArray = () => {
   let b = []
   for (let i = 0; i < height; i += 5) {
