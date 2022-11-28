@@ -17,7 +17,6 @@ const column = (x) => Math.floor(x / (width / 4))
 const random2 = () => {
   drawText('2', column(Math.random), row(Math.random), 'black', 80)
 }
-random2()
 
 const left = (x) => {
   return x < width / 4;
@@ -32,3 +31,6 @@ const bot = (x, y) => {
   return x > width / 4 && x < width / 4 * 3 && y > height / 2;
 }
 
+registerOnclick = () => {
+  random2()
+}
