@@ -30,4 +30,4 @@ const bot = (x, y) => {
 }
 
 const row = (y) => Math.floor(y / (height / 4))
-const column = (x) => Math.floor(x / (width / 4)
+const column = (x) => Math.floor(x / (width / 4))
