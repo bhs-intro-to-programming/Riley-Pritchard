@@ -1,6 +1,7 @@
 drawFilledRect(0, 0, width, height, 'black')
-let b = []
-const makeArray = () => {
+
+
+const makeArray = (b) => {
   let b = []
   for (let i = 0; i < height; i += 5) {
     for (let j = 0; j < width; j += 5) {
