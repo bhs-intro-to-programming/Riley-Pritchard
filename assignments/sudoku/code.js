@@ -17,14 +17,14 @@ const random2 = () => {
 random2()
 
 const left = (x) => {
-  return x < width / 4
+  return x < width / 4;
 }
 const right = (x) => {
-  return x > width / 4 * 3
+  return x > width / 4 * 3;
 }
 const top = (x, y) => {
-  return x > width / 4 && x < width / 4 * 3 && y < height / 2
+  return x > width / 4 && x < width / 4 * 3 && y < height / 2;
 }
 const bot = (x, y) => {
-  return x > width / 4 && x < width / 4 * 3 && y > height / 2
+  return x > width / 4 && x < width / 4 * 3 && y > height / 2;
 }
