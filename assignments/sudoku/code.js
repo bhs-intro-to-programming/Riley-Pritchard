@@ -28,3 +28,6 @@ const topp = (x, y) => {
 const bot = (x, y) => {
   return x > width / 4 && x < width / 4 * 3 && y > height / 2;
 }
+
+const row = (y) => Math.floor(y / (height / 4))
+const column = (x) => Math.floor(x / (width / 4)
