@@ -11,6 +11,9 @@ drawBoard()
 
 let board = [['','','',''],['','','',''],['','','',''],['','','','']]
 
+const row = (y) => Math.floor(y / (height / 4))
+const column = (x) => Math.floor(x / (width / 4))
+
 const random2 = () => {
   drawText('2', column(Math.random), row(Math.random), 'black', 80)
 }
@@ -29,5 +32,3 @@ const bot = (x, y) => {
   return x > width / 4 && x < width / 4 * 3 && y > height / 2;
 }
 
-const row = (y) => Math.floor(y / (height / 4))
-const column = (x) => Math.floor(x / (width / 4))
