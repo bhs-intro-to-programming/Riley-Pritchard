@@ -18,7 +18,7 @@ const columnx = () => (column(Math.random() * 662) + 1) * width / 4
 const rowx = () => (row(Math.random() * 274) + 1) * height / 4
 
 const random2 = () => {
-  drawText('2', columnx(), rowx() * 100), 'black', 80)
+  drawText('2', columnx(), rowx() * 100, 'black', 80)
 }
 
 const left = (x) => {
