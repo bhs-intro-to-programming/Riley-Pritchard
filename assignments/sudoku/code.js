@@ -24,7 +24,7 @@ const left = (x) => {
 const right = (x) => {
   return x > width / 4 * 3;
 }
-const top = (x, y) => {
+const topp = (x, y) => {
   return x > width / 4 && x < width / 4 * 3 && y < height / 2;
 }
 const bot = (x, y) => {
