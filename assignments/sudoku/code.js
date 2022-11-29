@@ -18,7 +18,7 @@ const columnx = () => (column(Math.random() * 662)) * width / 4
 const rowx = () => (row(Math.random() * 274) + 1) * height / 4
 
 const random2 = () => {
-  const x = columnx() + 100;
+  const x = columnx() + 50;
   const y = rowx();
   console.log(`x: ${x}`);
   console.log(`y: ${y}`);
