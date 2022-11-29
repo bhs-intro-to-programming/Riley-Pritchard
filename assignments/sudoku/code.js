@@ -35,11 +35,12 @@ const random2 = () => {
   console.log(`x: ${x}`);
   console.log(`y: ${y}`);
   drawText('2', x, y, 'black', 80)
+  board[row(y)][column(x)] = '2'
 }
 random2()
 
 const move = () => {
-  
+
 }
 
 registerOnclick( () => {
