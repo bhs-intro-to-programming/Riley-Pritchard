@@ -24,13 +24,13 @@ const left = (x) => {
 const right = (x) => {
   return x > width / 4 * 3;
 }
-const topp = (x, y) => {
+const top = (x, y) => {
   return x > width / 4 && x < width / 4 * 3 && y < height / 2;
 }
 const bot = (x, y) => {
   return x > width / 4 && x < width / 4 * 3 && y > height / 2;
 }
 
-registerOnclick = () => {
+registerOnclick( () => {
   random2()
-}
+});
