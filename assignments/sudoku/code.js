@@ -19,8 +19,10 @@ const rowx = () => (row(Math.random() * 274) + 1) * height / 4
 
 const random2 = () => {
   const x = columnx();
+  const y = rowx();
   console.log(`x: ${x}`);
-  drawText('2', x, rowx() * 100, 'black', 80)
+  console.log(`y: ${y}`);
+  drawText('2', x, y, 'black', 80)
 }
 
 const left = (x) => {
