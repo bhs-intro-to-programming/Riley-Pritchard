@@ -11,9 +11,21 @@ drawBoard()
 
 let board = [['','','',''],['','','',''],['','','',''],['','','','']]
 
+const left = (x) => {
+  return x < width / 4;
+}
+const right = (x) => {
+  return x > width / 4 * 3;
+}
+const topp = (x, y) => {
+  return x > width / 4 && x < width / 4 * 3 && y < height / 2;
+}
+const bot = (x, y) => {
+  return x > width / 4 && x < width / 4 * 3 && y > height / 2;
+}
+
 const row = (y) => Math.floor(y / (height / 4))
 const column = (x) => Math.floor(x / (width / 4))
-
 const columnx = () => (column(Math.random() * 662)) * width / 4
 const rowx = () => (row(Math.random() * 274) + 1) * height / 4
 
@@ -26,17 +38,8 @@ const random2 = () => {
 }
 random2()
 
-const left = (x) => {
-  return x < width / 4;
-}
-const right = (x) => {
-  return x > width / 4 * 3;
-}
-const topp = (x, y) => {
-  return x > width / 4 && x < width / 4 * 3 && y < height / 2;
-}
-const bot = (x, y) => {
-  return x > width / 4 && x < width / 4 * 3 && y > height / 2;
+const move = () => {
+  
 }
 
 registerOnclick( () => {
