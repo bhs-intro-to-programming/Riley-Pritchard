@@ -49,7 +49,7 @@ const drawArray = () => {
 }
 drawArray()
 
-const move = () => {
+const move = (x) => {
 if (right(x)){
   for (let i = 3; i > -1; i = i - 1){
     for ( let j = 2; j > -1; j = j - 1){
