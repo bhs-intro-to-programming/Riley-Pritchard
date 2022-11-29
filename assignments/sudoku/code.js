@@ -15,7 +15,7 @@ const row = (y) => Math.floor(y / (height / 4))
 const column = (x) => Math.floor(x / (width / 4))
 
 const random2 = () => {
-  drawText('2', column(Math.random * 100), row(Math.random * 100), 'black', 80)
+  drawText('2', column(Math.random() * 100), row(Math.random() * 100), 'black', 80)
 }
 
 const left = (x) => {
