@@ -39,10 +39,33 @@ const random2 = () => {
 }
 random2()
 
-const move = () => {
+const drawArray = () => {
+  for (let j = 0; j < board.length; j++)
+    for (let i = 0; i < 8; i++) {
+      if (board[j][i] !== '') {
+        drawText(board[j][i], width / 4 * (i), height / 4 * (j + 1), 'black', 80);
+      }
+    }
+}
+drawArray()
 
+const move = () => {
+if (right(x)){
+  for (let i = 3; i > -1; i = i - 1){
+    for ( let j = 2; j > -1; j = j - 1){
+      if (board[i][j] !== '' && board[i][j + 1] === ''){
+        board[i][j + 1] = board[i][j]
+        board[i][j] = ''
+      }
+    }
+  }
+}
+clear()
+drawBoard()
+drawArray()
+random2()
 }
 
 registerOnclick( () => {
-  random2()
+  move()
 });
