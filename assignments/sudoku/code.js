@@ -14,7 +14,7 @@ let board = [['','','',''],['','','',''],['','','',''],['','','','']]
 const row = (y) => Math.floor(y / (height / 4))
 const column = (x) => Math.floor(x / (width / 4))
 
-const columnx = (x) => column(Math.random() * 662)
+const columnx = (x) => (column(Math.random() * 662) + 1) * width / 12
 
 const random2 = () => {
   drawText('2', Math.random() * 100), row(Math.random() * 100), 'black', 80)
