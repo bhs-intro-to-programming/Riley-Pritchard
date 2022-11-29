@@ -24,6 +24,7 @@ const random2 = () => {
   console.log(`y: ${y}`);
   drawText('2', x, y, 'black', 80)
 }
+random2()
 
 const left = (x) => {
   return x < width / 4;
