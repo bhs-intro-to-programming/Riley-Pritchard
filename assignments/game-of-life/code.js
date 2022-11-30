@@ -2,7 +2,7 @@ drawFilledRect(0, 0, width, height, 'black')
 
 const makeArrayRow = () => {
   let s = []
-  for (let i = 0;i < height; i++){
+  for (let i = 0;i < height; i += 5){
     if (Math.random() < .2) {
         s.push(1)
       } else {
