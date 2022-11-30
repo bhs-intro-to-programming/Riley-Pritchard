@@ -17,6 +17,7 @@ const makeArray = () => {
     b.push(makeArrayRow())
     }
   }
+makeArray()
 
 
   const drawTheThings = () => {
