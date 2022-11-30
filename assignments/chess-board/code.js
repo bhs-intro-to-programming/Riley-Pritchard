@@ -24,7 +24,7 @@ const drawRow = (y, color) => {
   }
 }
 const colorBoard = (color) => {
-  for (let i = 0; i < height; i += width / 8) {
+  for (let i = 0; i < height; i += height / 8) {
     drawRow(i, color)
     if (color === 'grey') {
       color = 'white'
