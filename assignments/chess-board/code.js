@@ -33,6 +33,7 @@ const colorBoard = (color) => {
       color = 'grey'
     }
 }
+}
 
 const drawBoard = () => {
   for (let i = 0; i < 8; i++) {
