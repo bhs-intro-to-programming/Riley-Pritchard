@@ -1,6 +1,7 @@
 drawFilledRect(0, 0, width, height, 'black')
 
-const makeArrayRow = (s) => {
+const makeArrayRow = () => {
+  let s = []
   for (let i = 0;i < height; i++){
     if (Math.random() < .2) {
         s.push(1)
