@@ -16,12 +16,12 @@ const BLACK_PAWN = '♟';
 const rowA = () => {
   for (let i = 0; i < width; i += width / 8) {
     let color = 'white'
-  if (color === 'grey') {
+    drawFilledRect(i, 0, width / 8, height / 8, color)
+    if (color === 'grey') {
       color = 'white'
     } else {
       color = 'grey'
     }
-    drawFilledRect(i, 0, width / 8, height / 8, color)
   }
 }
 rowA()
