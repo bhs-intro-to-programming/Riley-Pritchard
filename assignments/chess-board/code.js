@@ -57,7 +57,7 @@ const move = (x, y) => {
     aSelect.pop(board[row(y)][column(x)])
     draw()
   } else {
-    drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'red', 40)
+    drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'yellow', 40)
     aSelect.push(board[row(y)][column(x)])
     board[row(y)][column(x)] = ''
 
