@@ -35,16 +35,6 @@ const colorBoard = (color) => {
 }
 colorBoard('white')
 
-const drawBoard = () => {
-  for (let i = 0; i < 8; i++) {
-    drawLine(width / 8 * i, 0, width / 8 * i, height, 'purple', 2)
-  }
-  for (let j = 0; j < 8; j++) {
-    drawLine(0, height / 8 * j, width, height / 8 * j, 'purple', 2)
-  }
-}
-//drawBoard()
-
 let board =
   [[WHITE_ROOK, WHITE_KNIGHT, WHITE_BISHOP, WHITE_KING, WHITE_QUEEN, WHITE_BISHOP, WHITE_KNIGHT, WHITE_ROOK],
   [WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN],
@@ -67,7 +57,7 @@ const move = (x, y) => {
     aSelect.pop(board[row(y)][column(x)])
     draw()
   } else {
-    drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'purple', 40)
+    drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'red', 40)
     aSelect.push(board[row(y)][column(x)])
     board[row(y)][column(x)] = ''
 
@@ -90,6 +80,5 @@ drawArray()
 const draw = () => {
   clear()
   colorBoard('white')
-  //drawBoard()
   drawArray()
 }
