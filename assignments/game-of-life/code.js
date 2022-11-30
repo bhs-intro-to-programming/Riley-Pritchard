@@ -50,6 +50,5 @@ const whatLives = () => {
   }
 }
 
-let b = makeArray();
-drawTheThings(b)
+drawTheThings(makeArray());
 
