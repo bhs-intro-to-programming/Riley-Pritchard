@@ -23,7 +23,7 @@ const drawRow = (color) => {
     }
   }
 }
-rowA('white')
+drawRow('white')
 const colorBoard = (color) => {
   for (let i = 0; i < height; i += width / 8) {
     drawRow(color)
