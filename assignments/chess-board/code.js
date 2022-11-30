@@ -23,7 +23,7 @@ const rowA = (color) => {
     }
   }
 }
-rowA()
+rowA('grey')
 
 //const colorBoard = () => 
 
