@@ -14,7 +14,17 @@ const BLACK_PAWN = '♟';
 // Example of drawing one of the pieces
 //drawText(WHITE_KING, width/2, height/2, 'black', 64);
 
-const rowA
+const rowA = () => {
+  for (i = 0; i < width; i += width / 8) {
+    drawFilledRect(i, y, width, height, 'black')
+    if (color === 'black') {
+      color = 'white'
+    } else {
+      color = 'black'
+    }
+  }
+}
+
 //const colorBoard = () => 
 
 const drawBoard = () => {
@@ -52,7 +62,7 @@ const move = (x, y) => {
     drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'purple', 40)
     aSelect.push(board[row(y)][column(x)])
     board[row(y)][column(x)] = ''
-    
+
   }
 }
 
