@@ -15,7 +15,7 @@ const BLACK_PAWN = '♟';
 //drawText(WHITE_KING, width/2, height/2, 'black', 64);
 const rowA = () => {
   for (let i = 0; i < width; i += width / 8) {
-    let color = 'grey'
+    let color = 'white'
   if (color === 'grey') {
       color = 'white'
     } else {
