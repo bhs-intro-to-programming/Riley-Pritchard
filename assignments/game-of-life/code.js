@@ -20,10 +20,10 @@ const makeArray = () => {
 
 
   const drawTheThings = () => {
-    for (let i = 0; i < height; i = i + 5) {
-      for (let j = 0; j < width; j = j + 5) {
+    for (let i = 0; i < height; i++) {
+      for (let j = 0; j < width; j++) {
         if (b[i][j] === 1) {
-          drawFilledRect(j, i, 5, 5, 'yellow')
+          drawFilledRect(j * 5, i * 5, 5, 5, 'yellow')
         }
       }
     }
