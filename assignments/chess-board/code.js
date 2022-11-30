@@ -89,6 +89,7 @@ drawArray()
 
 const draw = () => {
   clear()
-  drawBoard()
+  colorBoard(color)
+  //drawBoard()
   drawArray()
 }
