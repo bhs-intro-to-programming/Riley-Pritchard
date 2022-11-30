@@ -1,6 +1,6 @@
 drawFilledRect(0, 0, width, height, 'black')
 
-let b = makeArray();
+
 
 const makeArrayRow = () => {
   let row = []
@@ -23,7 +23,7 @@ const makeArray = () => {
 
 
 
-const drawTheThings = () => {
+const drawTheThings = (b) => {
   for (let i = 0; i < height; i++) {
     for (let j = 0; j < width; j++) {
       if (b[i][j] === 1) {
@@ -32,7 +32,6 @@ const drawTheThings = () => {
     }
   }
 }
-drawTheThings()
 
 const whatLives = () => {
   for (let i = 0; i < height; i += 5) {
@@ -50,4 +49,7 @@ const whatLives = () => {
     }
   }
 }
+
+let b = makeArray();
+drawTheThings(b)
 
