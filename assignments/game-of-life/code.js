@@ -21,7 +21,7 @@ const makeArray = () => {
   }
 
 
-  const drawTheThings = () => {
+  const drawTheThings = (b) => {
     for (let i = 0; i < height; i = i + 5) {
       for (let j = 0; j < width; j = j + 5) {
         if (Math.random() < .2) {
