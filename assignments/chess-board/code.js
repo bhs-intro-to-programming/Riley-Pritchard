@@ -43,7 +43,7 @@ const drawBoard = () => {
     drawLine(0, height / 8 * j, width, height / 8 * j, 'purple', 2)
   }
 }
-drawBoard()
+//drawBoard()
 
 let board =
   [[WHITE_ROOK, WHITE_KNIGHT, WHITE_BISHOP, WHITE_KING, WHITE_QUEEN, WHITE_BISHOP, WHITE_KNIGHT, WHITE_ROOK],
