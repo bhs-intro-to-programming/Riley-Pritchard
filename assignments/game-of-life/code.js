@@ -1,4 +1,5 @@
 drawFilledRect(0, 0, width, height, 'black')
+let b = []
 
 const makeArrayRow = () => {
   let s = []
@@ -13,15 +14,14 @@ const makeArrayRow = () => {
 }
 
 const makeArray = () => {
-  let b = []
   for (let i = 0; i < height; i += 5) {
-    
+    b.push(makeArrayRow())
     }
     return b
   }
 
 
-  const drawTheThings = (b) => {
+  const drawTheThings = () => {
     for (let i = 0; i < height; i = i + 5) {
       for (let j = 0; j < width; j = j + 5) {
         if (Math.random() < .2) {
