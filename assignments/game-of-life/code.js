@@ -8,6 +8,7 @@ const makeArrayRow = (s) => {
         s.push(0)
       }
   }
+  return s
 }
 
 const makeArray = () => {
