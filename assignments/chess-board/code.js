@@ -13,9 +13,9 @@ const BLACK_PAWN = '♟';
 
 // Example of drawing one of the pieces
 //drawText(WHITE_KING, width/2, height/2, 'black', 64);
-const drawRow = (color) => {
+const drawRow = (y, color) => {
   for (let i = 0; i < width; i += width / 8) {
-    drawFilledRect(i, 0, width / 8, height / 8, color)
+    drawFilledRect(i, y, width / 8, height / 8, color)
     if (color === 'grey') {
       color = 'white'
     } else {
@@ -26,13 +26,13 @@ const drawRow = (color) => {
 drawRow('white')
 const colorBoard = (color) => {
   for (let i = 0; i < height; i += width / 8) {
-    drawRow(color)
+    drawRow(i, color)
     if (color === 'grey') {
       color = 'white'
     } else {
       color = 'grey'
     }
-}
+  }
 }
 
 const drawBoard = () => {
