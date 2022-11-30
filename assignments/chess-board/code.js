@@ -14,6 +14,7 @@ const BLACK_PAWN = '♟';
 // Example of drawing one of the pieces
 //drawText(WHITE_KING, width/2, height/2, 'black', 64);
 
+const rowA
 //const colorBoard = () => 
 
 const drawBoard = () => {
