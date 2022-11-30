@@ -21,7 +21,7 @@ const rowA = () => {
     } else {
       color = 'grey'
     }
-    drawFilledRect(i, height / 8, width / 8, height / 8, color)
+    drawFilledRect(i, 0, width / 8, height / 8, color)
   }
 }
 rowA()
