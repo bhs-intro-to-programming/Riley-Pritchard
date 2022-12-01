@@ -52,5 +52,5 @@ const whatLives = () => {
 
 const cellsize = 5
 const board = makeArray(Math.floor(height/cellsize), Math.floor(width/cellsize));
-drawTheThings(board, cellSize);
+drawTheThings(board, cellsize);
 
