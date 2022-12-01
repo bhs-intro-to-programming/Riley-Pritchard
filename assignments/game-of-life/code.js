@@ -51,6 +51,6 @@ const whatLives = () => {
 }
 
 const cellsize = 5
-const board = makeArray(Math.floor(height/cellSize), Math.floor(width/cellsize));
+const board = makeArray(Math.floor(height/cellsize), Math.floor(width/cellsize));
 drawTheThings(board, cellSize);
 
