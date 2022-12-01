@@ -2,9 +2,9 @@ drawFilledRect(0, 0, width, height, 'black')
 
 
 
-const makeArrayRow = () => {
+const makeArrayRow = (columns) => {
   let row = []
-  for (let i = 0; i < width; i += 5) {
+  for (let i = 0; i < columns; i++) {
     if (Math.random() < .2) {
       row.push(1)
     } else {
@@ -13,21 +13,21 @@ const makeArrayRow = () => {
   }
   return row
 }
-const makeArray = () => {
+const makeArray = (rows, columns) => {
   let b = []
-  for (let i = 0; i < height / 5; i++) {
-    b.push(makeArrayRow())
+  for (let i = 0; i < rows; i++) {
+    b.push(makeArrayRow(columns))
   }
   return b;
 }
 
 
 
-const drawTheThings = (b) => {
-  for (let i = 0; i < height / 5; i++) {
-    for (let j = 0; j < width / 5; j++) {
+const drawTheThings = (b, cellsize) => {
+  for (let i = 0; i < b.length; i++) {
+    for (let j = 0; j < b[i].length; j++) {
       if (b[i][j] === 1) {
-        drawFilledRect(j * 5, i * 5, 5, 5, 'yellow')
+        drawFilledRect(j * cellsize, i * cellsize, cellsize, cellsize, 'yellow')
       }
     }
   }
@@ -50,5 +50,7 @@ const whatLives = () => {
   }
 }
 
-drawTheThings(makeArray());
+const cellsize = 5
+const board = makeArray(Math.floor(height/cellSize), Math.floor(width/cellSize));
+drawTheThings(board, cellSize);
 
