@@ -23,7 +23,7 @@ const makeArray = (rows, columns) => {
 
 
 
-const drawTheThings = (b) => {
+const drawTheThings = (b, cellsize) => {
   for (let i = 0; i < b.length; i++) {
     for (let j = 0; j < b[i].length; j++) {
       if (b[i][j] === 1) {
@@ -51,6 +51,6 @@ const whatLives = () => {
 }
 
 const cellsize = 5
-const board = makeArray(Math.floor(height/cellSize), Math.floor(width/cellSize));
+const board = makeArray(Math.floor(height/cellSize), Math.floor(width/cellsize));
 drawTheThings(board, cellSize);
 
