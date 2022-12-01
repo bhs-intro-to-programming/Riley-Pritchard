@@ -68,4 +68,4 @@ random2()
 
 registerOnclick( () => {
   move()
-});
+})
