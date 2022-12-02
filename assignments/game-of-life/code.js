@@ -33,20 +33,19 @@ const drawTheThings = (b, cellsize) => {
   }
 }
 
-const whatLives = () => {
+const whatLives = (b) => {
   for (let i = 0; i < height; i += 5) {
-    for (let start = 0; start < b.length; start++) {
-      if (b[start] > 0 && b[start + 1] > 0 && b[start + 3] > 0) {
-      } else {
-        if (Math.random() < .2) {
-          drawFilledRect(b[start] - 1, i, 5, 5, 'yellow')
-        }
+    for (let j = 0; j < b.length; j++) {
+      if (neighbors() < 3)
+        b[j] = 0
+      if (Math.random() < .2 && b[j] === 0) {
+        b[j] = 1
       }
     }
   }
 }
 
 const cellsize = 5
-const board = makeArray(Math.floor(height/cellsize), Math.floor(width/cellsize));
+const board = makeArray(Math.floor(height / cellsize), Math.floor(width / cellsize));
 drawTheThings(board, cellsize);
 
