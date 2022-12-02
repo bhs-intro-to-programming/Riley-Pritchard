@@ -34,6 +34,7 @@ const drawTheThings = (b, cellsize) => {
 }
 
 const neighbors = (x, y, b) => {
+let n = 0
 if(b[x][y] === 1 && b[x][y + 1] === 1){
   n = n + 1
 }
