@@ -78,3 +78,9 @@ const cellsize = 5
 const board = makeArray(Math.floor(height / cellsize), Math.floor(width / cellsize));
 drawTheThings(board, cellsize);
 
+const redraw = (t) => {
+  // clear()
+  // draw new board
+}
+
+animate(redraw);
