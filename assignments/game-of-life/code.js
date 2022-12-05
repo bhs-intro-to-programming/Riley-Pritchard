@@ -71,8 +71,8 @@ const neighbors = (y, x, b) => {
     drawTheThings(board, cellsize);
 
     const redraw = (t) => {
-      // clear()
-      // draw new board
+      clear()
+      drawTheThings(board, cellsize)
     }
 
     animate(redraw);
