@@ -21,8 +21,6 @@ const makeArray = (rows, columns) => {
   return b;
 }
 
-
-
 const drawTheThings = (b, cellsize) => {
   for (let i = 0; i < b.length; i++) {
     for (let j = 0; j < b[i].length; j++) {
@@ -33,24 +31,48 @@ const drawTheThings = (b, cellsize) => {
   }
 }
 
-const whatLives = () => {
-  for (let i = 0; i < height; i += 5) {
-    for (let start = 0; start < b.length; start++) {
-      if (b[start] > 0 && b[start + 1] > 0 && b[start + 3] > 0) {
-        drawFilledRect(b[start] - 1, i, 5, 5, 'yellow')
-        drawFilledRect(b[start] + 4, i, 5, 5, 'yellow')
-        drawFilledRect(b[start] + 9, i, 5, 5, 'yellow')
-        start = start + 2
-      } else {
-        if (Math.random() < .2) {
-          drawFilledRect(b[start] - 1, i, 5, 5, 'yellow')
+const neighbors = (y, x, b) => {
+  let n = 0
+  for (let i = -1; i < 2; i++) {
+    for (let j = -1; j < 2; j++)
+      if (x === 0) {
+        let j = j + 1
+      }
+    if (y === 0) {
+      let i = i + 1
+    }
+    if (y === Math.floor(height / cellsize)) {
+      while (i < 1) {
+        if (x === Math.floor(width / cellsize)) {
+          while (j < 1) {
+            if (b[y + i][x + j] === 1) {
+              n = n + 1
+            }
+          }
+        }
+      }
+      return n
+    }
+
+    const whatLives = (b) => {
+      for (let i = 0; i < height; i += 5) {
+        for (let j = 0; j < b.length; j++) {
+          if (neighbors(i, j) < 3)
+            b[i][j] = 0
+          if (Math.random() < .2 && b[i][j] === 0) {
+            b[i][j] = 1
+          }
         }
       }
     }
-  }
-}
 
-const cellsize = 5
-const board = makeArray(Math.floor(height/cellsize), Math.floor(width/cellsize));
-drawTheThings(board, cellsize);
+    const cellsize = 5
+    const board = makeArray(Math.floor(height / cellsize), Math.floor(width / cellsize));
+    drawTheThings(board, cellsize);
 
+    const redraw = (t) => {
+      clear()
+      drawTheThings(board, cellsize)
+    }
+
+    animate(redraw);
