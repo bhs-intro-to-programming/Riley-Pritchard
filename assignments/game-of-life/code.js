@@ -33,39 +33,21 @@ const drawTheThings = (b, cellsize) => {
   }
 }
 
-const neighbors = (x, y, b) => {
-let n = 0
-if(b[x][y] === 1 && b[x][y + 1] === 1){
-  n = n + 1
-}
-if(b[x][y] === 1 && b[x][y - 1] === 1){
-  n = n + 1
-}
-if(b[x][y] === 1 && b[x + 1][y] === 1){
-  n = n + 1
-}
-if(b[x][y] === 1 && b[x - 1][y] === 1){
-  n = n + 1
-}
-if(b[x][y] === 1 && b[x + 1][y + 1] === 1){
-  n = n + 1
-}
-if(b[x][y] === 1 && b[x + 1][y - 1] === 1){
-  n = n + 1
-}
-if(b[x][y] === 1 && b[x - 1][y + 1] === 1){
-  n = n + 1
-}
-if(b[x][y] === 1 && b[x - 1][y - 1] === 1){
-  n = n + 1
-}
-return n
+const neighbors = (y, x, b) => {
+  let n = 0
+  for (let i = -1; i < 2; i++) {
+    for (let j = -1; j < 2; j++)
+      if (b[y + i][x + j] === 1) {
+        n = n + 1
+      }
+  }
+  return n
 }
 
 const whatLives = (b) => {
   for (let i = 0; i < height; i += 5) {
     for (let j = 0; j < b.length; j++) {
-      if (neighbors(i,j) < 3)
+      if (neighbors(i, j) < 3)
         b[i][j] = 0
       if (Math.random() < .2 && b[i][j] === 0) {
         b[i][j] = 1
