@@ -31,7 +31,7 @@ const drawTheThings = (b, cellsize) => {
   }
 }
 
-const neighbors = (y, x, b, cellsize) => {
+const neighbors = (y, x, b) => {
   let n = 0
   for (let i = -1; i < 2; i++) {
     for (let j = -1; j < 2; j++)
