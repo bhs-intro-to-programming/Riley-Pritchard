@@ -1,7 +1,5 @@
 drawFilledRect(0, 0, width, height, 'black')
 
-
-
 const makeArrayRow = (columns) => {
   let row = []
   for (let i = 0; i < columns; i++) {
@@ -51,28 +49,30 @@ const neighbors = (y, x, b) => {
           }
         }
       }
-      return n
     }
+  }
+    return n
+  }
 
-    const whatLives = (b) => {
-      for (let i = 0; i < height; i += 5) {
-        for (let j = 0; j < b.length; j++) {
-          if (neighbors(i, j) < 3)
-            b[i][j] = 0
-          if (Math.random() < .2 && b[i][j] === 0) {
-            b[i][j] = 1
-          }
+  const whatLives = (b) => {
+    for (let i = 0; i < height; i += 5) {
+      for (let j = 0; j < b.length; j++) {
+        if (neighbors(i, j) < 3)
+          b[i][j] = 0
+        if (Math.random() < .2 && b[i][j] === 0) {
+          b[i][j] = 1
         }
       }
     }
+  }
 
-    const cellsize = 5
-    const board = makeArray(Math.floor(height / cellsize), Math.floor(width / cellsize));
-    drawTheThings(board, cellsize);
+  const cellsize = 5
+  const board = makeArray(Math.floor(height / cellsize), Math.floor(width / cellsize));
+  drawTheThings(board, cellsize);
 
-    const redraw = (t) => {
-      // clear()
-      // draw new board
-    }
+  const redraw = (t) => {
+    clear()
+    drawTheThings(board, cellsize)
+  }
 
-    animate(redraw);
+  animate(redraw)
