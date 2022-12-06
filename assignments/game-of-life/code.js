@@ -1,3 +1,4 @@
+drawFilledRect(0, 0, width, height, 'black')
 
 const makeArrayRow = (columns) => {
   let row = []
@@ -75,4 +76,3 @@ const neighbors = (y, x, b) => {
   }
 
   animate(redraw)
-  drawFilledRect(0, 0, width, height, 'black')
