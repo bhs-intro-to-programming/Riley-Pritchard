@@ -23,7 +23,7 @@ const drawTheThings = (b, cellsize) => {
   for (let i = 0; i < b.length; i++) {
     for (let j = 0; j < b[i].length; j++) {
       if (b[i][j] === 1) {
-        drawFilledRect(j * cellsize, i * cellsize, cellsize, cellsize, 'khaki')
+        drawFilledRect(j * cellsize, i * cellsize, cellsize, cellsize, 'hotpink')
       }
     }
   }
