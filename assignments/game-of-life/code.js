@@ -52,6 +52,7 @@ const neighbors = (y, x, b) => {
         }
       }
     }
+  }
     return n
   }
 
