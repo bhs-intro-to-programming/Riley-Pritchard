@@ -1,4 +1,4 @@
-
+drawFilledRect(0, 0, width, height, 'black')
 
 const makeArrayRow = (columns) => {
   let row = []
