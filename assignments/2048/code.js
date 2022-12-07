@@ -36,11 +36,13 @@ const drawArray = () => {
 drawArray()
 
 const moveLeft = () => {
-  let right = board
+  let left = board
+  let c = 0
   for (let i = 3; i > -1; i = i - 1) {
     for (let j = 3; j > -1; j = j - 1) {
       if (board[i][j] !== '') {
-        right[i][c] = board[i][j]
+        left[i][c] = board[i][j]
+        c++
       }
     }
   }
