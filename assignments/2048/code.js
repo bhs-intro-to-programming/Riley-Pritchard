@@ -35,7 +35,7 @@ const drawArray = () => {
 }
 drawArray()
 
-const moveRight = (x) => {
+const moveLeft = () => {
   let right = board
   for (let i = 3; i > -1; i = i - 1) {
     for (let j = 3; j > -1; j = j - 1) {
@@ -52,5 +52,6 @@ const moveRight = (x) => {
 
 registerOnKeyDown((key) => {
   console.log(key)
-  //move()
+  if (key === 'ArrowLeft')
+  moveLeft()
 })
