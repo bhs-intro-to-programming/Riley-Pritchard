@@ -45,8 +45,8 @@ const doIt = () => {
 const moveLeft = () => {
   let left = board
   let c = 0
-  for (let i = 3; i > -1; i = i - 1) {
-    for (let j = 3; j > -1; j = j - 1) {
+  for (let i = 0; i < 4; i++) {
+    for (let j = 0; j < 4; j++) {
       if (board[i][j] !== '') {
         left[i][c] = board[i][j]
         board[i][j] = ''
