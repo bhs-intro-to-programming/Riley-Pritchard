@@ -23,7 +23,7 @@ const random2 = () => {
   drawText('2', x, y, 'black', 80)
   board[row(y)][column(x)] = '2'
 }
-random2()
+
 
 const drawArray = () => {
   for (let j = 0; j < board.length; j++)
