@@ -8,7 +8,7 @@ const drawBoard = () => {
 }
 drawBoard()
 
-let board = [['','','',''],['','','',''],['','','',''],['','','','']]
+let board = [['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', '']]
 
 const row = (y) => Math.floor(y / (height / 4))
 const column = (x) => Math.floor(x / (width / 4))
@@ -37,21 +37,20 @@ drawArray()
 
 const moveRight = (x) => {
   let right = board
-  for (let i = 3; i > -1; i = i - 1){
-    for ( let j = 3; j > -1; j = j - 1){
-      if (board[i][j] !== ''){
+  for (let i = 3; i > -1; i = i - 1) {
+    for (let j = 3; j > -1; j = j - 1) {
+      if (board[i][j] !== '') {
         right[i][c] = board[i][j]
-      }
       }
     }
   }
-}
-clear()
-drawBoard()
-drawArray()
-random2()
+  clear()
+  drawBoard()
+  drawArray()
+  random2()
 }
 
-registerOnKeyDown( ('ArrowRight') => {
-  move()
+registerOnKeyDown((key) => {
+  console.log(key)
+  //move()
 })
