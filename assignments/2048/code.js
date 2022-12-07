@@ -46,10 +46,7 @@ const moveLeft = () => {
       }
     }
   }
-  clear()
-  drawBoard()
-  drawArray()
-  random2()
+  board = left
 }
 
 registerOnKeyDown((key) => {
