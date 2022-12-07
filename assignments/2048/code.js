@@ -49,6 +49,7 @@ const moveLeft = () => {
     for (let j = 3; j > -1; j = j - 1) {
       if (board[i][j] !== '') {
         left[i][c] = board[i][j]
+        board[i][j] = ''
         c++
       }
     }
