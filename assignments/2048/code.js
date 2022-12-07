@@ -59,6 +59,6 @@ const moveLeft = () => {
 
 registerOnKeyDown((key) => {
   console.log(key)
-  if (key === 'ArrowLeft')
-  moveLeft()
+  //if (key === 'ArrowLeft')
+  //moveLeft()
 })
