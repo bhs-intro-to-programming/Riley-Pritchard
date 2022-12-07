@@ -79,5 +79,7 @@ const pair = (a, b) => {
 ////////////////////////////////////////////////////////////////////////
 // Write your code here ...
 const logIfOk = (x) => {
-  if isOk(x);
+  if (isOk(x)) {
+    return log(x)
+  }
 }
