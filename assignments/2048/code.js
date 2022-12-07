@@ -35,13 +35,13 @@ const drawArray = () => {
 }
 drawArray()
 
-const move = (x) => {
-if (right(x)){
+const moveRight = (x) => {
+  let right = board
   for (let i = 3; i > -1; i = i - 1){
-    for ( let j = 2; j > -1; j = j - 1){
-      if (board[i][j] !== '' && board[i][j + 1] === ''){
-        board[i][j + 1] = board[i][j]
-        board[i][j] = ''
+    for ( let j = 3; j > -1; j = j - 1){
+      if (board[i][j] !== ''){
+        right[i][c] = board[i][j]
+      }
       }
     }
   }
@@ -52,6 +52,6 @@ drawArray()
 random2()
 }
 
-registerOnclick( () => {
+registerOnKeyDown( ('ArrowRight') => {
   move()
 })
