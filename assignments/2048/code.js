@@ -54,6 +54,7 @@ const moveLeft = () => {
     }
   }
   board = left
+  doIt()
 }
 
 registerOnKeyDown((key) => {
