@@ -35,6 +35,13 @@ const drawArray = () => {
 }
 drawArray()
 
+const doIt = () => {
+  clear()
+  drawBoard()
+  drawArray()
+  random2()
+}
+
 const moveLeft = () => {
   let left = board
   let c = 0
