@@ -59,9 +59,9 @@ const neighbors = (y, x, b) => {
       for (let j = 0; j < b.length; j++) {
         if (neighbors(i, j) < 3)
           b[i][j] = 0
+      }
         if (Math.random() < .2 && b[i][j] === 0) {
           b[i][j] = 1
-        }
       }
     }
   }
