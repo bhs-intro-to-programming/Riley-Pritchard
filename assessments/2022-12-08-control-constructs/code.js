@@ -21,8 +21,8 @@ const emit = (x, y, z) => {
 }
 
 const timesTable = (x) => {
-  for (let i = 0; i < x + 1; i++){
-    for (let j = 0; j < x + 1; j++){
+  for (let i = 1; i < x + 1; i++){
+    for (let j = 1; j < x + 1; j++){
       emit(i, j, i * j)
     }
   }
