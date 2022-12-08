@@ -13,4 +13,5 @@ const countXs = (s) => {
       count = count + 1
     }
   }
+  return count
 }
