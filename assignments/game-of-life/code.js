@@ -34,10 +34,10 @@ const neighbors = (y, x, b) => {
   for (let i = -1; i < 2; i++) {
     for (let j = -1; j < 2; j++)
       if (x === 0) {
-        let j = j + 1
+        j = j + 1
       }
     if (y === 0) {
-      let i = i + 1
+      i = i + 1
     }
     if (y === Math.floor(height / cellsize)) {
       while (i < 1) {
