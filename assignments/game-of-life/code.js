@@ -1,4 +1,5 @@
 drawFilledRect(0, 0, width, height, 'black')
+const cellsize = 5
 
 const makeArrayRow = (columns) => {
   let row = []
@@ -57,15 +58,16 @@ const neighbors = (y, x, b) => {
 const whatLives = (b, cellsize) => {
   for (let i = 0; i < height; i += cellsize) {
     for (let j = 0; j < width; j += cellsize) {
-    if (neighbors(i, j) > 2) {
-      b[i][j] = 1
-    }else{
-      b[i][j] = 0
+      if (neighbors(i, j) > 2) {
+        b[i][j] = 1
+      } else {
+        b[i][j] = 0
+      }
     }
   }
 }
 
-const cellsize = 5
+
 const board = makeArray(Math.floor(height / cellsize), Math.floor(width / cellsize));
 drawTheThings(board, cellsize);
 
