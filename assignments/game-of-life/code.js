@@ -54,9 +54,9 @@ const neighbors = (y, x, b) => {
     return n
   }
 
-  const whatLives = (b) => {
-    for (let i = 0; i < height; i += 5) {
-      for (let j = 0; j < b.length; j++) {
+  const whatLives = (b, cellsize) => {
+    for (let i = 0; i < height; i += cellsize) {
+      for (let j = 0; j < width; j += cellsize) {
         if (neighbors(i, j) < 3)
           b[i][j] = 0
       }
