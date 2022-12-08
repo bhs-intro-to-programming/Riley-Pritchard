@@ -61,6 +61,9 @@ const whatLives = (b, cellsize) => {
       if (neighbors(i, j) > 2) {
         b[i][j] = 1
       } else {
+        if (b[i] === undefined){
+          console.log(i + ' ' + j)
+        }
         b[i][j] = 0
       }
     }
