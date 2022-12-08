@@ -57,11 +57,10 @@ const neighbors = (y, x, b) => {
 const whatLives = (b, cellsize) => {
   for (let i = 0; i < height; i += cellsize) {
     for (let j = 0; j < width; j += cellsize) {
-      if (neighbors(i, j) < 3)
-        b[i][j] = 0
-    }
     if (neighbors(i, j) > 2) {
       b[i][j] = 1
+    }else{
+      b[i][j] = 0
     }
   }
 }
