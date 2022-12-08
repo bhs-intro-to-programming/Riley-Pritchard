@@ -60,7 +60,7 @@ const whatLives = (b, cellsize) => {
       if (neighbors(i, j) < 3)
         b[i][j] = 0
     }
-    if (Math.random() < .2 && b[i][j] === 0) {
+    if (neighbors(i, j) > 2) {
       b[i][j] = 1
     }
   }
