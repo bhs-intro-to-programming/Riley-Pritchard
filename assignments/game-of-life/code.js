@@ -56,8 +56,8 @@ const neighbors = (y, x, b) => {
 }
 
 const whatLives = (b, cellsize) => {
-  for (let i = 0; i < height; i += cellsize) {
-    for (let j = 0; j < width; j += cellsize) {
+  for (let i = 0; i < height / cellsize; i ++) {
+    for (let j = 0; j < width / cellsize; j++) {
       if (neighbors(i, j) > 2) {
         b[i][j] = 1
       } else {
