@@ -17,7 +17,7 @@ const countXs = (s) => {
 }
 
 const emit = (x, y, z) => {
-  return 'x * y = z'
+  console.log(x * y = z)
 }
 
 const timesTable = (x) => {
