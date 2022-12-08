@@ -30,7 +30,11 @@ const timesTable = (x) => {
 }
 
 const containsX = (s) => {
-  for (let i = 0; i < s.length; i++) {
-    return s[i] === 'x'
+    let count = 0
+  for (let i = 0; i < s.length; i++){
+    if (s[i] === 'x'){
+      count = count + 1
+    }
   }
+  return count > 0
 }
