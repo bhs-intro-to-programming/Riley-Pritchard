@@ -16,6 +16,10 @@ const countXs = (s) => {
   return count
 }
 
+const emit = (x, y, z) => {
+  return 'x * y = z'
+}
+
 const timesTable = (x) => {
   for (let i = 0; i < x + 1; i++){
     for (let j = 0; j < x + 1; j++){
