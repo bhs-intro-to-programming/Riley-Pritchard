@@ -16,10 +16,7 @@ const countXs = (s) => {
   return count
 }
 
-// it said emit wasn't defined so I just wrote this
-const emit = (x, y, z) => {
-  console.log(x, y, z)
-}
+const emit = (a, b) => console.log(a + ', ' + b);
 
 const timesTable = (x) => {
   for (let i = 1; i < x + 1; i++) {
