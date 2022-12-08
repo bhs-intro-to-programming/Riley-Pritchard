@@ -51,28 +51,29 @@ const neighbors = (y, x, b) => {
       }
     }
   }
-    return n
-  }
+  return n
+}
 
-  const whatLives = (b, cellsize) => {
-    for (let i = 0; i < height; i += cellsize) {
-      for (let j = 0; j < width; j += cellsize) {
-        if (neighbors(i, j) < 3)
-          b[i][j] = 0
-      }
-        if (Math.random() < .2 && b[i][j] === 0) {
-          b[i][j] = 1
-      }
+const whatLives = (b, cellsize) => {
+  for (let i = 0; i < height; i += cellsize) {
+    for (let j = 0; j < width; j += cellsize) {
+      if (neighbors(i, j) < 3)
+        b[i][j] = 0
+    }
+    if (Math.random() < .2 && b[i][j] === 0) {
+      b[i][j] = 1
     }
   }
+}
 
-  const cellsize = 5
-  const board = makeArray(Math.floor(height / cellsize), Math.floor(width / cellsize));
-  drawTheThings(board, cellsize);
+const cellsize = 5
+const board = makeArray(Math.floor(height / cellsize), Math.floor(width / cellsize));
+drawTheThings(board, cellsize);
 
-  const redraw = (t) => {
-    clear()
-    drawTheThings(board, cellsize)
-  }
+const redraw = (t) => {
+  clear()
+  whatLives(board, cellsize)
+  drawTheThings(board, cellsize)
+}
 
-  animate(redraw)
+animate(redraw)
