@@ -38,3 +38,10 @@ const containsX = (s) => {
   }
   return count > 0
 }
+
+const sumSquares = (x) => {
+  let sum = 0
+  for (let i = 1; i < x; i++){
+    sum = sum + i**2
+  }
+}
