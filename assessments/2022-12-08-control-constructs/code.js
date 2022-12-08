@@ -15,3 +15,11 @@ const countXs = (s) => {
   }
   return count
 }
+
+const timesTable = (x) => {
+  for (let i = 0; i < x + 1; i++){
+    for (let j = 0; j < x + 1; j++){
+      emit(i, j, i * j)
+    }
+  }
+}
