@@ -71,9 +71,9 @@ const moveRight = () => {
         board[i][j] = ''
         c = c - 1
       }
-      if (left[i][3] === left[i][2] && left[i][3] !== ''){
-        left[i][3] = left[i][3] * 2
-        left[i][2] = ''
+      if (right[i][3] === right[i][2] && right[i][3] !== ''){
+        right[i][3] = right[i][3] * 2
+        right[i][2] = ''
       }
     }
   }
