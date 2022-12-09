@@ -90,6 +90,22 @@ const moveUp = () => {
   doIt()
 }
 
+const moveDown = () => {
+  let down = board
+  for (let j = 3; j > -1; j = j - 1) {
+    let c = 0
+    for (let i = 3; i > -1; i = i - 1) {
+      if (down[i][j] !== '') {
+        down[c][j] = board[i][j]
+        board[i][j] = ''
+        c = c - 1
+      }
+    }
+  }
+  board = down
+  doIt()
+}
+
 registerOnKeyDown((key) => {
   console.log(key)
   if (key === 'ArrowLeft') {
