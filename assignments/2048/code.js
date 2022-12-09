@@ -86,7 +86,7 @@ const moveUp = () => {
       }
     }
   }
-  up = up
+  board = up
   doIt()
 }
 
