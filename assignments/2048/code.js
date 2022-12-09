@@ -52,6 +52,9 @@ const moveLeft = () => {
         board[i][j] = ''
         c++
       }
+      if (left[i][0] === left[i][1]){
+        left[i][0] = left[i][0] * 2
+      }
     }
   }
   board = left
