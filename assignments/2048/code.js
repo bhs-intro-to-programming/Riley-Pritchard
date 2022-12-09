@@ -74,6 +74,22 @@ const moveRight = () => {
   doIt()
 }
 
+const moveUp = () => {
+  let up = board
+  for (let j = 0; j < 4; j++) {
+    let c = 0
+    for (let i = 0; i < 4; i++) {
+      if (up[i][j] !== '') {
+        up[c][j] = board[i][j]
+        board[i][j] = ''
+        c++
+      }
+    }
+  }
+  up = left
+  doIt()
+}
+
 registerOnKeyDown((key) => {
   console.log(key)
   if (key === 'ArrowLeft') {
