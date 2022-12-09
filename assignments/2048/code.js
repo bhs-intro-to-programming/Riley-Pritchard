@@ -18,8 +18,7 @@ const rowx = () => (row(Math.random() * 274) + 1) * height / 4
 const random2 = () => {
   const x = columnx() + 50;
   const y = rowx() - 5;
-  console.log(`x: ${x}`);
-  console.log(`y: ${y}`);
+  if (board[row(y)][column(x)] === '')
   drawText('2', x, y, 'black', 80)
   board[row(y)][column(x)] = '2'
 }
