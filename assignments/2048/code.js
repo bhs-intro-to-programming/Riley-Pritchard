@@ -54,6 +54,7 @@ const moveLeft = () => {
       }
       if (left[i][0] === left[i][1] && left[i][0] !== ''){
         left[i][0] = left[i][0] * 2
+        left[i][1] = ''
       }
     }
   }
