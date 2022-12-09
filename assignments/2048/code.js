@@ -70,7 +70,7 @@ const moveRight = () => {
       }
     }
   }
-  board = left
+  board = right
   doIt()
 }
 
