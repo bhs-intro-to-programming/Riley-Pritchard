@@ -66,7 +66,7 @@ const moveRight = () => {
       if (board[i][j] !== '') {
         right[i][c] = board[i][j]
         board[i][j] = ''
-        c = c -1
+        c = c - 1
       }
     }
   }
@@ -97,5 +97,8 @@ registerOnKeyDown((key) => {
   }
   if (key === 'ArrowRight') {
     moveRight()
+  }
+  if (key === 'ArrowUp') {
+    moveUp()
   }
 })
