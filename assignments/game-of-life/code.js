@@ -40,28 +40,26 @@ const neighbors = (y, x, b) => {
     if (y === 0) {
       i = i + 1
     }
-    if (y === Math.floor(height / cellsize)) {
-      while (i < 1) {
-        if (x === Math.floor(width / cellsize)) {
-          while (j < 1) {
-            if (b[y + i][x + j] === 1) {
-              n = n + 1
-            }
-          }
-        }
-      }
+    if (y === Math.floor(height / cellsize) && i === 1) {
+      i = i - 1
+    }
+    if (x === Math.floor(width / cellsize && j === 1)) {
+      j = j - 1
+    }
+    if (b[y + i][x + j] === 1) {
+      n = n + 1
     }
   }
   return n
 }
 
 const whatLives = (b, cellsize) => {
-  for (let i = 0; i < height / cellsize; i ++) {
+  for (let i = 0; i < height / cellsize; i++) {
     for (let j = 0; j < width / cellsize; j++) {
       if (neighbors(i, j) > 2) {
         b[i][j] = 1
       } else {
-        if (b[i] === undefined){
+        if (b[i] === undefined) {
           console.log(i + ' ' + j)
         }
         b[i][j] = 0
