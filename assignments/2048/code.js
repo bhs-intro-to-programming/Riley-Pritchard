@@ -61,12 +61,12 @@ const moveLeft = () => {
 const moveRight = () => {
   let right = board
   for (let i = 3; i > -1; i = i - 1) {
-    let c = 0
+    let c = 3
     for (let j = 3; j > - 1; j = j - 1) {
       if (board[i][j] !== '') {
         right[i][c] = board[i][j]
         board[i][j] = ''
-        c++
+        c = c -1
       }
     }
   }
