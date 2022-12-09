@@ -117,4 +117,7 @@ registerOnKeyDown((key) => {
   if (key === 'ArrowUp') {
     moveUp()
   }
+  if (key === 'ArrowDown') {
+    moveDown()
+  }
 })
