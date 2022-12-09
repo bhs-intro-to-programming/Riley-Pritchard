@@ -86,7 +86,7 @@ const moveUp = () => {
       }
     }
   }
-  up = left
+  up = up
   doIt()
 }
 
