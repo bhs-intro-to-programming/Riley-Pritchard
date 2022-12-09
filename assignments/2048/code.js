@@ -59,7 +59,7 @@ const moveLeft = () => {
 }
 
 const moveRight = () => {
-  let left = board
+  let right = board
   for (let i = 3; i > -1; i = i - 1) {
     let c = 0
     for (let j = 3; j > - 1; j = j - 1) {
