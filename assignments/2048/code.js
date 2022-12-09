@@ -93,7 +93,7 @@ const moveUp = () => {
 const moveDown = () => {
   let down = board
   for (let j = 3; j > -1; j = j - 1) {
-    let c = 0
+    let c = 3
     for (let i = 3; i > -1; i = i - 1) {
       if (down[i][j] !== '') {
         down[c][j] = board[i][j]
