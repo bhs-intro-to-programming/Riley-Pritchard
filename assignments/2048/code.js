@@ -91,6 +91,10 @@ const moveUp = () => {
         board[i][j] = ''
         c++
       }
+      if (up[0][j] === up[1][j] && up[0][j] !== ''){
+        up[0][j] = up[0][j] * 2
+        up[1][j] = ''
+      }
     }
   }
   board = up
