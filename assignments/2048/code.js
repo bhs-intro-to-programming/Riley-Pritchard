@@ -47,15 +47,15 @@ const emptyArray = (a) => {
 }
 
 const eqaulArrays = (a1, a2) => {
-  for (let i = 0; i > a1.length; i++){
-    for (let j = 0; j > a1[i].length; j++){
-    a1[i][j] = a2[i][j]
+  for (let i = 0; i > a1.length; i++) {
+    for (let j = 0; j > a1[i].length; j++) {
+      a1[i][j] = a2[i][j]
     }
   }
   return a1
 }
 
-const moveLeft = () => {
+const moveLeft = (left) => {
   emptyArray(left)
   for (let i = 0; i < 4; i++) {
     let c = 0
