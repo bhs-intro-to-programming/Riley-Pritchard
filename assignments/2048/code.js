@@ -19,7 +19,7 @@ const random2 = () => {
   const x = columnx() + 50;
   const y = rowx() - 5;
   if (board[row(y)][column(x)] === '')
-  drawText('2', x, y, 'black', 80)
+    drawText('2', x, y, 'black', 80)
   board[row(y)][column(x)] = '2'
 }
 random2()
@@ -42,11 +42,21 @@ const doIt = () => {
 }
 
 const emptyArray = (a) => {
-  return a = [['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', '']]
+  let a = [['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', '']]
+  return a
+}
+
+const eqaulArrays = (a1, a2) => {
+  for (let i = 0; i > a1.length; i++){
+    for (let j = 0; j > a1[i].length; j++){
+    a1[i][j] = a2[i][j]
+    }
+  }
+  return a1
 }
 
 const moveLeft = () => {
-  let left = board
+  emptyArray(left)
   for (let i = 0; i < 4; i++) {
     let c = 0
     for (let j = 0; j < 4; j++) {
@@ -55,18 +65,18 @@ const moveLeft = () => {
         board[i][j] = ''
         c++
       }
-      if (left[i][0] === left[i][1] && left[i][0] !== ''){
+      if (left[i][0] === left[i][1] && left[i][0] !== '') {
         left[i][0] = left[i][0] * 2
         left[i][1] = ''
       }
     }
   }
-  board = left
+  equalArrays(board, left)
   doIt()
 }
 
 const moveRight = () => {
-  let right = board
+  emptyArray(right)
   for (let i = 3; i > -1; i = i - 1) {
     let c = 3
     for (let j = 3; j > - 1; j = j - 1) {
@@ -75,18 +85,18 @@ const moveRight = () => {
         board[i][j] = ''
         c = c - 1
       }
-      if (right[i][3] === right[i][2] && right[i][3] !== ''){
+      if (right[i][3] === right[i][2] && right[i][3] !== '') {
         right[i][3] = right[i][3] * 2
         right[i][2] = ''
       }
     }
   }
-  board = right
+  equalArrays(board, right)
   doIt()
 }
 
 const moveUp = () => {
-  let up = board
+  emptyArray(up)
   for (let j = 0; j < 4; j++) {
     let c = 0
     for (let i = 0; i < 4; i++) {
@@ -95,18 +105,18 @@ const moveUp = () => {
         board[i][j] = ''
         c++
       }
-      if (up[0][j] === up[1][j] && up[0][j] !== ''){
+      if (up[0][j] === up[1][j] && up[0][j] !== '') {
         up[0][j] = up[0][j] * 2
         up[1][j] = ''
       }
     }
   }
-  board = up
+  equalArrays(board, up)
   doIt()
 }
 
 const moveDown = () => {
-  let down = board
+  emptyArray(down)
   for (let j = 3; j > -1; j = j - 1) {
     let c = 3
     for (let i = 3; i > -1; i = i - 1) {
@@ -117,7 +127,7 @@ const moveDown = () => {
       }
     }
   }
-  board = down
+  equalArrays(board, down)
   doIt()
 }
 
