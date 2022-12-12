@@ -41,15 +41,6 @@ const doIt = () => {
   random2()
 }
 
-const eqaulArrays = (a1, a2) => {
-  for (let i = 0; i > a1.length; i++) {
-    for (let j = 0; j > a1[i].length; j++) {
-      a1[i][j] = a2[i][j]
-    }
-  }
-  return a1
-}
-
 const moveLeft = () => {
   let left = [['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', '']]
   for (let i = 0; i < 4; i++) {
