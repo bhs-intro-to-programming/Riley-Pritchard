@@ -53,7 +53,7 @@ const eqaulArrays = (a1, a2) => {
 }
 
 const moveLeft = () => {
-  emptyArray(left)
+  left = emptyArray
   for (let i = 0; i < 4; i++) {
     let c = 0
     for (let j = 0; j < 4; j++) {
