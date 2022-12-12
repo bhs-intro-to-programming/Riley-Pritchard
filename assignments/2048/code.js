@@ -41,10 +41,7 @@ const doIt = () => {
   random2()
 }
 
-const emptyArray = (a) => {
-  a = [['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', '']]
-  return a
-}
+const emptyArray = [['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', '']]
 
 const eqaulArrays = (a1, a2) => {
   for (let i = 0; i > a1.length; i++) {
@@ -55,7 +52,7 @@ const eqaulArrays = (a1, a2) => {
   return a1
 }
 
-const moveLeft = (left) => {
+const moveLeft = () => {
   emptyArray(left)
   for (let i = 0; i < 4; i++) {
     let c = 0
