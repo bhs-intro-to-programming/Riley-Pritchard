@@ -75,7 +75,7 @@ const moveLeft = () => {
 }
 
 const moveRight = () => {
-  emptyArray(right)
+  let right = [['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', '']]
   for (let i = 3; i > -1; i = i - 1) {
     let c = 3
     for (let j = 3; j > - 1; j = j - 1) {
@@ -90,12 +90,16 @@ const moveRight = () => {
       }
     }
   }
-  equalArrays(board, right)
+ for (let i = 0; i > board.length; i++) {
+    for (let j = 0; j > board[i].length; j++) {
+      board[i][j] = right[i][j]
+    }
+  }
   doIt()
 }
 
 const moveUp = () => {
-  emptyArray(up)
+  let up = [['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', '']]
   for (let j = 0; j < 4; j++) {
     let c = 0
     for (let i = 0; i < 4; i++) {
@@ -110,12 +114,16 @@ const moveUp = () => {
       }
     }
   }
-  equalArrays(board, up)
+  for (let i = 0; i > board.length; i++) {
+    for (let j = 0; j > board[i].length; j++) {
+      board[i][j] = up[i][j]
+    }
+  }
   doIt()
 }
 
 const moveDown = () => {
-  emptyArray(down)
+  let down = [['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', '']]
   for (let j = 3; j > -1; j = j - 1) {
     let c = 3
     for (let i = 3; i > -1; i = i - 1) {
@@ -126,7 +134,11 @@ const moveDown = () => {
       }
     }
   }
-  equalArrays(board, down)
+  for (let i = 0; i > board.length; i++) {
+    for (let j = 0; j > board[i].length; j++) {
+      board[i][j] = down[i][j]
+    }
+  }
   doIt()
 }
 
