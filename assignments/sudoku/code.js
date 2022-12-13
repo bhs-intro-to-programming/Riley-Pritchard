@@ -1,7 +1,7 @@
 const drawBoard = (thick) => {
   for (let i = 0; i < 10; i++) {
     drawLine((width / 2) - (height / 2) + (height / 9) * i, 0, (width / 2) - (height / 2) + height / 9 * i, height, 'black', thick)
-    if (i % 3 === 0){
+    if (i === 0){
       thick = 2
     }
   }
