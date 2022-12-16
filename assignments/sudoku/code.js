@@ -13,3 +13,18 @@ const drawBoard = () => {
   }
 }
 drawBoard()
+
+const makeArrayRow = (columns) => {
+  let row = []
+  for (let i = 0; i < columns; i++) {
+    row.push('')
+  }
+  return row
+}
+const makeArray = (rows, columns) => {
+  let b = []
+  for (let i = 0; i < rows; i++) {
+    b.push(makeArrayRow(columns))
+  }
+  return b;
+}
