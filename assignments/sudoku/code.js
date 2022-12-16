@@ -38,6 +38,7 @@ const drawArray = () => {
       }
     }
 }
+drawArray()
 
 const addSelect2Array = () => {
   for (let i = 0; i < 9; i++){
