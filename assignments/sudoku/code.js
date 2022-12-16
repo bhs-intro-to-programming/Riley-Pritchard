@@ -35,7 +35,7 @@ const column = (x) => Math.floor(x / (width / 9))
 
 const drawSelectNumbers = () => {
   for (let i = 1; i < 10; i++){
-    drawText(i, i * 20 - 20, 25, 'black', 30)
+    drawText(i, i * 25 - 20, 25, 'black', 30)
   }
 }
 drawSelectNumbers()
