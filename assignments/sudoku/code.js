@@ -34,8 +34,8 @@ const row = (y) => Math.floor(y / (height / 9))
 const column = (x) => Math.floor(x / (width / 9))
 
 const drawSelectNumbers = () => {
-  for (let i = 0; i < 10; i++){
-    drawText(i + 1, i * 20 + 3, 20, 'black', 20)
+  for (let i = 1; i < 10; i++){
+    drawText(i, i * 20 + 3, 20, 'black', 20)
   }
 }
 drawSelectNumbers()
