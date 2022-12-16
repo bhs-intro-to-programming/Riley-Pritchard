@@ -5,5 +5,11 @@ const drawBoard = (thick) => {
   for (let j = 0; j < 10; j++) {
     drawLine((width / 2) - (height / 2), height / 9 * j, (width / 2) + (height / 2), height / 9 * j, 'black', 1)
   }
+    for (let i = 0; i < 4; i++) {
+    drawLine((width / 2) - (height / 2) + (height / 3) * i, 0, (width / 2) - (height / 2) + height / 3 * i, height, 'black', 2)
+  }
+  for (let j = 0; j < 4; j++) {
+    drawLine((width / 2) - (height / 2), height / 3 * j, (width / 2) + (height / 2), height / 3 * j, 'black', 2)
+  }
 }
 drawBoard(1)
