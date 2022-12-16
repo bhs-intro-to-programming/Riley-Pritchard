@@ -43,6 +43,7 @@ const addSelect2Array = () => {
   for (let i = 0; i < 9; i++){
     board[i][0] = i + 1
   }
+  return board
 }
 
 const row = (y) => Math.floor(y / (height / 9))
