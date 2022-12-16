@@ -38,13 +38,13 @@ const addSelect2Array = () => {
 }
 addSelect2Array()
 
-const drawArray = () => {
-  for (let j = 0; j < board.length; j++)
+const drawArray = (b) => {
+  for (let j = 0; j < b.length; j++)
     for (let i = 0; i < 10; i++) {
-      drawText(board[j][i], (width / 2) - (height / 2) + (height / 10) * j, height / 9 * i, 'black', 25);
+      drawText(b[j][i], (width / 2) - (height / 2) + (height / 10) * j, height / 9 * i, 'black', 25);
     }
 }
-drawArray()
+drawArray(board)
 
 const row = (y) => Math.floor(y / (height / 9))
 const column = (x) => Math.floor(x / (width / 9))
