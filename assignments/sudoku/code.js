@@ -39,6 +39,12 @@ const drawArray = () => {
     }
 }
 
+const addSelect2Array = () => {
+  for (let i = 0; i < 9; i++){
+    board[i][0] = i + 1
+  }
+}
+
 const row = (y) => Math.floor(y / (height / 9))
 const column = (x) => Math.floor(x / (width / 9))
 const selectColumn = (x) => Math.floor(x / (198 / 9 - 20))
@@ -48,7 +54,6 @@ const drawSelectNumbers = () => {
     drawText(i, (width / 2) - (height / 2) + (height / 9) - (height / 9 * 2) + 7, i * (height / 9) - 5, 'black', 25)
   }
 }
-let selectors = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 drawSelectNumbers()
 
 let aSelect = []
