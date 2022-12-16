@@ -30,15 +30,24 @@ const makeArray = (rows, columns) => {
 }
 const board = makeArray(9, 9)
 
+const row = (y) => Math.floor(y / (height / 9))
+const column = (x) => Math.floor(x / (width / 9))
+
+const drawSelectNumbers = () => {
+  for (let i = 0; i < 10; i++){
+    drawText(i, 0, 10, 'black',10)
+  }
+}
+
 let aSelect = []
 const move = (x, y) => {
   if (aSelect.length === 1) {
-    drawText(aSelect, width / 8 * column(x), height / 8 * (row(y) + 1), 'black', 40)
+    drawText(aSelect, width / 9 * column(x), height / 9 * (row(y) + 1), 'black', 40)
     board[row(y)][column(x)] = aSelect[0]
     aSelect.pop(board[row(y)][column(x)])
     draw()
   } else {
-    drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'blue', 40)
+    drawText(board[row(y)][column(x)], width / 9 * column(x), height / 9 * (row(y) + 1), 'blue', 40)
     aSelect.push(board[row(y)][column(x)])
     board[row(y)][column(x)] = ''
 
