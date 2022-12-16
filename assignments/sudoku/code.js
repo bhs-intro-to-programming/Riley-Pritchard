@@ -54,7 +54,7 @@ drawSelectNumbers()
 let aSelect = []
 const move = (x, y) => {
   if (aSelect.length === 1) {
-    drawText(aSelect, width / 9 * column(x), height / 9 * (row(y) + 1), 'black', 40)
+    drawText(aSelect, width / 9 * column(x), height / 9 * (row(y) + 1), 'black', 20)
     board[row(y)][column(x)] = aSelect[0]
     aSelect.pop(board[row(y)][column(x)])
     draw()
