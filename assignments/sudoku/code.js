@@ -6,10 +6,10 @@ const drawBoard = () => {
     drawLine((width / 2) - (height / 2 - height / 10), height / 9 * j, (width / 2) + (height / 2), height / 9 * j, 'black', 1)
   }
     for (let i = 0; i < 4; i++) {
-    drawLine((width / 2) - (height / 2) + (height / 3) * i + (height / 9), 0, (width / 2) - (height / 2) + height / 3 * i + (height /9), height, 'black', 3)
+    drawLine((width / 2) - (height / 2) + (height / 10) * i, 0, (width / 2) - (height / 2) + height / 10 * i, height, 'black', 1)
   }
   for (let j = 0; j < 4; j++) {
-     drawLine((width / 2) - (height / 2 - height / 10) + 5, height / 9 * j * 3, (width / 2) + (height / 2), height / 9 * j * 3, 'black', 3)
+     drawLine((width / 2) - (height / 2 - height / 10), height / 9 * j * 3, (width / 2) + (height / 2), height / 9 * j * 3, 'black', 3)
   }
 }
 drawBoard()
