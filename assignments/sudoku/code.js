@@ -45,6 +45,7 @@ const addSelect2Array = () => {
   }
   return board
 }
+addSelect2Array()
 
 const row = (y) => Math.floor(y / (height / 9))
 const column = (x) => Math.floor(x / (width / 9))
