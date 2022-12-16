@@ -28,3 +28,4 @@ const makeArray = (rows, columns) => {
   }
   return b;
 }
+makeArray(9,9)
