@@ -39,6 +39,7 @@ const drawSelectNumbers = () => {
     drawText(i, i * 22 - 20, 25, 'black', 30)
   }
 }
+let selectors = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 drawSelectNumbers()
 
 let aSelect = []
