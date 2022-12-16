@@ -28,7 +28,7 @@ const makeArray = (rows, columns) => {
   }
   return b;
 }
-const board = makeArray(9, 9)
+const board = makeArray(10, 9)
 
 const drawArray = () => {
   for (let j = 0; j < board.length; j++)
