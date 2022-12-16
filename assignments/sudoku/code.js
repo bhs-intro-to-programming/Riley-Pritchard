@@ -28,5 +28,19 @@ const makeArray = (rows, columns) => {
   }
   return b;
 }
-
 const board = makeArray(9, 9)
+
+let aSelect = []
+const move = (x, y) => {
+  if (aSelect.length === 1) {
+    drawText(aSelect, width / 8 * column(x), height / 8 * (row(y) + 1), 'black', 40)
+    board[row(y)][column(x)] = aSelect[0]
+    aSelect.pop(board[row(y)][column(x)])
+    draw()
+  } else {
+    drawText(board[row(y)][column(x)], width / 8 * column(x), height / 8 * (row(y) + 1), 'blue', 40)
+    aSelect.push(board[row(y)][column(x)])
+    board[row(y)][column(x)] = ''
+
+  }
+}
