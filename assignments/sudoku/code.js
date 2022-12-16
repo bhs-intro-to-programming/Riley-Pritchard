@@ -17,7 +17,7 @@ drawBoard()
 const makeArrayRow = (columns) => {
   let row = []
   for (let i = 0; i < columns; i++) {
-    row.push('')
+    row.push(0)
   }
   return row
 }
