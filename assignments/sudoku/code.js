@@ -5,11 +5,11 @@ const drawBoard = () => {
   for (let j = 0; j < 11; j++) {
     drawLine((width / 2) - (height / 2 - height / 10), height / 9 * j, (width / 2) + (height / 2), height / 9 * j, 'black', 1)
   }
-    for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 4; i++) {
     drawLine((width / 2) - (height / 2) + (height / 10) * i * 3 + height / 10, 0, (width / 2) - (height / 2) + height / 10 * i * 3 + height / 10, height, 'black', 3)
   }
   for (let j = 0; j < 4; j++) {
-     drawLine((width / 2) - (height / 2 - height / 10), height / 9 * j * 3, (width / 2) + (height / 2), height / 9 * j * 3, 'black', 3)
+    drawLine((width / 2) - (height / 2 - height / 10), height / 9 * j * 3, (width / 2) + (height / 2), height / 9 * j * 3, 'black', 3)
   }
 }
 drawBoard()
@@ -31,7 +31,7 @@ const makeArray = (rows, columns) => {
 const board = makeArray(9, 10)
 
 const addSelect2Array = () => {
-  for (let i = 0; i < 9; i++){
+  for (let i = 0; i < 9; i++) {
     board[i][0] = i + 1
   }
   return board
@@ -41,8 +41,7 @@ addSelect2Array()
 const drawArray = () => {
   for (let j = 0; j < board.length; j++)
     for (let i = 0; i < 10; i++) {
-        drawText(board[j][i],(width / 2) - (height / 2) + (height / 10) * j, height / 9 * i, 'black', 25);
-      
+      drawText(board[j][i], (width / 2) - (height / 2) + (height / 10) * j, height / 9 * i, 'black', 25);
     }
 }
 drawArray()
