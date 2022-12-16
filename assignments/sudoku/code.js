@@ -53,3 +53,4 @@ const move = (x, y) => {
     aSelect.push(selectors[selectColumn(x)])
   }
 }
+registerOnclick(move);
