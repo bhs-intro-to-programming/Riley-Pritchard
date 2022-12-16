@@ -9,7 +9,7 @@ const drawBoard = (thick) => {
   }
   for (let j = 0; j < 10; j++) {
     drawLine((width / 2) - (height / 2), height / 9 * j, (width / 2) + (height / 2), height / 9 * j, 'black', thick)
-  if (j % 3 === 0){
+  if (j % 3 === .6666667){
       thick = 2;
     }else{
       thick = 1;
