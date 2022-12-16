@@ -52,12 +52,13 @@ const row = (y) => Math.floor(y / (height / 9))
 const column = (x) => Math.floor(x / (width / 9))
 const selectColumn = (x) => Math.floor(x / (198 / 9 - 20))
 
-const drawSelectNumbers = () => {
+/*const drawSelectNumbers = () => {
   for (let i = 1; i < 10; i++){
     drawText(i, (width / 2) - (height / 2) + (height / 9) - (height / 9 * 2) + 7, i * (height / 9) - 5, 'black', 25)
   }
 }
 drawSelectNumbers()
+*/
 
 let aSelect = []
 const move = (x, y) => {
