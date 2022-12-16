@@ -1,6 +1,6 @@
 const drawBoard = () => {
   for (let i = 0; i < 10; i++) {
-    drawLine((width / 2) - (height / 2) + (height / 9) * i - (height / 9), 0, (width / 2) - (height / 2) + height / 9 * i  - (height / 9), height, 'black', 1)
+    drawLine((width / 2) - (height / 2) + (height / 10) * i, 0, (width / 2) - (height / 2) + height / 10 * i, height, 'black', 1)
   }
   for (let j = 0; j < 11; j++) {
     drawLine((width / 2) - (height / 2), height / 9 * j, (width / 2) + (height / 2), height / 9 * j, 'black', 1)
@@ -51,7 +51,6 @@ addSelect2Array()
 
 const row = (y) => Math.floor(y / (height / 9))
 const column = (x) => Math.floor(x / (width / 9))
-const selectColumn = (x) => Math.floor(x / (198 / 9 - 20))
 
 /*const drawSelectNumbers = () => {
   for (let i = 1; i < 10; i++){
@@ -69,8 +68,8 @@ const move = (x, y) => {
     aSelect.pop(board[row(y)][column(x)])
     draw()
   } else {
-    drawText(selectors[selectColumn(x)], (198 / 9 - 20) * selectColumn(x), 30, 'blue', 30)
-    aSelect.push(selectors[selectColumn(x)])
+    drawText(board[column(x)], (198 / 9 - 20) * column(x), 30, 'blue', 30)
+    aSelect.push(board[column(x)])
   }
 }
 registerOnclick(move);
