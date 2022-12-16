@@ -35,7 +35,7 @@ const drawArray = () => {
     for (let i = 0; i < 9; i++) {
       if (board[j][i] !== '') {
         console.log(board[j][i])
-        drawText(board[j][i], width / 9 * (i), height / 9 * (j + 1), 'black', 25);
+        drawText(board[j][i], width / 10 * (i), height / 10 * (j + 1), 'black', 25);
       }
     }
 }
