@@ -6,10 +6,10 @@ const drawBoard = (thick) => {
     drawLine((width / 2) - (height / 2), height / 9 * j, (width / 2) + (height / 2), height / 9 * j, 'black', 1)
   }
     for (let i = 0; i < 4; i++) {
-    drawLine((width / 2) - (height / 2) + (height / 3) * i, 0, (width / 2) - (height / 2) + height / 3 * i, height, 'black', 2)
+    drawLine((width / 2) - (height / 2) + (height / 3) * i, 0, (width / 2) - (height / 2) + height / 3 * i, height, 'black', 3)
   }
   for (let j = 0; j < 4; j++) {
-    drawLine((width / 2) - (height / 2), height / 3 * j, (width / 2) + (height / 2), height / 3 * j, 'black', 2)
+    drawLine((width / 2) - (height / 2), height / 3 * j, (width / 2) + (height / 2), height / 3 * j, 'black', 3)
   }
 }
 drawBoard(1)
