@@ -38,6 +38,7 @@ const drawSelectNumbers = () => {
     drawText(i, 0, 10, 'black',10)
   }
 }
+drawSelectNumbers()
 
 let aSelect = []
 const move = (x, y) => {
