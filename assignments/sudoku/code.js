@@ -32,6 +32,7 @@ const board = makeArray(9, 9)
 
 const row = (y) => Math.floor(y / (height / 9))
 const column = (x) => Math.floor(x / (width / 9))
+const selectColumn = (x) => Math.floor(x / (198 / 9 - 20))
 
 const drawSelectNumbers = () => {
   for (let i = 1; i < 10; i++){
@@ -48,7 +49,7 @@ const move = (x, y) => {
     aSelect.pop(board[row(y)][column(x)])
     draw()
   } else {
-    drawText(selectors[column(x)], (198 / 9 - 20) * column(x), height / 9 * (row(y) + 1), 'blue', 40)
-    aSelect.push(selectors[column(x)])
+    drawText(selectors[selectColumn(x)], (198 / 9 - 20) * selectColumn(x), 30, 'blue', 30)
+    aSelect.push(selectors[selectColumn(x)])
   }
 }
