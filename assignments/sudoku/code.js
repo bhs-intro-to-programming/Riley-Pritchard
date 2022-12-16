@@ -28,4 +28,5 @@ const makeArray = (rows, columns) => {
   }
   return b;
 }
-makeArray(9,9)
+
+const board = makeArray(9, 9)
