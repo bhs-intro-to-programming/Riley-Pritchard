@@ -30,6 +30,14 @@ const makeArray = (rows, columns) => {
 }
 const board = makeArray(9, 10)
 
+const addSelect2Array = () => {
+  for (let i = 0; i < 9; i++){
+    board[i][0] = i + 1
+  }
+  return board
+}
+addSelect2Array()
+
 const drawArray = () => {
   for (let j = 0; j < board.length; j++)
     for (let i = 0; i < 10; i++) {
@@ -40,14 +48,6 @@ const drawArray = () => {
     }
 }
 drawArray()
-
-const addSelect2Array = () => {
-  for (let i = 0; i < 9; i++){
-    board[i][0] = i + 1
-  }
-  return board
-}
-addSelect2Array()
 
 const row = (y) => Math.floor(y / (height / 9))
 const column = (x) => Math.floor(x / (width / 9))
