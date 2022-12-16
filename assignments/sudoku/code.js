@@ -30,6 +30,15 @@ const makeArray = (rows, columns) => {
 }
 const board = makeArray(9, 9)
 
+const drawArray = () => {
+  for (let j = 0; j < board.length; j++)
+    for (let i = 0; i < 9; i++) {
+      if (board[j][i] !== '') {
+        drawText(board[j][i], width / 9 * (i), height / 9 * (j + 1), 'black', 20);
+      }
+    }
+}
+
 const row = (y) => Math.floor(y / (height / 9))
 const column = (x) => Math.floor(x / (width / 9))
 const selectColumn = (x) => Math.floor(x / (198 / 9 - 20))
@@ -55,3 +64,9 @@ const move = (x, y) => {
   }
 }
 registerOnclick(move);
+
+const draw = () => {
+  clear()
+  drawBoard()
+  drawArray()
+}
