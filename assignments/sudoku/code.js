@@ -9,7 +9,7 @@ const drawBoard = () => {
     drawLine((width / 2) - (height / 2) + (height / 3) * i + (height / 9), 0, (width / 2) - (height / 2) + height / 3 * i + (height /9), height, 'black', 3)
   }
   for (let j = 0; j < 4; j++) {
-     drawLine((width / 2) - (height / 2 - height / 10) + 3, height / 9 * j * 3, (width / 2) + (height / 2), height / 9 * j * 3, 'black', 3)
+     drawLine((width / 2) - (height / 2 - height / 10) + 5, height / 9 * j * 3, (width / 2) + (height / 2), height / 9 * j * 3, 'black', 3)
   }
 }
 drawBoard()
