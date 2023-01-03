@@ -77,7 +77,7 @@ const drawSpicyCheckers = (n, color) => {
     }
   }
 }
-//drawSpicyCheckers(12, 'blue')
+drawSpicyCheckers(12, 'blue')
 
 const drawTooManyLines = (n) => {
   for (let i = 0; i < n; i++) {
@@ -128,4 +128,4 @@ const drawStrangePictureFrame = (d, color) => {
     }
   }
 }
-drawStrangePictureFrame(20, 'blue') 
+//drawStrangePictureFrame(20, 'blue') 
