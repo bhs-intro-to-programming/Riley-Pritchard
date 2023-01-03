@@ -16,3 +16,7 @@ const fib2 = (n) => {
 const MAX_FIB_N = 1476;
 
 const MAX_FIB = fib2(MAX_FIB_N);
+
+const double = (x) => {
+  return x * 2;
+}
